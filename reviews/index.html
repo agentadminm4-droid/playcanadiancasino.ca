@@ -3,16 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png">
+    <!-- Favicon (data URI - guaranteed to load) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFWUlEQVR42u1XW2+cVxVda5/zzXzjmTR2fSGXmtx6S1vaJoGqSVpsXqpKUCEViZemEqgSQv0D8FIJiTwgnnhEFRKCN8QLoAJCQsJOqoQqLaW3JBVJasfETZvmYrtjz3zznb14mHFwE6dpaURe+knn5ZPO3mvvvc4667D2ja8LN/Ez3OTvpgOINzieIHVHShIA/x8AEgkBDJLYS/xfQEDqddpuNIBE0iSFbs0CpSaIBYAS0ACwZkWOZSD8rADUW0ESvFm+EevxwqaBbGD6UjHirgYIAljsOKZR+Acxs80M3Nzb7yu78WkBLG+mSUe2DlWq+x4buf+ph4fx9vttPPb8FPKcgAtFUda3DFWHn31kCD8/+P7SyXdbk9Xcdjq4ZiWIuEoCXyUxe/8zShdcOF7N457ffHcrYiB++eJ7+N2bczOhU1yEs0OqURa645mHBuzZ8f7iibtqte/89r2xv5+cO5FHXkzCF6/VAfuYoxkoTSHQLcQ9zdKx79fvLP3rXPtIsVD2W1+8MwQbdQAQUavo+P4/zrbzaA88vfOWtKmOdNiy2907pwDOgVwLAFyphJReQ7B5JP8oVQSAMEhblGUbIMA8HS/bLqvY9hUNnATsq5eJlryZV+38QKMyemp2UaODldRoVLMTsx9OxCyMXylEAtgjGC+TTd3lMNurEDd0A6d/uHC3VWw7gQtUmgT0Mi2OQToE6QMALQSrLxXp1OkFMctDioFhx7rMy6Stq42AIh6EL+df2QKfUAgl3IEynaH8LoGvgEiQblEIY7AISSIQRQ51S5IbaXkEmm2wVjGO1I0Shq8CQPmEgAyuqwkYwhg6pZhFU5nOiTYAaCeyjGgXR+FqAimn66ygJZpNIPlakTug7vxQOrbdmqFVAnRvAah9BIDIBwEGBGQ9OU0AAuQvIcuIVFJFcQa0L8N9gnk+rqLdUoz3QC5IlHwAMRtHJQMWlw5TKhzYbp4gyfZu6fPfH180Gs8AGLiCA+wHtADgHQBTAKYhTIG2Fu5iCCA4A8lB3o+i9RbzPIe8q/uCs5r3QYIWl14VuVvyQzHPhxebRfrSaJ+N1CNePt1iLQ/nV+OAKE2J6EAOiMvMvC/I5QgUFEgzALdKepNl51W4D4OsIYRBFMUkoS+I3EH5IWTZuBdFcof9YHwoPX9kzlK7+LfV4q7lSV9BQtvTVYOwQhj8n82Sg5XU8Wh2h5LOwzgI2m4U6QSAkwTuZUqvODgGEJQfZAh7AHlzvrSffGs9Xn+35QdOLIY1tTBbCrddyw84gLK3WgaUXmhu79YG/vb9LcVzj6/vL4o0RekCgEzEZpiNiRxycJcvpaNFx19itfJoJ8maCx3++JvrYEDnpwfns0ZMk6X4UC/+9ZRQ5qAB2FRTWdyzoa/ylW31zlLHd+3/0+zZWjUccICEUCb5bWvj4L6vDd1738YGv/2Lk2loTbQfPbHRZ+dKPPfXi5U6ywOJNnaZ3Ne/jGgAEith84Fjcy8++auZR344Pmh/fv1i22JYhyxbFwg0W46fPbke33t4AOfm2/rLsfnyqV39eHRbX3rh7aX4wmuXVM854eD4alcyP4EpTQBC6qTDpYW7kcWBqkpBaANCmYD9j4/ICB472w6VjFlLAX84uoBLc+236rmVpfBAb7xXuSR+QlecAASDZkCedmAHY9bnEvqrhpFGRCUSyYHpc4vFpQ/T0UqVi2bcLYFXtv1/AYCVQQjNCJimkASPgKnjSuaIIeNG4LL5uMqAfBZLFnoiJIGjAEa7UtEtLAtcWaN6icP1nPenc0Tk8glxgP4xVt+u1fIbZEppN+pN8fnL6HMANx3AfwCKRpvxHjrFJwAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACF0lEQVR42qVTzU6TURA9M/f7acFSRItgioSUlBRYEMWFmChx40L3PoM7Fz6Aj+DrGDYmBqOmRqNxgRGjETQBxUIK/dp+d46LfiAa8SfO7t6ZM5M5Z47kr18j/iP0d0kBvFPxPwAEHoD9qQEBGAHnjQ5kV1QaMLaNcBnOjmrA3nDoybyr31wYen7+TH/aadvgcDFsny3nHpq3N/vY/QYGwANIAZiSHUu5PD0+MG9EurqZ1JV8UIzw9u6NiYXJ4dyo7/g6AEhG4pZAVkEDAA/VApxWfdJ9LbTTFgYvAmCOQDFyWBko5KfCtL32qWllBQAh14wWkIgIJoijGXa6j1yom2EcrIdxdJnkMxXZabas2ReA5WJYOliBwDEARoFRdMr2Wu9UdQwuWPRxblZIiKKssFUDKrVSiPWddA0AgoyDEwLsAYSIROZEjBhB2n0K75udtg9UMJJ4xvOVwqCI4MOX7oaLtNIjUaQIkVmIzo4V3MrSrZmRiaFg2VJGjla6ONnva+V8fq4yMF0b7cO9l1/vu0gvAIALq9U7mXReANtuWe7jVvJ+w6Jzn3ft1JVasXT7anm8Y1LYaCRbS68aT8TpYqaayk+n3LsBs3YKeeyc9B2PNU9gdzuxFrtWlVBHM9n1MAeHrheEahwAl0Cgkdj3ZKjIJrv9v+DXFuitBEBFICBIwEAqRNzh4uBoH/Vy5MFbIfJvbvyb+AbqVOUnCfYIjQAAAABJRU5ErkJggg==">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
