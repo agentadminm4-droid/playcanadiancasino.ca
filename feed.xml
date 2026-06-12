@@ -1,123 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0"
+  xmlns:atom="https://www.w3.org/2005/Atom"
+  xmlns:content="https://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="https://purl.org/dc/elements/1.1/"
+  xmlns:schema="https://schema.org/">
   <channel>
-    <title>PlayCanadianCasino.ca — Casino Guides &amp; News</title>
+    <title>Top Ontario Casinos — News &amp; Guides</title>
     <link>https://playcanadiancasino.ca/blog/</link>
-    <description>Expert casino guides, game strategies, and industry news for Ontario players. Learn about wagering requirements, casino rules, and the best games to play.</description>
+    <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
-    <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 08 Jun 2026 03:04:23 +0000</lastBuildDate>
+    <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
+    <lastBuildDate>Thu, 11 Jun 2026 20:35:00 +0000</lastBuildDate>
+    <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
+    <image>
+      <url>https://playcanadiancasino.ca/images/logo.png</url>
+      <title>Top Ontario Casinos</title>
+      <link>https://playcanadiancasino.ca/</link>
+    </image>
+    <item>
+      <title>Blackjack Basic Strategy in Ontario: How to Read the Chart and Why It Works</title>
+      <link>https://playcanadiancasino.ca/blog/blackjack-basic-strategy-ontario-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/blackjack-basic-strategy-ontario-2026.html</guid>
+      <description><![CDATA[<p>Blackjack basic strategy is the mathematically optimal way to play every hand. This guide explains what it is, why it works, how to read the chart, and how to use it at any of the AGCO-licensed Ontario casinos without running afoul of the rules.</p>]]></description>
+      <pubDate>Thu, 11 Jun 2026 20:35:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>Guide</category>
+      <schema:Article schema:datemodified="2026-06-11">
+        <schema:headline>Blackjack Basic Strategy in Ontario: How to Read the Chart and Why It Works</schema:headline>
+        <schema:description>Blackjack basic strategy is the mathematically optimal way to play every hand. This guide explains what it is, why it works, how to read the chart, and how to use it at any of the AGCO-licensed Ontario casinos without running afoul of the rules.</schema:description>
+        <schema:datepublished>2026-06-11</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/blackjack-basic-strategy-ontario-2026.jpg"/>
+      </schema:Article>
+    </item>
+    <item>
+      <title>Gaming Corps Goes Live with PowerPlay in Ontario Ahead of Alberta Market Opening</title>
+      <link>https://playcanadiancasino.ca/blog/gaming-corps-powerplay-ontario-launch-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/gaming-corps-powerplay-ontario-launch-june-2026.html</guid>
+      <description><![CDATA[<p>Sweden-listed game studio Gaming Corps has gone live with AGCO-licensed PowerPlay in Ontario, bringing the 3 Pigs franchise, a football-themed release cluster, and the new 5,000x instant-win Banknote Blitz to the operator's 1,200+ game lobby. The deal is structured to put Gaming Corps content in front of Ontario players immediately, with a confirmed day-one launch in Alberta lined up for that province's regulated market opening on July 13, 2026.</p>]]></description>
+      <pubDate>Thu, 11 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-06-11">
+        <schema:headline>Gaming Corps Goes Live with PowerPlay in Ontario Ahead of Alberta Market Opening</schema:headline>
+        <schema:description>Sweden-listed game studio Gaming Corps has gone live with AGCO-licensed PowerPlay in Ontario, with an Alberta day-one launch lined up for July 13 and rollout across all PowerPlay.com markets.</schema:description>
+        <schema:datepublished>2026-06-11</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/gaming-corps-powerplay-ontario-launch-june-2026.jpg"/>
+      </schema:Article>
+    </item>
     <item>
       <title>St8 Brings Wazdan Slots to Ontario Casinos — More Game Variety at AGCO-Licensed Sites</title>
       <link>https://playcanadiancasino.ca/blog/st8-wazdan-ontario-partnership-may-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/st8-wazdan-ontario-partnership-may-2026.html</guid>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Casino games aggregator St8 has expanded its Wazdan partnership into Ontario, adding hit slot titles and engagement mechanics like Cash to Infinity to multiple AGCO-licensed operators.]]></description>
+      <description><![CDATA[<p>Casino games aggregator St8 has expanded its Wazdan partnership into Ontario, adding hit slot titles like Mighty Fish: Blue Marlin and 36 Coins, plus the studio's signature Cash to Infinity, Sticky to Infinity, and Hold the Jackpot mechanics, to multiple AGCO-licensed operator sites.</p>]]></description>
+      <pubDate>Fri, 05 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-06-05">
+        <schema:headline>St8 Brings Wazdan Slots to Ontario Casinos — More Game Variety at AGCO-Licensed Sites</schema:headline>
+        <schema:description>Casino games aggregator St8 has expanded its Wazdan partnership into Ontario, adding hit slot titles and engagement mechanics to multiple AGCO-licensed operators.</schema:description>
+        <schema:datepublished>2026-06-05</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/st8-wazdan-ontario-partnership-may-2026.jpg"/>
+      </schema:Article>
     </item>
     <item>
       <title>Ontario iGaming Posts $405 Million in April Revenue on $9.32 Billion in Wagers — Every April Metric Sets a New Record</title>
       <link>https://playcanadiancasino.ca/blog/ontario-igaming-april-2026-monthly.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-april-2026-monthly.html</guid>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[iGaming Ontario's April 2026 monthly report landed with.4M in revenue, 1.265M active player accounts, and a record average revenue per player.]]></description>
+      <description><![CDATA[<p>iGaming Ontario's April 2026 monthly report landed today with a $405.4M revenue figure, 1.265M active player accounts, and a record $321 average revenue per player. Here's what the numbers say about where Ontario's regulated market is heading.</p>]]></description>
+      <pubDate>Wed, 03 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-06-03">
+        <schema:headline>Ontario iGaming Posts $405 Million in April Revenue on $9.32 Billion in Wagers — Every April Metric Sets a New Record</schema:headline>
+        <schema:description>iGaming Ontario's April 2026 monthly report landed today with a $405.4M revenue figure, 1.265M active player accounts, and a record $321 average revenue per player.</schema:description>
+      </schema:Article>
     </item>
     <item>
       <title>AGCO Taps Sarah McQuarrie as New Chief Strategy Officer, Effective June 8</title>
       <link>https://playcanadiancasino.ca/blog/agco-sarah-mcquarrie-chief-strategy-officer-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/agco-sarah-mcquarrie-chief-strategy-officer-2026.html</guid>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's gaming regulator has appointed Sarah McQuarrie as Chief Strategy Officer, effective June 8, 2026. She brings deep agency-oversight experience to the role.]]></description>
+      <description><![CDATA[<p>Ontario's gaming regulator has hired a senior public servant with deep agency-oversight experience to lead strategic planning as the province's iGaming market heads into its fifth year.</p>]]></description>
+      <pubDate>Tue, 02 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-06-02">
+        <schema:headline>AGCO Taps Sarah McQuarrie as New Chief Strategy Officer, Effective June 8</schema:headline>
+        <schema:description>Ontario's gaming regulator has hired a senior public servant with deep agency-oversight experience to lead strategic planning as the province's iGaming market heads into its fifth year.</schema:description>
+      </schema:Article>
     </item>
     <item>
       <title>Ontario's iGaming Market Just Shuffled: Conquestador Closes, Casumo Departs, and BetNova Arrives</title>
       <link>https://playcanadiancasino.ca/blog/ontario-igaming-operator-exits-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-operator-exits-2026.html</guid>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Conquestador has closed, Casumo has departed, and BetNova has arrived in Ontario's regulated casino market. Here's what the exits and entries mean for players.]]></description>
+      <description><![CDATA[<p>Three operators reshaped Ontario's regulated casino landscape in April and May 2026 — here's what the exits and entries mean for players.</p>]]></description>
+      <pubDate>Mon, 01 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-06-01">
+        <schema:headline>Ontario's iGaming Market Just Shuffled: Conquestador Closes, Casumo Departs, and BetNova Arrives</schema:headline>
+        <schema:description>Three operators reshaped Ontario's regulated casino landscape in April and May 2026 — here's what the exits and entries mean for players.</schema:description>
+        <schema:datepublished>2026-06-01</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/og-homepage.png"/>
+      </schema:Article>
     </item>
+
     <item>
       <title>BetGuard Launches Across Ontario's Regulated iGaming Market — What Players Need to Know</title>
       <link>https://playcanadiancasino.ca/blog/betguard-ontario-self-exclusion-launch-may-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/betguard-ontario-self-exclusion-launch-may-2026.html</guid>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's new centralized self-exclusion tool, BetGuard, is now live. Players can opt out of every regulated casino site with one application.]]></description>
+      <description><![CDATA[<p>Ontario's new centralized self-exclusion tool, BetGuard, is now live — letting players opt out of every regulated casino site with one application.</p>]]></description>
+      <pubDate>Sat, 30 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
     </item>
+
     <item>
       <title>Ontario iGaming Advertising Under the Microscope as Ad Standards Takes Over Oversight</title>
       <link>https://playcanadiancasino.ca/blog/ontario-igaming-advertising-ad-standards-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-advertising-ad-standards-2026.html</guid>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's regulated online casinos face a new complaint-review layer as Ad Standards formally began accepting gambling ad complaints under the iGaming Ontario Act.]]></description>
+      <description><![CDATA[<p>Ontario's regulated online casinos face a new complaint-review layer as Ad Standards formally began accepting gambling ad complaints under the Canadian Code on January 1, 2026 — and Ontario leads the country in filed complaints.</p>]]></description>
+      <pubDate>Thu, 28 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
     </item>
+
     <item>
       <title>91% of Ontario Online Gamblers Now Use Regulated Sites — Here's Why That Matters</title>
       <link>https://playcanadiancasino.ca/blog/ontario-igaming-channelization-record-91-percent.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-channelization-record-91-percent.html</guid>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Four years into Ontario's open iGaming market, a new Ipsos study shows over 91% of players are choosing regulated operators. We break down what changed.]]></description>
+      <description><![CDATA[<p>Four years into Ontario's open iGaming market, a new Ipsos study shows over 91% of players are choosing regulated operators. We break down what channelization means and why it matters for every Ontario player.</p>]]></description>
+      <pubDate>Wed, 27 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-05-27">
+        <schema:headline>91% of Ontario Online Gamblers Now Use Regulated Sites — Here's Why That Matters</schema:headline>
+        <schema:description>Four years into Ontario's open iGaming market, a new Ipsos study shows over 91% of players are choosing regulated operators. We break down what channelization means and why it matters for every Ontario player.</schema:description>
+        <schema:datepublished>2026-05-27</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
     </item>
+
     <item>
       <title>Ontario Court of Appeal Rules 4-1 to Open Regulated Online Gaming to International Players</title>
       <link>https://playcanadiancasino.ca/blog/ontario-court-appeal-cross-border-betting-ruling.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-court-appeal-cross-border-betting-ruling.html</guid>
-      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's Court of Appeal has ruled 4-1 to open regulated online gaming to international players in a landmark decision. Here's what changes.]]></description>
+      <description><![CDATA[<p>Ontario's top court has cleared the way for regulated iGaming operators to accept players from outside Canada, in a landmark ruling that could reshape the province's $4 billion online gambling market.</p>]]></description>
+      <pubDate>Tue, 26 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-05-26">
+        <schema:headline>Ontario Court of Appeal Rules 4-1 to Open Regulated Online Gaming to International Players</schema:headline>
+        <schema:description>Ontario's top court has cleared the way for regulated iGaming operators to accept players from outside Canada, in a landmark ruling that could reshape the province's $4 billion online gambling market.</schema:description>
+        <schema:datepublished>2026-05-26</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
     </item>
+
     <item>
       <title>Ontario iGaming Hits $9.52 Billion in January Wagers — A Record Start to 2026</title>
       <link>https://playcanadiancasino.ca/blog/ontario-igaming-january-2026-record.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-january-2026-record.html</guid>
-      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's regulated online gambling market opened 2026 with a new monthly handle record of.52 billion in January wagers. Here's what drove the growth.]]></description>
+      <description><![CDATA[<p>Ontario's regulated online gambling market opened 2026 with a bang, setting a new monthly handle record of $9.52 billion. Here's what drove the surge and what it means for players.</p>]]></description>
+      <pubDate>Mon, 25 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-05-25">
+        <schema:headline>Ontario iGaming Hits $9.52 Billion in January Wagers — A Record Start to 2026</schema:headline>
+        <schema:description>Ontario's regulated online gambling market opened 2026 with a bang, setting a new monthly handle record of $9.52 billion. Here's what drove the surge and what it means for players.</schema:description>
+        <schema:datepublished>2026-05-25</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
     </item>
-    <item>
-      <title>Hard Rock Bet Secures Ontario iGaming Registration — First Canadian Market for the Casino Giant</title>
-      <link>https://playcanadiancasino.ca/blog/hard-rock-bet-ontario-agco-registration-may-2026.html</link>
-      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/hard-rock-bet-ontario-agco-registration-may-2026.html</guid>
-      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Hard Rock Digital Canada has received official AGCO registration, clearing the path for the casino brand's Ontario online casino and sportsbook debut.]]></description>
-    </item>
+
     <item>
       <title>BetGuard Is Live: Ontario's New Centralized Self-Exclusion Tool Explained</title>
       <link>https://playcanadiancasino.ca/blog/betguard-ontario-centralized-self-exclusion-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/betguard-ontario-centralized-self-exclusion-2026.html</guid>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's iGaming regulator has launched BetGuard, a single portal that lets players self-exclude from every regulated online casino at once. Here's how it works.]]></description>
+      <description><![CDATA[<p>Ontario's iGaming regulator has launched BetGuard — a single portal that lets players self-exclude from every regulated online casino at once. Here's what it means for Ontario players.</p>]]></description>
+      <pubDate>Thu, 21 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-05-21">
+        <schema:headline>BetGuard Is Live: Ontario's New Centralized Self-Exclusion Tool Explained</schema:headline>
+        <schema:description>Ontario's iGaming regulator has launched BetGuard — a single portal that lets players self-exclude from every regulated online casino at once. Here's what it means for Ontario players.</schema:description>
+        <schema:datepublished>2026-05-21</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
     </item>
+
     <item>
       <title>AGCO Fines Relax Gaming and Arrise Solutions $40,000 Each Over Unregulated Casino Games</title>
       <link>https://playcanadiancasino.ca/blog/agco-enforcement-relax-gaming-unregulated-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/agco-enforcement-relax-gaming-unregulated-2026.html</guid>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[AGCO has fined Relax Gaming and Arrise Solutions each for allowing their casino games to appear on unregulated gambling websites accessible to Ontario players.]]></description>
+      <description><![CDATA[<p>Ontario's gaming regulator has taken action against two game developers for supplying content to unregulated gambling websites — signalling continued pressure on the grey market supply chain.</p>]]></description>
+      <pubDate>Wed, 20 May 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-05-20">
+        <schema:headline>AGCO Fines Relax Gaming and Arrise Solutions $40,000 Each Over Unregulated Casino Games</schema:headline>
+        <schema:description>Ontario's gaming regulator has taken action against two game developers for supplying content to unregulated gambling websites — signalling continued pressure on the grey market supply chain.</schema:description>
+        <schema:datepublished>2026-05-20</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
     </item>
+
     <item>
       <title>Ontario iGaming Breaks Records in 2025: $98 Billion in Wagers and $2 Billion in Tax Revenue</title>
       <link>https://playcanadiancasino.ca/blog/ontario-igaming-2025-record-revenue.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-2025-record-revenue.html</guid>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's regulated online gambling market hit all-time highs in 2025, with operators handling nearly billion in wagers and generating over billion in revenue.]]></description>
+      <description><![CDATA[<p>Ontario's regulated online gambling market hit all-time highs in 2025, with operators handling nearly $100 billion in wagers and generating over $4 billion in revenue. Here's what it means for players and the province.</p>]]></description>
+      <pubDate>Tue, 19 May 2026 09:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-05-19">
+        <schema:headline>Ontario iGaming Breaks Records in 2025: $98 Billion in Wagers and $2 Billion in Tax Revenue</schema:headline>
+        <schema:description>Ontario's regulated online gambling market hit all-time highs in 2025, with operators handling nearly $100 billion in wagers and generating over $4 billion in revenue.</schema:description>
+        <schema:datepublished>2026-05-19</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
     </item>
-    <item>
-      <title>Best Slot Games in Ontario 2025: Our Team's Top Picks</title>
-      <link>https://playcanadiancasino.ca/blog/best-slot-games-ontario.html</link>
-      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/best-slot-games-ontario.html</guid>
-      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[Our team's favourite slot games available at AGCO-licensed Ontario casinos in 2025. From progressive jackpots like Mega Moolah to classics like Book of Dead — ranked and reviewed.]]></description>
-    </item>
-    <item>
-      <title>Ontario's iGaming Rules Explained: What AGCO Licensing Means</title>
-      <link>https://playcanadiancasino.ca/blog/ontario-casino-rules.html</link>
-      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-casino-rules.html</guid>
-      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[Ontario's regulated online casino market explained simply. What AGCO does, how iGaming Ontario works, what to look for in a legal casino, and how to verify a site is properly licensed.]]></description>
-    </item>
+
     <item>
       <title>Understanding Casino Wagering Requirements: A Complete Guide</title>
       <link>https://playcanadiancasino.ca/blog/wagering-requirements-guide.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/wagering-requirements-guide.html</guid>
-      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
-      <description><![CDATA[What casino wagering requirements actually mean, how to calculate if a bonus is worth taking, and which Ontario casinos have the fairest wagering terms.]]></description>
+      <description>What "35x wagering" actually means, how to calculate if a bonus is worth taking, and which Ontario casinos have the fairest terms.</description>
+      <pubDate>Sun, 18 May 2025 12:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>Guide</category>
+      <schema:Article schema:datemodified="2025-05-18">
+        <schema:headline>Understanding Casino Wagering Requirements: A Complete Guide</schema:headline>
+        <schema:description>What "35x wagering" actually means, how to calculate if a bonus is worth taking, and which Ontario casinos have the fairest terms.</schema:description>
+        <schema:datepublished>2025-05-18</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/og-homepage.png"/>
+      </schema:Article>
     </item>
+
+    <item>
+      <title>Ontario's iGaming Rules Explained: What AGCO Licensing Means for Players</title>
+      <link>https://playcanadiancasino.ca/blog/ontario-casino-rules.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-casino-rules.html</guid>
+      <description>Who regulates online casinos in Ontario, what AGCO licensing means for players, and how to verify a site is legally operating in Ontario.</description>
+      <pubDate>Sun, 18 May 2025 12:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>Explainer</category>
+      <schema:Article schema:datemodified="2025-05-18">
+        <schema:headline>Ontario's iGaming Rules Explained: What AGCO Licensing Means for Players</schema:headline>
+        <schema:description>Who regulates online casinos in Ontario, what AGCO licensing means for players, and how to verify a site is legally operating in Ontario.</schema:description>
+        <schema:datepublished>2025-05-18</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
+    </item>
+
+    <item>
+      <title>Best Slot Games in Ontario 2025: Our Team's Top Picks</title>
+      <link>https://playcanadiancasino.ca/blog/best-slot-games-ontario.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/best-slot-games-ontario.html</guid>
+      <description>From Mega Moolah to Book of Dead — our team's favourite slots available at every AGCO-licensed Ontario casino. Rankings, RTPs, and where to play them.</description>
+      <pubDate>Sun, 18 May 2025 12:00:00 +0000</pubDate>
+      <dc:creator>TopOntarioCasinos Team</dc:creator>
+      <category>Top Picks</category>
+      <schema:Article schema:datemodified="2025-05-18">
+        <schema:headline>Best Slot Games in Ontario 2025: Our Team's Top Picks</schema:headline>
+        <schema:description>From Mega Moolah to Book of Dead — our team's favourite slots available at every AGCO-licensed Ontario casino.</schema:description>
+        <schema:datepublished>2025-05-18</schema:datepublished>
+        <schema:author>
+          <schema:Person>TopOntarioCasinos Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>Top Ontario Casinos</schema:Organization>
+        </schema:publisher>
+      </schema:Article>
+    </item>
+
   </channel>
 </rss>
