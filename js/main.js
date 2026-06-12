@@ -60,7 +60,12 @@
     }
     function formatDate(iso) {
         try {
-            var d = new Date(iso + 'T00:00:00Z');
+            // Parse the ISO date as a LOCAL date (no 'Z' suffix) so the displayed
+            // day matches the date in the JSON, not the previous day in timezones
+            // west of UTC (e.g. Eastern Time UTC-4 would otherwise show June 11
+            // as June 10).
+            var parts = iso.split('-');
+            var d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
             return d.toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
         } catch (e) { return iso; }
     }
