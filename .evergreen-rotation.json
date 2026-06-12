@@ -1,0 +1,12 @@
+{
+  "last_pick": "table-games",
+  "last_pick_date": "2026-06-11",
+  "written_guides": [
+    {"topic": "slots", "slug": "best-slot-games-ontario.html", "date": "2025-05-18", "note": "preexisting (May 18 2025 manual write, not from this rotation); seeded as starting state for the Pitfall 3b evergreen fallback"},
+    {"topic": "table-games", "slug": "blackjack-basic-strategy-ontario-2026", "date": "2026-06-11", "note": "first Pitfall 3b evergreen write — blackjack basic strategy guide"}
+  ],
+  "rotation_index": 2,
+  "topics": ["slots", "table-games", "live-dealer", "payments", "responsible-gaming"],
+  "next_pick": "live-dealer",
+  "schema_version": 1
+}
