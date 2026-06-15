@@ -110,6 +110,8 @@
     </script>
 
     <link rel="alternate" hreflang="en-CA" href="https://playcanadiancasino.ca/blog/ontario-igaming-april-2026-monthly.html">
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbce7893-7bf8-4c76-a76a-8ae8834d3051"></script>
 </head>
 <body>
 
@@ -260,5 +262,56 @@
     </footer>
 
     <script src="../js/main.js?v=15"></script>
+<!-- Custom event tracking for affiliate conversions (added by inject-umami.py) -->
+<script id="umami-track-casino">
+(function() {
+  if (typeof window.umami === 'undefined') {
+    // Umami not loaded yet — wait for it
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.umami !== 'undefined') initUmamiTrackers();
+    });
+  } else {
+    initUmamiTrackers();
+  }
+
+  function initUmamiTrackers() {
+    // Track all clicks, then filter to affiliate + outbound
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+
+      var href = link.getAttribute('href') || '';
+      var hostname = link.hostname || '';
+      var currentHost = window.location.hostname;
+
+      // Skip same-page anchors, mailto, tel, internal nav
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+          href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+      // Affiliate link: contains ?s=sp51774 (our tag) — this is the conversion event
+      if (href.indexOf('s=sp51774') !== -1) {
+        var operator = (link.getAttribute('data-casino-link') || hostname || 'unknown');
+        var page = window.location.pathname;
+        window.umami.track('Casino Click', { operator: operator, page: page, href: href });
+        return;
+      }
+
+      // Other outbound link to a different domain — useful for link-building tracking
+      if (hostname && hostname !== currentHost && !hostname.endsWith('playcanadiancasino.ca')) {
+        window.umami.track('Outbound Click', { domain: hostname, page: window.location.pathname, href: href });
+      }
+    }, true);  // capture phase to catch programmatic clicks
+
+    // Optional: track form submissions (for future "Join Now" forms on review pages)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (form && form.action && form.action.indexOf('s=sp51774') !== -1) {
+        window.umami.track('Conversion', { page: window.location.pathname });
+      }
+    }, true);
+  }
+})();
+</script>
+
 </body>
 </html>

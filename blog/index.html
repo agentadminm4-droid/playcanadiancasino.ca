@@ -75,6 +75,8 @@
     }
     </script>
     <link rel="alternate" hreflang="en-CA" href="https://playcanadiancasino.ca/blog/index.html">
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbce7893-7bf8-4c76-a76a-8ae8834d3051"></script>
 </head>
 <body>
     <!-- Header -->
@@ -477,11 +479,11 @@
                 <div class="footer-links">
                     <h4>Top Casinos</h4>
                     <ul>
-                        <li><a href="https://www.royalvegas.ca/?s=sp51774" target="_blank" rel="noopener">Royal Vegas</a></li>
-                        <li><a href="https://www.jackpotcity.ca/?s=sp51774" target="_blank" rel="noopener">Jackpot City</a></li>
-                        <li><a href="https://www.rubyfortune.ca/?s=sp51774" target="_blank" rel="noopener">Ruby Fortune</a></li>
-                        <li><a href="https://www.spincasino.ca/?s=sp51774" target="_blank" rel="noopener">Spin Casino</a></li>
-                        <li><a href="https://betway.ca/bwp/welcome-casino-on-1000-50/en-ca/?s=sp51774" target="_blank" rel="noopener">Betway</a></li>
+                        <li><a href="https://www.royalvegas.ca/?s=sp51774" target="_blank" rel="noopener" data-casino-link="Royal Vegas">Royal Vegas</a></li>
+                        <li><a href="https://www.jackpotcity.ca/?s=sp51774" target="_blank" rel="noopener" data-casino-link="Jackpot City">Jackpot City</a></li>
+                        <li><a href="https://www.rubyfortune.ca/?s=sp51774" target="_blank" rel="noopener" data-casino-link="Ruby Fortune">Ruby Fortune</a></li>
+                        <li><a href="https://www.spincasino.ca/?s=sp51774" target="_blank" rel="noopener" data-casino-link="Spin Casino">Spin Casino</a></li>
+                        <li><a href="https://betway.ca/bwp/welcome-casino-on-1000-50/en-ca/?s=sp51774" target="_blank" rel="noopener" data-casino-link="Betway">Betway</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -512,5 +514,56 @@
 
     <!-- JavaScript -->
     <script src="../js/main.js?v=15"></script>
+<!-- Custom event tracking for affiliate conversions (added by inject-umami.py) -->
+<script id="umami-track-casino">
+(function() {
+  if (typeof window.umami === 'undefined') {
+    // Umami not loaded yet — wait for it
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.umami !== 'undefined') initUmamiTrackers();
+    });
+  } else {
+    initUmamiTrackers();
+  }
+
+  function initUmamiTrackers() {
+    // Track all clicks, then filter to affiliate + outbound
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+
+      var href = link.getAttribute('href') || '';
+      var hostname = link.hostname || '';
+      var currentHost = window.location.hostname;
+
+      // Skip same-page anchors, mailto, tel, internal nav
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+          href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+      // Affiliate link: contains ?s=sp51774 (our tag) — this is the conversion event
+      if (href.indexOf('s=sp51774') !== -1) {
+        var operator = (link.getAttribute('data-casino-link') || hostname || 'unknown');
+        var page = window.location.pathname;
+        window.umami.track('Casino Click', { operator: operator, page: page, href: href });
+        return;
+      }
+
+      // Other outbound link to a different domain — useful for link-building tracking
+      if (hostname && hostname !== currentHost && !hostname.endsWith('playcanadiancasino.ca')) {
+        window.umami.track('Outbound Click', { domain: hostname, page: window.location.pathname, href: href });
+      }
+    }, true);  // capture phase to catch programmatic clicks
+
+    // Optional: track form submissions (for future "Join Now" forms on review pages)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (form && form.action && form.action.indexOf('s=sp51774') !== -1) {
+        window.umami.track('Conversion', { page: window.location.pathname });
+      }
+    }, true);
+  }
+})();
+</script>
+
 </body>
 </html>
