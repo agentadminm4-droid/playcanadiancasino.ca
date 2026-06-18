@@ -13,6 +13,10 @@
 (function () {
     'use strict';
 
+    // Mark the page as JS-ready so the .fade-in rules can hide elements.
+    // If JS is blocked, this class is never added and content stays visible.
+    document.documentElement.classList.add('js-fade-ready');
+
     document.addEventListener('DOMContentLoaded', function () {
         renderNewsHero();
         initNav();
@@ -173,10 +177,18 @@
     /* ---------- 6. Fade-in on scroll ---------- */
     function initFadeIn() {
         var els = document.querySelectorAll('.fade-in');
-        if (!els.length || !('IntersectionObserver' in window)) {
+        if (!els.length) return;
+
+        // Fallback for very old browsers (no IntersectionObserver):
+        // just make everything visible.
+        if (!('IntersectionObserver' in window)) {
             els.forEach(function (e) { e.classList.add('visible'); });
             return;
         }
+
+        // Generous rootMargin so elements get revealed as soon as they're
+        // even slightly into the viewport. Without this, content far below
+        // the fold stays invisible until the user scrolls.
         var io = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
@@ -184,7 +196,7 @@
                     io.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0, rootMargin: '0px 0px 600px 0px' });
         els.forEach(function (e) { io.observe(e); });
     }
 })();

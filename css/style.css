@@ -1155,17 +1155,22 @@ p:last-child { margin-bottom: 0; }
 .affiliate-disclaimer { margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
 
 /* ========================================
-   Fade-in (subtle)
+   Fade-in (subtle, progressive enhancement)
+   Content is visible by default — JS adds .js-fade-ready
+   on <html> before the observer hides elements. This
+   prevents cards from being invisible if JS is slow /
+   blocked / errors out.
    ======================================== */
-.fade-in { opacity: 0; transform: translateY(8px); transition: opacity 0.5s ease, transform 0.5s ease; }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in { opacity: 1; transform: none; transition: opacity 0.5s ease, transform 0.5s ease; }
+.js-fade-ready .fade-in { opacity: 0; transform: translateY(8px); }
+.js-fade-ready .fade-in.visible { opacity: 1; transform: translateY(0); }
 
 /* ========================================
    Reduced motion
    ======================================== */
 @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; animation: none !important; }
-    .fade-in { opacity: 1; transform: none; }
+    .fade-in { opacity: 1 !important; transform: none !important; }
 }
 
 .legal-content {
