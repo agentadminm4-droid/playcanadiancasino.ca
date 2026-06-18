@@ -1162,8 +1162,12 @@ p:last-child { margin-bottom: 0; }
    blocked / errors out.
    ======================================== */
 .fade-in { opacity: 1; transform: none; transition: opacity 0.5s ease, transform 0.5s ease; }
-.js-fade-ready .fade-in { opacity: 0; transform: translateY(8px); }
+.js-fade-ready .fade-in:not(.visible) { opacity: 0; transform: translateY(8px); }
 .js-fade-ready .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* If JS is enabled and IntersectionObserver works, reveal elements
+   as soon as they come into view via the .visible class. */
+.js-fade-ready .fade-in.no-observer { opacity: 1; transform: none; }
 
 /* ========================================
    Reduced motion

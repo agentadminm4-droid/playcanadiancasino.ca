@@ -174,21 +174,38 @@
         });
     }
 
-    /* ---------- 6. Fade-in on scroll ---------- */
+    /* ---------- 6. Fade-in on scroll ----------
+       Strategy: hide elements via CSS only if JS confirms the observer works.
+       If the observer doesn't fire within 100ms (e.g., broken in some
+       headless environments), add .no-observer so CSS shows everything.
+    */
     function initFadeIn() {
         var els = document.querySelectorAll('.fade-in');
         if (!els.length) return;
 
+        // Mark elements hidden so the observer can reveal them.
+        // If JS or observer fails, the safety timeout below will reveal them.
+        var revealed = false;
+        function revealAll() {
+            if (revealed) return;
+            revealed = true;
+            els.forEach(function (e) {
+                e.classList.remove('no-observer');
+                e.classList.add('visible');
+            });
+        }
+
         // Fallback for very old browsers (no IntersectionObserver):
-        // just make everything visible.
         if (!('IntersectionObserver' in window)) {
-            els.forEach(function (e) { e.classList.add('visible'); });
+            revealAll();
             return;
         }
 
-        // Generous rootMargin so elements get revealed as soon as they're
-        // even slightly into the viewport. Without this, content far below
-        // the fold stays invisible until the user scrolls.
+        // Safety: if the observer doesn't fire within 1500ms (e.g., the
+        // browser is a headless/test env where IO is broken), reveal
+        // everything anyway so users never see invisible content.
+        var safetyTimer = setTimeout(revealAll, 1500);
+
         var io = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
