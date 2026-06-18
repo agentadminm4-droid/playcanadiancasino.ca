@@ -1156,18 +1156,15 @@ p:last-child { margin-bottom: 0; }
 
 /* ========================================
    Fade-in (subtle, progressive enhancement)
-   Content is visible by default — JS adds .js-fade-ready
-   on <html> before the observer hides elements. This
-   prevents cards from being invisible if JS is slow /
-   blocked / errors out.
+   Content is visible by default — never hidden by CSS alone.
+   If JS is enabled, it adds .js-fade-ready + uses an observer
+   to add .visible to elements as they scroll into view, providing
+   a subtle fade animation. A 1.5s safety timer guarantees content
+   is revealed even if the observer fails (e.g., some browsers).
    ======================================== */
 .fade-in { opacity: 1; transform: none; transition: opacity 0.5s ease, transform 0.5s ease; }
 .js-fade-ready .fade-in:not(.visible) { opacity: 0; transform: translateY(8px); }
-.js-fade-ready .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-/* If JS is enabled and IntersectionObserver works, reveal elements
-   as soon as they come into view via the .visible class. */
-.js-fade-ready .fade-in.no-observer { opacity: 1; transform: none; }
+.js-fade-ready .fade-in.visible { opacity: 1 !important; transform: translateY(0) !important; }
 
 /* ========================================
    Reduced motion
