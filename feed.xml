@@ -10,13 +10,40 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Wed, 17 Jun 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+    <item>
+      <title>Blue Jays' Vladimir Guerrero Jr. Teams With Betway on Ontario Responsible Gambling Campaign | PlayCanadianCasino</title>
+      <link>https://playcanadiancasino.ca/blog/betway-guerrero-jr-ontario-responsible-gambling-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/betway-guerrero-jr-ontario-responsible-gambling-june-2026.html</guid>
+      <description><![CDATA[<p>Super Group's Betway has signed Toronto Blue Jays star Vladimir Guerrero Jr. as a responsible-gambling ambassador, with a new Ontario TV ad airing on sports broadcasts across the province starting June 17, 2026.</p>]]></description>
+      <pubDate>Fri, 19 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-06-19">
+        <schema:headline>Blue Jays' Vladimir Guerrero Jr. Teams With Betway on Ontario Responsible Gambling Campaign | PlayCanadianCasino</schema:headline>
+        <schema:description>Super Group's Betway has signed Toronto Blue Jays star Vladimir Guerrero Jr. as a responsible-gambling ambassador, with a new Ontario TV ad airing on sports broadcasts across the province starting June 17, 2026.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/betway-guerrero-jr-ontario-responsible-gambling-june-2026.jpg</schema:image>
+        <schema:datepublished>2026-06-19</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/betway-guerrero-jr-ontario-responsible-gambling-june-2026.jpg"/>
+      </schema:Article>
+      <enclosure url="https://playcanadiancasino.ca/images/articles/betway-guerrero-jr-ontario-responsible-gambling-june-2026.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://playcanadiancasino.ca/images/articles/betway-guerrero-jr-ontario-responsible-gambling-june-2026.jpg" type="image/jpeg" medium="image" width="1200" height="630">
+        <media:title type="plain">Blue Jays' Vladimir Guerrero Jr. Teams With Betway on Ontario Responsible Gambling Campaign | PlayCanadianCasino</media:title>
+        <media:description type="plain">Editorial still life of a folded Blue Jays jersey beside a printed responsible-gambling pamphlet on a clean desk, no people visible.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Game On Ontario Brings Multi-Brand Betting Gift Cards to the Province — Canada's First</title>
       <link>https://playcanadiancasino.ca/blog/game-on-ontario-gift-card-launch-june-2026.html</link>
