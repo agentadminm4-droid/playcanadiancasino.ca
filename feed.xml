@@ -10,13 +10,60 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Mon, 22 Jun 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Yggdrasil Launches YGG Champions — A New House-of-Brands Programme for Slot Studios</title>
+      <link>https://playcanadiancasino.ca/blog/yggdrasil-ygg-champions-studio-program-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/yggdrasil-ygg-champions-studio-program-june-2026.html</guid>
+      <description><![CDATA[<p>Yggdrasil rolled out YGG Champions on June 23, 2026 — a new house-of-brands programme built to back distinct game studios, brands, and creators while letting them keep their own identity, art direction, and product vo...</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🤝 Slot Studio News</category>
+      <schema:Article schema:datemodified="2026-06-23">
+        <schema:headline>Yggdrasil Launches YGG Champions — A New House-of-Brands Programme for Slot Studios</schema:headline>
+        <schema:description>Yggdrasil rolled out YGG Champions on June 23, 2026 — a house-of-brands programme backing distinct slot and casino studios with distribution, tech, and a partner-first identity.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/yggdrasil-ygg-champions-studio-program-june-2026.jpg</schema:image>
+        <schema:datepublished>2026-06-23</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/yggdrasil-ygg-champions-studio-program-june-2026.jpg"/>
+      </schema:Article>
+    </item>
+
+    <item>
+      <title>AGCO Lets Ontario Charities Run Media Bingo on Livestreams Starting June 23</title>
+      <link>https://playcanadiancasino.ca/blog/agco-charitable-lottery-livestream-media-bingo-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/agco-charitable-lottery-livestream-media-bingo-june-2026.html</guid>
+      <description><![CDATA[<p>The AGCO updated its charitable lottery licensing policy on June 23, 2026, letting eligible Ontario charities broadcast media bingo on a livestream instead of local cable television. The change modernizes the format without changing the rules of the game.</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🗞️ AGCO News</category>
+      <schema:Article schema:datemodified="2026-06-23">
+        <schema:headline>AGCO Lets Ontario Charities Run Media Bingo on Livestreams Starting June 23</schema:headline>
+        <schema:description>The AGCO updated its charitable lottery licensing policy on June 23, 2026, letting eligible Ontario charities broadcast media bingo on a livestream instead of local cable television. The change modernizes the format without changing the rules of the game.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/agco-charitable-lottery-livestream-media-bingo-june-2026.jpg</schema:image>
+        <schema:datepublished>2026-06-23</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/agco-charitable-lottery-livestream-media-bingo-june-2026.jpg"/>
+      </schema:Article>
+    </item>
+
 
     <item>
       <title>Pragmatic Play's Hell Butcher Drops With 20,000x Max Win and a Reap-and-Replace Wild Multiplier</title>
