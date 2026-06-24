@@ -1,3 +1,6 @@
-# Hermes runtime / temp files
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.log
 .snapshot-*.html
-_gen_*.py

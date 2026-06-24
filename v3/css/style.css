@@ -1,0 +1,1223 @@
+/* ========================================
+   PlayCanadianCasino.ca v3 - Light Editorial Theme
+   Warm-neutral off-white + subtle teal accent.
+   Class names preserved from v1 where possible;
+   new blocks prefixed with "news-", "mobile-", "agco-".
+   ======================================== */
+
+:root {
+    /* --- Light, warm-neutral palette --- */
+    --bg-primary:    #fafbf7;   /* warm off-white page bg */
+    --bg-card:       #ffffff;   /* elevated cards */
+    --bg-section:    #f4f5f0;   /* alternating section bg */
+
+    --text-primary:   #1a2330;  /* dark navy */
+    --text-secondary: #5a6478;
+    --text-muted:     #8a93a4;
+
+    --accent-teal:    #0d8a85;  /* primary brand accent */
+    --accent-teal-2:  #0a6e6a;  /* hover/active */
+    --accent-teal-soft: rgba(13, 138, 133, 0.08);
+    --accent-gold:    #b8901c;  /* trust badges only */
+    --accent-gold-soft: rgba(184, 144, 28, 0.08);
+
+    --border-light:   #e8e9e3;
+    --border-medium:  #d6d8d0;
+
+    /* --- Typography --- */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* --- Spacing --- */
+    --space-xs:  0.25rem;
+    --space-sm:  0.5rem;
+    --space-md:  1rem;
+    --space-lg:  1.5rem;
+    --space-xl:  2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+
+    /* --- Motion --- */
+    --t-fast: 0.15s ease;
+    --t-norm: 0.25s ease;
+    --t-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* --- Shadows (soft, light-aware) --- */
+    --shadow-sm: 0 1px 3px rgba(26, 35, 48, 0.06);
+    --shadow-md: 0 4px 14px rgba(26, 35, 48, 0.08);
+    --shadow-lg: 0 12px 36px rgba(26, 35, 48, 0.10);
+    --shadow-card-hover: 0 18px 50px rgba(26, 35, 48, 0.14);
+    --shadow-teal: 0 4px 18px rgba(13, 138, 133, 0.25);
+
+    /* --- Radius --- */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 18px;
+}
+
+/* ========================================
+   Reset + base
+   ======================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;            /* editorial-feel body */
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a {
+    color: var(--accent-teal);
+    text-decoration: none;
+    transition: color var(--t-fast);
+}
+a:hover { color: var(--accent-teal-2); }
+
+/* ========================================
+   Typography
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); }
+h2 { font-size: clamp(1.75rem, 3.5vw, 2.4rem);  margin-bottom: var(--space-md); }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
+h4 { font-size: 1.15rem; }
+
+p {
+    margin-bottom: var(--space-md);
+    color: var(--text-secondary);
+    max-width: 65ch;             /* editorial readability */
+}
+p:last-child { margin-bottom: 0; }
+
+/* ========================================
+   Layout
+   ======================================== */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+.container-narrow { max-width: 900px; }
+
+.section { padding: var(--space-3xl) 0; }   /* generous editorial spacing */
+.section-dark { background: var(--bg-section); }
+
+.section-header { text-align: center; margin-bottom: var(--space-2xl); }
+.section-header h2 { margin-bottom: var(--space-sm); }
+.section-header p { max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
+
+/* ========================================
+   Unified article & page headers
+   (used by blog index, reviews index, review pages, blog articles)
+   ======================================== */
+.page-header {
+    text-align: center;
+    padding: var(--space-2xl) 0 var(--space-xl);
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: var(--space-2xl);
+}
+.page-header h1 {
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin: 0 auto var(--space-sm);
+    position: relative;
+    display: block;
+    max-width: max-content;
+}
+.page-header h1::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 3px;
+    background: var(--accent-teal);
+    border-radius: 2px;
+    margin: var(--space-sm) auto 0;
+}
+.page-header > p,
+.page-header .page-header-sub,
+.page-header .container > p {
+    max-width: 640px;
+    margin: var(--space-md) auto 0;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.page-header .eyebrow {
+    display: block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-teal);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+/* In-article h2 (used on review + blog article body) */
+.article-body h2,
+.article-content h2,
+.review-body h2,
+.review-main h2,
+.blog-content h2 {
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+    margin: var(--space-2xl) 0 var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--border-light);
+    position: relative;
+}
+.article-body h2::before,
+.article-content h2::before,
+.review-body h2::before,
+.review-main h2::before,
+.blog-content h2::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: var(--accent-teal);
+    border-radius: 2px;
+    margin-right: 0.6rem;
+    vertical-align: -0.15em;
+}
+.article-body h3,
+.article-content h3,
+.review-body h3,
+.review-main h3,
+.blog-content h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: var(--space-xl) 0 var(--space-sm);
+}
+
+/* Article hero (blog) */
+.article-hero {
+    text-align: center;
+    padding: var(--space-2xl) 0 var(--space-xl);
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: var(--space-2xl);
+}
+.article-hero .article-tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-teal);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-section);
+    border-radius: 999px;
+}
+.article-hero .article-title {
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin: 0 0 var(--space-sm);
+}
+.article-hero .article-meta {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Review hero h1 unified */
+.review-hero h1 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+}
+
+/* Review hero layout */
+.review-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+}
+.review-hero-logo-img {
+    max-height: 130px;
+    max-width: 360px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.review-hero-info { flex: 1; min-width: 280px; }
+@media (max-width: 700px) {
+    .review-hero-inner { flex-direction: column; align-items: flex-start; gap: var(--space-md); }
+    .review-hero-logo-img { max-height: 90px; max-width: 280px; }
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: 0.85rem 1.6rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--t-norm);
+    border: 2px solid transparent;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+}
+.btn-primary {
+    background: var(--accent-teal);
+    color: #fff;
+    border-color: var(--accent-teal);
+    box-shadow: var(--shadow-teal);
+}
+.btn-primary:hover {
+    background: var(--accent-teal-2);
+    border-color: var(--accent-teal-2);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(13, 138, 133, 0.35);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--border-medium);
+}
+.btn-secondary:hover {
+    border-color: var(--accent-teal);
+    color: var(--accent-teal);
+    background: var(--accent-teal-soft);
+}
+
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.85rem; }
+
+.btn-table {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--accent-teal);
+    border-radius: var(--radius-sm);
+    transition: background var(--t-fast);
+}
+.btn-table:hover { background: var(--accent-teal-2); color: #fff; }
+
+/* ========================================
+   Header (dynamic nav)
+   ======================================== */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-light);
+    padding: 16px 0;                              /* default (compact) */
+    box-shadow: none;
+    transition: padding var(--t-norm), box-shadow var(--t-norm), border-color var(--t-norm);
+}
+.header.is-scrolled {
+    padding: 10px 0;                              /* shrinks on scroll */
+    box-shadow: 0 4px 20px rgba(26, 35, 48, 0.08);
+    border-bottom-color: transparent;
+}
+.header.is-scrolled .logo { font-size: 1.15rem; }
+.header.is-scrolled .logo-icon img { width: 2.6rem; height: 2.6rem; }
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-lg);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: font-size var(--t-norm);
+    /* Logo image has motion lines on the left that need breathing room */
+    padding-left: 1.25rem;
+    margin-left: -0.85rem;
+}
+.logo:hover { color: var(--accent-teal); }
+.logo-icon { display: inline-flex; align-items: center; flex-shrink: 0; }
+.logo-icon svg, .logo-icon img { width: 3.4rem; height: 3.4rem; display: block; }
+
+/* Desktop nav */
+.nav-desktop ul {
+    display: flex;
+    list-style: none;
+    gap: 1.75rem;
+    align-items: center;
+}
+.nav-desktop a {
+    position: relative;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.25rem 0;
+    transition: color var(--t-fast), font-weight var(--t-fast);
+}
+.nav-desktop a::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 2px;
+    background: var(--accent-teal);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform var(--t-norm);
+}
+.nav-desktop a:hover { color: var(--accent-teal); }
+.nav-desktop a:hover::after,
+.nav-desktop a.is-active { color: var(--accent-teal); font-weight: 700; }
+.nav-desktop a.is-active::after { transform: scaleX(1); }
+
+.nav-desktop a.nav-cta {
+    color: var(--accent-teal);
+    font-weight: 600;
+    padding: 0.4rem 0.9rem;
+    border: 1.5px solid var(--accent-teal);
+    border-radius: 999px;
+    transition: all var(--t-fast);
+}
+.nav-desktop a.nav-cta:hover { background: var(--accent-teal); color: #fff; }
+.nav-desktop a.nav-cta::after { display: none; }
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+}
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: transform var(--t-fast), opacity var(--t-fast);
+}
+.hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2) { opacity: 0; }
+.hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile overlay menu */
+.mobile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    background: rgba(20, 28, 38, 0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--t-norm), visibility var(--t-norm);
+}
+.mobile-overlay.is-open { opacity: 1; visibility: visible; }
+.mobile-overlay nav { text-align: center; }
+.mobile-overlay ul { list-style: none; }
+.mobile-overlay a {
+    display: block;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    padding: 0.85rem 1rem;
+    transition: color var(--t-fast);
+}
+.mobile-overlay a:hover { color: var(--accent-teal); }
+.mobile-overlay .mobile-cta {
+    margin-top: var(--space-lg);
+    display: inline-block;
+    background: var(--accent-teal);
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.mobile-overlay .mobile-cta:hover { background: var(--accent-teal-2); color: #fff; }
+
+@media (max-width: 900px) {
+    .nav-desktop { display: none; }
+    .hamburger { display: flex; }
+}
+
+/* ========================================
+   News Hero (NEW v3 focal point)
+   ======================================== */
+.news-hero {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-section) 100%);
+    padding: var(--space-3xl) 0 var(--space-2xl);
+    border-bottom: 1px solid var(--border-light);
+}
+.news-hero__header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto var(--space-2xl);
+}
+.news-hero__eyebrow {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-teal);
+    margin-bottom: var(--space-sm);
+}
+.news-hero__title {
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+    margin-bottom: var(--space-sm);
+}
+.news-hero__subtitle {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Single lead-story layout (v3.1 — replaces 3-card grid) */
+.news-hero-feature {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.news-feature {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--t-norm), box-shadow var(--t-norm);
+}
+.news-feature:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card-hover);
+}
+.news-feature__media {
+    display: block;
+    aspect-ratio: 16 / 11;
+    overflow: hidden;
+    background: var(--bg-section);
+}
+.news-feature__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+.news-feature:hover .news-feature__media img { transform: scale(1.03); }
+.news-feature__body {
+    padding: var(--space-2xl) var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+.news-feature__eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-teal);
+    margin-bottom: var(--space-xs);
+}
+.news-feature__date {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.news-feature__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+    line-height: 1.25;
+    margin: 0;
+    color: var(--text-primary);
+}
+.news-feature__title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--t-norm);
+}
+.news-feature__title a:hover { color: var(--accent-teal); }
+.news-feature__excerpt {
+    font-size: 1rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    margin: var(--space-xs) 0 var(--space-md);
+}
+.news-feature__cta {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    background: var(--accent-teal);
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background var(--t-norm), transform var(--t-norm);
+}
+.news-feature__cta:hover {
+    background: var(--accent-teal-2);
+    transform: translateX(2px);
+}
+
+/* Stack vertically on tablet and below */
+@media (max-width: 860px) {
+    .news-feature { grid-template-columns: 1fr; }
+    .news-feature__media { aspect-ratio: 16 / 9; }
+    .news-feature__body { padding: var(--space-xl) var(--space-lg) var(--space-2xl); }
+}
+
+/* "More news" link in the news-hero section header */
+.news-hero__more {
+    display: inline-block;
+    margin-top: var(--space-md);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-teal);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--t-norm);
+}
+.news-hero__more:hover { border-bottom-color: var(--accent-teal); }
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--t-norm), box-shadow var(--t-norm);
+    height: 100%;
+}
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+}
+.news-card__media {
+    aspect-ratio: 12 / 5;             /* 1200x500 ratio */
+    overflow: hidden;
+    background: var(--bg-section);
+}
+.news-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.news-card:hover .news-card__media img { transform: scale(1.04); }
+.news-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem 1.5rem 1.75rem;
+}
+.news-card__date {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+.news-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 0.6rem;
+    color: var(--text-primary);
+}
+.news-card__excerpt {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+    flex: 1;
+    /* strip the max-width 65ch from default p for compact cards */
+    max-width: none;
+}
+.news-card__link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-teal);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: gap var(--t-fast), color var(--t-fast);
+}
+.news-card__link:hover {
+    color: var(--accent-teal-2);
+    gap: 0.6rem;
+}
+.news-card__link::after { content: '→'; font-size: 1.05em; }
+
+/* ========================================
+   AGCO Trust Strip (below news hero)
+   ======================================== */
+.agco-strip {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-light);
+    padding: var(--space-lg) 0;
+}
+.agco-strip__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+}
+.agco-strip__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+}
+.agco-strip__item .ico { font-size: 1.15rem; }
+.agco-strip__item--gold { color: var(--accent-gold); }
+.agco-strip__item--teal { color: var(--accent-teal); }
+
+/* ========================================
+   Editors Pick Banner
+   ======================================== */
+.editors-pick-banner {
+    background: linear-gradient(135deg, var(--accent-teal-soft) 0%, var(--accent-gold-soft) 100%);
+    border-bottom: 1px solid var(--border-light);
+    padding: var(--space-md) 0;
+}
+.pick-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    text-align: center;
+}
+.pick-icon { font-size: 1.4rem; }
+.pick-text { font-size: 0.95rem; color: var(--text-primary); }
+.pick-text a {
+    color: var(--accent-teal);
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.pick-text a:hover { color: var(--accent-teal-2); }
+
+/* ========================================
+   Casino cards
+   ======================================== */
+.casinos-section { background: var(--bg-primary); }
+.casinos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-xl);
+}
+.casino-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;                          /* editorial rounded */
+    padding: var(--space-xl);                    /* 2rem (up from 1.5rem) */
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    transition: transform var(--t-norm), box-shadow var(--t-norm), border-color var(--t-norm);
+}
+.casino-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--border-medium);
+}
+.casino-card.editors-choice { border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold-soft), var(--shadow-sm); }
+
+.editors-choice-badge {
+    position: absolute;
+    top: -12px;
+    left: var(--space-lg);
+    background: var(--accent-gold);
+    color: #fff;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 999px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.casino-card-header { display: flex; gap: var(--space-md); align-items: center; }
+.logo-row { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
+.rank-badge {
+    font-size: 1.4rem;
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.casino-logo-img {
+    max-height: 48px;
+    max-width: 120px;
+    width: auto;
+    object-fit: contain;
+}
+.casino-logo-img.ruby-fortune {
+    max-height: 58px;            /* larger per user request */
+    max-width: 150px;
+}
+.casino-cell {
+    padding: 0.5rem !important;
+    background: white;
+    vertical-align: middle;
+}
+.casino-logo-table {
+    max-height: 38px;            /* taller to fit diamond outlines */
+    max-width: 130px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+.casino-logo-table.ruby-fortune {
+    max-height: 40px;            /* larger per user request */
+    max-width: 130px;
+}
+.casino-info { flex: 1; min-width: 0; }
+.casino-name { font-size: 1.35rem; margin-bottom: 0.25rem; }
+.casino-rating { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+.casino-rating span { color: var(--text-muted); margin-left: 0.25rem; }
+
+.casino-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: var(--bg-section);
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+}
+.tag-gold { background: var(--accent-gold-soft); color: var(--accent-gold); }
+.tag-green { background: var(--accent-teal-soft); color: var(--accent-teal); }
+
+.casino-quick-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    padding: 0.85rem 0;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+.quick-stat { text-align: center; }
+.qs-label { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+.qs-value { display: block; font-family: var(--font-heading); font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-top: 0.15rem; }
+
+.casino-pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+@media (max-width: 600px) { .casino-pros-cons { grid-template-columns: 1fr; } }
+.pro-label, .con-label { display: block; font-size: 0.78rem; font-weight: 700; margin-bottom: 0.4rem; letter-spacing: 0.05em; }
+.pro-label { color: var(--accent-teal); }
+.con-label { color: #c43d3d; }
+.pros ul, .cons ul { list-style: none; padding: 0; }
+.pros li, .cons li { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.3rem; padding-left: 1rem; position: relative; }
+.pros li::before { content: '+'; position: absolute; left: 0; color: var(--accent-teal); font-weight: 700; }
+.cons li::before { content: '−'; position: absolute; left: 0; color: #c43d3d; font-weight: 700; }
+
+.casino-payments { font-size: 0.85rem; color: var(--text-secondary); }
+.payments-label { font-weight: 600; color: var(--text-primary); margin-right: 0.4rem; }
+.payment-icons { letter-spacing: 0.05em; }
+
+.casino-bonus {
+    background: var(--accent-teal-soft);
+    border-radius: var(--radius-md);
+    padding: 0.85rem 1rem;
+    text-align: center;
+}
+.bonus-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-teal); font-weight: 700; }
+.bonus-amount { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-top: 0.2rem; }
+
+.casino-card-actions { display: flex; flex-direction: column; gap: 0.5rem; align-items: center; margin-top: 0.25rem; }
+.full-review-link { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
+.full-review-link:hover { color: var(--accent-teal); }
+
+.review-disclaimer {
+    margin-top: var(--space-2xl);
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.review-disclaimer a { color: var(--accent-teal); }
+
+/* ========================================
+   Comparison table
+   ======================================== */
+.comparison-section { background: var(--bg-section); }
+.table-scroll-wrapper { overflow-x: auto; border-radius: var(--radius-md); background: var(--bg-card); box-shadow: var(--shadow-sm); }
+.comparison-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 800px; }
+.comparison-table th, .comparison-table td { padding: 0.9rem 0.85rem; text-align: center; border-bottom: 1px solid var(--border-light); }
+.comparison-table th { background: var(--bg-section); color: var(--text-primary); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.comparison-table td:first-child, .comparison-table th:first-child { text-align: left; }
+.comparison-table tr.editor-row { background: var(--accent-teal-soft); }
+.comparison-table tr:hover { background: var(--bg-section); }
+.rating-stars { color: var(--accent-gold); }
+.payout-fast { color: var(--accent-teal); font-weight: 600; }
+.table-footnote { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: var(--space-md); max-width: 800px; margin-left: auto; margin-right: auto; }
+
+/* ========================================
+   Best For grid
+   ======================================== */
+.best-for-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+}
+.best-for-card {
+    display: flex;
+    gap: var(--space-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: var(--space-lg);
+    transition: transform var(--t-norm), box-shadow var(--t-norm);
+}
+.best-for-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.bf-icon { font-size: 1.8rem; flex-shrink: 0; }
+.bf-content h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+.bf-content p { font-size: 0.9rem; max-width: none; }
+.bf-stat { display: block; font-size: 0.78rem; color: var(--text-muted); margin: 0.5rem 0 0.75rem; font-weight: 600; }
+
+/* ========================================
+   Methodology / How We Rate
+   ======================================== */
+.methodology-intro { text-align: center; max-width: 720px; margin: 0 auto var(--space-2xl); }
+.scoring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+.scoring-category {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    padding: var(--space-lg);
+}
+.scoring-category-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+.scoring-icon { font-size: 1.4rem; }
+.scoring-category-header h3 { font-size: 1.05rem; margin: 0; }
+.scoring-items { display: flex; flex-direction: column; gap: 0.4rem; }
+.scoring-item { display: flex; justify-content: space-between; font-size: 0.88rem; color: var(--text-secondary); }
+.scoring-detail { color: var(--accent-teal); font-weight: 700; font-size: 0.82rem; }
+
+.trust-badges-section { margin-top: var(--space-2xl); }
+.trust-badges-title { text-align: center; margin-bottom: var(--space-xl); font-size: 1.3rem; }
+.trust-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+}
+.trust-badge {
+    display: flex;
+    gap: 0.85rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--accent-gold);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+}
+.trust-badge-icon { font-size: 1.3rem; flex-shrink: 0; }
+.trust-badge strong { display: block; color: var(--text-primary); margin-bottom: 0.2rem; font-size: 0.95rem; }
+.trust-badge p { font-size: 0.85rem; max-width: none; }
+
+.eeat-section { margin-top: var(--space-2xl); background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 14px; padding: var(--space-xl); }
+.eeat-content { display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-xl); align-items: center; }
+@media (max-width: 800px) { .eeat-content { grid-template-columns: 1fr; } }
+.eeat-text h3 { margin-bottom: 0.75rem; }
+.eeat-text p { font-size: 0.95rem; max-width: none; }
+.eeat-stats { display: flex; flex-direction: column; gap: var(--space-md); }
+.eeat-stat { text-align: center; padding: 0.85rem; background: var(--bg-section); border-radius: var(--radius-md); }
+.eeat-stat-value { display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--accent-teal); }
+.eeat-stat-label { display: block; font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.2rem; }
+
+.methodology-date { text-align: center; font-size: 0.82rem; color: var(--text-muted); margin-top: var(--space-xl); }
+
+/* ========================================
+   Why Canada
+   ======================================== */
+.why-canada-section { background: var(--bg-section); }
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+}
+.why-card {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: var(--space-lg);
+    border: 1px solid var(--border-light);
+}
+.why-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.why-card p { font-size: 0.92rem; max-width: none; }
+
+/* ========================================
+   News section (secondary list)
+   ======================================== */
+.news-section { background: var(--bg-section); }
+.news-section .section-header h2 {
+    font-size: 1.6rem;          /* smaller than default h2 */
+    letter-spacing: -0.01em;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+}
+.news-image {
+    aspect-ratio: 12 / 5;       /* 1200x500 ratio */
+    overflow: hidden;
+    background: var(--bg-section);
+    border-radius: 12px 12px 0 0;
+}
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.news-card:hover .news-image img { transform: scale(1.04); }
+.news-content {
+    padding: 1.5rem 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.news-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin: 0.6rem 0;
+    color: var(--text-primary);
+}
+.news-content p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+.news-content time {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: auto;
+}
+.category-badge {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--accent-teal);
+    color: white;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    margin-bottom: 0.25rem;
+}
+.news-cta { text-align: center; margin-top: var(--space-xl); }
+
+/* ========================================
+   Responsible Gambling
+   ======================================== */
+.rg-section { background: var(--bg-primary); }
+.rg-inner {
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: var(--space-2xl);
+}
+.rg-icon { font-size: 2.5rem; margin-bottom: var(--space-md); }
+.rg-inner h2 { margin-bottom: 0.75rem; }
+.rg-inner p { max-width: 600px; margin-left: auto; margin-right: auto; }
+.rg-resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-xl) 0;
+}
+.rg-resource {
+    background: var(--bg-section);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    font-size: 0.92rem;
+}
+.rg-resource strong { display: block; color: var(--accent-teal); margin-bottom: 0.25rem; }
+.rg-resource a { color: var(--text-primary); font-weight: 600; }
+.rg-note { display: block; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem; }
+.rg-age { font-size: 0.85rem; color: var(--text-muted); }
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer { background: var(--bg-section); border-top: 1px solid var(--border-light); padding: var(--space-2xl) 0 var(--space-lg); margin-top: var(--space-2xl); }
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-xl);
+}
+@media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
+.footer-brand .logo { font-size: 1.5rem; }
+.footer-brand .logo-icon img { width: 3.4rem; height: 3.4rem; }
+.footer-brand p { font-size: 0.9rem; max-width: 320px; margin-top: 0.75rem; }
+.footer-links h4 { font-family: var(--font-body); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-primary); margin-bottom: 0.75rem; font-weight: 700; }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 0.45rem; }
+.footer-links a { font-size: 0.88rem; color: var(--text-secondary); }
+.footer-links a:hover { color: var(--accent-teal); }
+.footer-bottom {
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--space-lg);
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+.footer-bottom p { font-size: 0.82rem; max-width: none; }
+.affiliate-disclaimer { margin-top: 0.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+/* ========================================
+   Fade-in (subtle)
+   ======================================== */
+.fade-in { opacity: 0; transform: translateY(8px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ========================================
+   Reduced motion
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    .fade-in { opacity: 1; transform: none; }
+}
+
+.legal-content {
+    max-width: 760px;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-3xl);
+}
+.legal-content .legal-updated {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    background: var(--bg-section);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-teal);
+    margin-bottom: var(--space-xl);
+}
+.legal-content h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+    margin: var(--space-2xl) 0 var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--border-light);
+    position: relative;
+}
+.legal-content h2::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: var(--accent-teal);
+    border-radius: 2px;
+    margin-right: 0.6rem;
+    vertical-align: -0.15em;
+}
+.legal-content h3 {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: var(--space-xl) 0 var(--space-sm);
+}
+.legal-content p, .legal-content ul, .legal-content ol {
+    line-height: 1.75;
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+}
+.legal-content ul, .legal-content ol { padding-left: 1.4rem; }
+.legal-content li { margin-bottom: 0.4rem; }
+.legal-content a { color: var(--accent-teal); text-decoration: underline; text-underline-offset: 2px; }
+.legal-content a:hover { color: var(--accent-teal-dark, #0a8a8a); }
+.legal-content table { width: 100%; border-collapse: collapse; margin: var(--space-md) 0 var(--space-xl); font-size: 0.95rem; }
+.legal-content th, .legal-content td { padding: 0.6rem 0.8rem; text-align: left; border-bottom: 1px solid var(--border-light); }
+.legal-content th { background: var(--bg-section); font-weight: 700; color: var(--text-primary); }
+.legal-content code { background: var(--bg-section); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.88em; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
