@@ -1,5 +1,0 @@
-# actually simpler: check the .hero-stats overflow directly
-echo "checking with curl + check"
-curl -s http://localhost:8765/ | grep -E "hero-content|container" | head -3
-echo "==="
-grep -A 3 "hero-content" ~/Desktop/playcanadiancasino/v2/css/style.css | head -8

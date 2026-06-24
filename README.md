@@ -1,54 +1,43 @@
 # PlayCanadianCasino.ca
-A Canadian-owned, independent online casino review site for Ontario players.
 
-## Overview
-This is a static HTML/CSS/JS site built for GitHub Pages deployment. It features:
-- Homepage with 6 featured casino cards (affiliate links with tracking params)
-- Individual casino review pages (6 full reviews)
-- Blog section with news/guides about Ontario iGaming
-- Legal pages (Privacy Policy, Terms of Service, Affiliate Disclosure, Cookie Policy)
-- Reviews index page with all 6 casinos
-- Mobile-responsive design with dark theme
+Ontario AGCO-licensed casino review site. Static HTML, no build step.
 
-## Site Structure
-```
-├── index.html                 # Homepage
-├── reviews/
-│   ├── index.html            # Reviews listing page
-│   ├── royal-vegas.html
-│   ├── jackpot-city.html
-│   ├── ruby-fortune.html
-│   ├── spin-casino.html
-│   ├── playojo.html
-│   └── betway.html
-├── blog/
-│   ├── index.html
-│   └── [article files]
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── sitemap.xml
-├── robots.txt
-├── about.html
-├── affiliate-disclosure.html
-├── privacy-policy.html
-├── terms-of-service.html
-└── cookie-policy.html
+## Stack
+- HTML5 + CSS3 (no framework)
+- Vanilla JavaScript
+- Hosted on GitHub Pages
+
+## Local preview
+```bash
+cd ~/Desktop/playcanadiancasino-deploy
+python3 -m http.server 8785
+# Open http://localhost:8785
 ```
 
-## Tech Stack
-- Pure HTML5 + CSS3 + Vanilla JavaScript
-- Google Fonts (Inter + Playfair Display)
-- GitHub Pages hosting (static, no build step)
-- No frameworks, no dependencies to install
+## Deploy
+```bash
+cd ~/Desktop/playcanadiancasino-deploy
+TOKEN=*** /tmp/hermes_gh_token)
+git add -A
+git commit -m "deploy: v3 site"
+git push https://agentadminm4-droid:${TOKEN}@github.com/agentadminm4-droid/playcanadiancasino.ca.git main
+```
 
-## Deployment
-1. Push to GitHub repo
-2. Enable GitHub Pages in repo settings → Pages → Source: main branch
-3. Custom domain: playcanadiancasino.ca (set in repo settings + DNS)
+## Structure
+- `index.html` — homepage
+- `reviews/` — casino review pages
+- `blog/` — 16 editorial articles
+- `css/` — stylesheets
+- `js/` — scripts
+- `images/` — logos, OG images, news photos
+- `favicon*.png`, `apple-touch-icon.png` — favicon set
+- `sitemap.xml`, `robots.txt`, `feed.xml` — SEO
+- `CNAME` — custom domain (`playcanadiancasino.ca`)
+- `privacy-policy.html`, `terms-of-service.html`, `affiliate-disclosure.html`, `cookie-policy.html` — legal
 
-## Development
-- Local preview: `python3 -m http.server 8080` then visit `http://localhost:8080`
-- No build process required
-- CSS follows BEM naming convention
+## Compliance
+- AGCO + iGaming Ontario regulated market
+- No casino promotions on site
+- iGO "19+ Play Safe" badge in nav
+- Affiliate disclosure page present
+- All affiliate links tagged with `?s=sp51774`

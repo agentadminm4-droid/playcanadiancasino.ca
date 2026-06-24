@@ -1,323 +1,219 @@
 /* ========================================
-   TopOntarioCasinos.ca - Main JavaScript
+   PlayCanadianCasino.ca v3 - Main JavaScript
+   Vanilla JS, no dependencies.
+   Handles:
+     1. News hero card render (from inline JSON)
+     2. Nav scroll-spy
+     3. Nav compact-on-scroll
+     4. Mobile hamburger + overlay menu
+     5. Smooth scroll for in-page anchors
+     6. Fade-in on scroll (light version)
    ======================================== */
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all components
-    initHeader();
-    initMobileNav();
-    initScrollAnimations();
-    initSmoothScroll();
-});
+(function () {
+    'use strict';
 
-/* ========================================
-   Header Scroll Effect
-   ======================================== */
+    // Mark the page as JS-ready so the .fade-in rules can hide elements.
+    // If JS is blocked, this class is never added and content stays visible.
+    document.documentElement.classList.add('js-fade-ready');
 
-function initHeader() {
-    const header = document.querySelector('.header');
-    if (!header) return;
-    
-    let lastScroll = 0;
-    const scrollThreshold = 50;
-    
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-        
-        // Add shadow when scrolled
-        if (currentScroll > scrollThreshold) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-        
-        lastScroll = currentScroll;
-    }, { passive: true });
-}
-
-/* ========================================
-   Mobile Navigation
-   ======================================== */
-
-function initMobileNav() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMobile = document.querySelector('.nav-mobile');
-    
-    if (!hamburger || !navMobile) return;
-    
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMobile.classList.toggle('active');
-        
-        // Prevent body scroll when menu is open
-        document.body.style.overflow = navMobile.classList.contains('active') ? 'hidden' : '';
+    document.addEventListener('DOMContentLoaded', function () {
+        renderNewsHero();
+        initNav();
+        initMobileMenu();
+        initSmoothScroll();
+        initFadeIn();
     });
-    
-    // Close mobile nav when clicking a link
-    const mobileLinks = navMobile.querySelectorAll('a');
-    mobileLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMobile.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
-    
-    // Close mobile nav when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!hamburger.contains(e.target) && !navMobile.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navMobile.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
-}
 
-/* ========================================
-   Scroll Animations (Fade In)
-   ======================================== */
+    /* ---------- 1. News hero render (single lead-story layout) ---------- */
+    function renderNewsHero() {
+        var grid = document.getElementById('news-hero-grid');
+        var dataEl = document.getElementById('news-data');
+        if (!grid || !dataEl) return;
 
-function initScrollAnimations() {
-    const fadeElements = document.querySelectorAll('.fade-in');
-    
-    if (fadeElements.length === 0) return;
-    
-    // Check if element is in viewport
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-        
-        return (
-            rect.top <= windowHeight * 0.85 &&
-            rect.bottom >= 0
-        );
+        var articles;
+        try { articles = JSON.parse(dataEl.textContent); }
+        catch (e) { console.warn('news-data parse error', e); return; }
+        if (!Array.isArray(articles) || !articles.length) return;
+
+        // Render only the most recent article as a large "lead story" card.
+        // The remaining articles remain available in #news-data for the
+        // "More news" section further down the page, and for future use.
+        var lead = articles[0];
+        var url = 'blog/' + lead.slug + '.html';
+
+        grid.className = 'news-hero-feature';
+        grid.innerHTML =
+            '<article class="news-feature">' +
+                '<a class="news-feature__media" href="' + url + '" aria-label="' + escapeHtml(lead.title) + '">' +
+                    '<img src="' + lead.image + '" alt="' + escapeHtml(lead.title) + '" loading="eager" decoding="async">' +
+                '</a>' +
+                '<div class="news-feature__body">' +
+                    '<span class="news-feature__eyebrow">Latest Story</span>' +
+                    '<time class="news-feature__date" datetime="' + lead.date + '">' + formatDate(lead.date) + '</time>' +
+                    '<h2 class="news-feature__title"><a href="' + url + '">' + escapeHtml(lead.title) + '</a></h2>' +
+                    '<p class="news-feature__excerpt">' + escapeHtml(lead.excerpt) + '</p>' +
+                    '<a class="news-feature__cta" href="' + url + '">Read full article →</a>' +
+                '</div>' +
+            '</article>';
     }
-    
-    // Handle fade-in animation
-    function handleFadeAnimation() {
-        fadeElements.forEach(function(element) {
-            if (isInViewport(element) && !element.classList.contains('visible')) {
-                element.classList.add('visible');
-            }
+
+    function truncate(s, words) {
+        var parts = s.split(/\s+/);
+        return parts.length > words ? parts.slice(0, words).join(' ') + '…' : s;
+    }
+    function formatDate(iso) {
+        try {
+            // Parse the ISO date as a LOCAL date (no 'Z' suffix) so the displayed
+            // day matches the date in the JSON, not the previous day in timezones
+            // west of UTC (e.g. Eastern Time UTC-4 would otherwise show June 11
+            // as June 10).
+            var parts = iso.split('-');
+            var d = new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
+            return d.toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+        } catch (e) { return iso; }
+    }
+    function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+            return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
         });
     }
-    
-    // Initial check
-    handleFadeAnimation();
-    
-    // Throttled scroll handler
-    let ticking = false;
-    window.addEventListener('scroll', function() {
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                handleFadeAnimation();
+
+    /* ---------- 2 & 3. Nav: scroll-spy + compact-on-scroll ---------- */
+    function initNav() {
+        var header = document.querySelector('.header');
+        var links = document.querySelectorAll('.nav-desktop a[href^="#"]');
+        if (!header) return;
+
+        // Map link href -> target section
+        var linkMap = {};
+        links.forEach(function (a) {
+            var id = a.getAttribute('href').slice(1);
+            if (id) linkMap[id] = a;
+        });
+        var sections = Object.keys(linkMap)
+            .map(function (id) { return document.getElementById(id); })
+            .filter(Boolean);
+
+        var ticking = false;
+        function onScroll() {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(function () {
+                var y = window.pageYOffset;
+
+                // Compact header
+                if (y > 100) header.classList.add('is-scrolled');
+                else header.classList.remove('is-scrolled');
+
+                // Scroll-spy: pick the last section whose top is above 1/3 viewport
+                var threshold = window.innerHeight * 0.33;
+                var current = null;
+                for (var i = 0; i < sections.length; i++) {
+                    var s = sections[i];
+                    var top = s.getBoundingClientRect().top;
+                    if (top <= threshold) current = s.id;
+                    else break;
+                }
+                Object.keys(linkMap).forEach(function (id) {
+                    linkMap[id].classList.toggle('is-active', id === current);
+                });
+
                 ticking = false;
             });
-            ticking = true;
         }
-    }, { passive: true });
-}
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
 
-/* ========================================
-   Smooth Scroll for Anchor Links
-   ======================================== */
+    /* ---------- 4. Mobile hamburger + overlay ---------- */
+    function initMobileMenu() {
+        var btn = document.querySelector('.hamburger');
+        var overlay = document.querySelector('.mobile-overlay');
+        if (!btn || !overlay) return;
 
-function initSmoothScroll() {
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
-    anchorLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
+        function close() {
+            btn.classList.remove('is-open');
+            overlay.classList.remove('is-open');
+            document.body.style.overflow = '';
+            btn.setAttribute('aria-expanded', 'false');
+        }
+        function open() {
+            btn.classList.add('is-open');
+            overlay.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+            btn.setAttribute('aria-expanded', 'true');
+        }
+        btn.addEventListener('click', function () {
+            overlay.classList.contains('is-open') ? close() : open();
+        });
+        // Close when a link is clicked
+        overlay.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', close);
+        });
+        // Close on Escape
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) close();
+        });
+    }
+
+    /* ---------- 5. Smooth scroll for in-page links ---------- */
+    function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+            a.addEventListener('click', function (e) {
+                var id = a.getAttribute('href');
+                if (id.length < 2) return;
+                var target = document.getElementById(id.slice(1));
+                if (!target) return;
                 e.preventDefault();
-                
-                const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
-                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
+                var headerH = (document.querySelector('.header') || {}).offsetHeight || 0;
+                var y = target.getBoundingClientRect().top + window.pageYOffset - headerH - 8;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+                history.pushState(null, '', id);
+            });
         });
-    });
-}
+    }
 
-/* ========================================
-   Casino Card Interactions
-   ======================================== */
+    /* ---------- 6. Fade-in on scroll ----------
+       Strategy: hide elements via CSS only if JS confirms the observer works.
+       If the observer doesn't fire within 100ms (e.g., broken in some
+       headless environments), add .no-observer so CSS shows everything.
+    */
+    function initFadeIn() {
+        var els = document.querySelectorAll('.fade-in');
+        if (!els.length) return;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const casinoCards = document.querySelectorAll('.casino-card');
-    
-    casinoCards.forEach(function(card) {
-        // Add hover sound effect simulation (visual feedback)
-        card.addEventListener('mouseenter', function() {
-            this.style.transition = 'all 0.2s ease';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transition = 'all 0.3s ease';
-        });
-    });
-});
+        // Mark elements hidden so the observer can reveal them.
+        // If JS or observer fails, the safety timeout below will reveal them.
+        var revealed = false;
+        function revealAll() {
+            if (revealed) return;
+            revealed = true;
+            els.forEach(function (e) {
+                e.classList.remove('no-observer');
+                e.classList.add('visible');
+            });
+        }
 
-/* ========================================
-   Stats Counter Animation (Optional)
-   ======================================== */
+        // Fallback for very old browsers (no IntersectionObserver):
+        if (!('IntersectionObserver' in window)) {
+            revealAll();
+            return;
+        }
 
-function animateCounters() {
-    const counters = document.querySelectorAll('.stat-number');
-    
-    counters.forEach(function(counter) {
-        const target = parseInt(counter.getAttribute('data-target'), 10);
-        const duration = 2000;
-        const step = target / (duration / 16);
-        let current = 0;
-        
-        const updateCounter = function() {
-            current += step;
-            if (current < target) {
-                counter.textContent = Math.floor(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target;
-            }
-        };
-        
-        updateCounter();
-    });
-}
+        // Safety: if the observer doesn't fire within 1500ms (e.g., the
+        // browser is a headless/test env where IO is broken), reveal
+        // everything anyway so users never see invisible content.
+        var safetyTimer = setTimeout(revealAll, 1500);
 
-/* ========================================
-   Newsletter Form Handling (Placeholder)
-   ======================================== */
-
-document.addEventListener('DOMContentLoaded', function() {
-    const newsletterForms = document.querySelectorAll('.newsletter-form');
-    
-    newsletterForms.forEach(function(form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const emailInput = form.querySelector('input[type="email"]');
-            const submitBtn = form.querySelector('button[type="submit"]');
-            
-            if (emailInput && submitBtn) {
-                const originalText = submitBtn.textContent;
-                submitBtn.textContent = 'Subscribing...';
-                submitBtn.disabled = true;
-                
-                // Simulate subscription
-                setTimeout(function() {
-                    submitBtn.textContent = 'Subscribed!';
-                    emailInput.value = '';
-                    
-                    setTimeout(function() {
-                        submitBtn.textContent = originalText;
-                        submitBtn.disabled = false;
-                    }, 2000);
-                }, 1000);
-            }
-        });
-    });
-});
-
-/* ========================================
-   Lazy Loading Images (if implemented)
-   ======================================== */
-
-document.addEventListener('DOMContentLoaded', function() {
-    if ('IntersectionObserver' in window) {
-        const lazyImages = document.querySelectorAll('img[data-src]');
-        
-        const imageObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.removeAttribute('data-src');
-                    imageObserver.unobserve(img);
+                    entry.target.classList.add('visible');
+                    io.unobserve(entry.target);
                 }
             });
-        });
-        
-        lazyImages.forEach(function(img) {
-            imageObserver.observe(img);
-        });
+        }, { threshold: 0, rootMargin: '0px 0px 600px 0px' });
+        els.forEach(function (e) { io.observe(e); });
     }
-});
-
-/* ========================================
-   Back to Top Button (Optional)
-   ======================================== */
-
-document.addEventListener('DOMContentLoaded', function() {
-    const backToTopBtn = document.querySelector('.back-to-top');
-    
-    if (backToTopBtn) {
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 500) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-});
-
-/* ========================================
-   Table of Contents (Article Pages)
-   ======================================== */
-
-document.addEventListener('DOMContentLoaded', function() {
-    const tocLinks = document.querySelectorAll('.toc-link');
-    
-    tocLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
-                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-                
-                // Update active state
-                tocLinks.forEach(function(l) { l.classList.remove('active'); });
-                this.classList.add('active');
-            }
-        });
-    });
-});
-
-/* ========================================
-   Close dropdowns on outside click
-   ======================================== */
-
-document.addEventListener('click', function(e) {
-    const dropdowns = document.querySelectorAll('.dropdown.open');
-    
-    dropdowns.forEach(function(dropdown) {
-        if (!dropdown.contains(e.target)) {
-            dropdown.classList.remove('open');
-        }
-    });
-});
+})();

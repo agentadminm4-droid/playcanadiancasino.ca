@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pure Casino Entertainment has cleared its final regulatory hurdle to acquire Gamehost Inc. for $13.65 per share, adding three Alberta properties (including Calgary's Deerfoot Inn & Casino) to its portfolio and bringing its First Nations-backed Alberta footprint to seven casinos.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicons (data URI - bypasses all browser caching) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADJ0lEQVR42m2TS0ycZRSG3/N9/z/zzz9DgSlTRolV4hi8xAhdmNaqNMAAEhzrYrqpC6sbY73UBFMTMEjSuPMSTLowxo3xVjRxYWzamdIhRhpdGEfDaJNqo0XKgHIZZvjv33GBmVDSd3U251mc9zxEABgA0HEHHtk7YO6SnawoJiQt1KruNAr5cwSAs1mJqakAO0LY+2B7a+fukVf6kkfKNdUy+e0KTEPAdgIkGySgVOHa3MoJmvuueDOIyBy+/cPvxx54/qn9iZaligt4rs2ep0JS4LOjbcEnT7cfau2IX9J7eh6nqakA4+PiBsA/dhB/O7dgpUaL73189tqhxpCXUo61jy3nrTPFDflwh+lku5oiLoXOJIf778bEBG+HaLNXqz/Mnlt8Dn/OXhIArHhPmzV9sQigOKnSfH2TR3KlVevWRCRS27BeB3AUpVIdQARAADAG+3oDoR8n8JpUOFm1rNXWUOi2MsnLAMlH74zS/Ipd/uPzv1KEn2sMEAAWkaHupHHgwJ5AaO8IM/IkhHjC9TebMDPj11x3ozEsKiRINBuESEjsRiqWrBcAQGMyv1RxM0IMA0EQIPAvSD16X2Sw2wosgEExZoVETKNfFm2GKdX2I2oAEYX0Lvg+2PUUC61XGOFsUPEHpAkZ6Ho4Cs9LNOj6YsVfTfj/Li9v7TIACCZIIgKYFYQQImLE2bKvOLnceSHkiGMH2NdmqKpPvLnh/7RSKlX/b2ELAKV+ZN/7DQQbzOts2y9b5aV7w/19xxAO97DrBcP3xGT+So0Eq48UABQK9RaEXV5+CZb1LtnewQh7/fbX30wazc0PhUzjdHXNCY50NfKSBfnr7+uXj3fqXzBAmJnZ8dLd3UZ93t/7YjQzbCM9xJ3HDvvvf/CMG81k2Eyn+wEA2ay8wQVzaPBZFqT7dtB+MNXw2Ine5P2vfjWvJEO9lm7hsfy6/vfC+pu4mBu9mQua0LSTNQrfNZaJ442BPcjNrSHdsUvc0qiJsfOrmC9XTotCflRtLaudNmoMzpFjXzd8R73w6VVZsZRoa9LVqdyydCznrJjOn1Lj4wITE6pu/rb8B9dgcqYGgrY+AAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJRklEQVR42p1Xa3BV1RX+1t773HPPfSW5IbeEpCBakUYqnYaXogaEINqMr5Fa0XY6VLFaqXTaqv2hMUxb2jqjTnWsjsVx2lpbL8xYReUtQZ5B9EElPiBAMDGEV5J77zn3cc7eqz8S0FZAcP8458fee61v1vq+tdYmfLIIDQ0Sra0BARAAAkA406fXklKpkELMgIvwcbRs377u7u7u/Mmb8+ZJpNMaX2DRpw0IALMaL4muzVU0glSTiquplhKjwRwnIYiZAWYPRB+Duc0hvXzR/p7XWzo6SsM2DAA+ZwAEYOqcacntrnMPbOuOcTWxMdfUJbBxTxa7ewuwLcAYZhANARYCUknkvAAIgt1J5Tcff3P9CgBAc7NAS4s5awD19fVWux27DU54yYy6ii8vmJTAlWOdoKbc4hlP7qMtXZ6I2gKGh6MFQBDYzRuzcFoF9vQH6q0PXSRsXmbv61p8pKMjdy4pUe8mRyysq40/9bMrK3B9Xdy3LSGEAB13NR/KBpCSwCABsAFgJIFyBSMaL4rJR2+oRklz8IO/9mDF+/nvxy8YM8lOJG4uptN7zzYShOmNj7x49wUPzZ+cCLI5LfsGfV69x1Ovvedi8wEXRmtAG5AUIKXga8YIZfSW+84nJyTJ14ywRbjuuf3+tp4gFFemm44NzMhs3do5zOUzghBg9t98Lysy2cD8dsMxOfu5g+relw7sX93e97R2c7dabmZqMJiZIL3sZeS5d6uguHkwIPnLtUeIwGwYMAw8fmONlVTG96VVG5TFX8Ell0TR3PwJ0U+XglAihDUfuubSp7rCHfszH4DM0ttrxfK//HmDWwBQGD7oD/22EfBMdG7jPX/YXPodg/DYDSPBIFKCUB5VKjNQ8q2IMyEyMrXEa2n5yefxQdrjL5pZkOqq3r7Mk/Oq/Fvee+Otnbt27fO5oUGhq4tPMjuVEqiqkpgyhUqvvtZWcfF5h7Z26+um1obN7r4i3frCQRz2NGIhIpuNKULUx0bVvFh8443+4VScUp4UuXbuw0Jr3129dimfqAmHDxNaW4OyiRPLi6lkc6Gn7wF0dAQnjdTXK2pv90NzGjdWlMcajmWLAYOlJQm2IEyrtf31PTpk57PNuTUblqChQaG1NTglB8JHjz+RW712KTc3CwCEdJqHD4tSzcgVFHIWQynrU2RixGLMACkTPHu8qGEpQkgJEBG5PmNCjSMSFrgEdQ0AoLX1tClQx9vaMpg3T2LHDgWgGJ4z+2FIkSTDMXIiV3Gh4MYdZxQ3NMhcKrUH6bTGjFaDVrAoee8oOxywEArMLIjY14wRUSmSNlE/Y/yoyZMrP96589gwGfmzKgCAdFpj1aoiABCJ8SKe+BFsewEXixpAOEhVrQ9s61dIp3lI30OG6Gj2GBuTBQl82ngyIuEosBGi3IvbNcM8OqUalD1r1vm26w6UIpE5Ba2Xs6AolUoaxmgACkIyjB4Fg8UADFmutIb6FEBSMkAndc4AlCQkIxLaMJOQRFLFAQAdHacGANv+XskJ30WSUuHBgV4wKRBJMAAiQ5ZSyLjfza9761ByypTE8ba2zInLxVgsQUQxgEEABYZRHhYocwQG8gZKAIGRZy5EJFCkkJWCgYYTXQaByaw1QGAopTjvtQrf7Heu++ZuL5FYFG1svCpy9RXVACAdZxwsZcMYTUTwA8bYCgsEoiOuFgqGjSkMAa6r41NHACAYw2DDZFkXgAEYAwASWoNJXKhjkU0gSRSL/EIXilm4uBgAjBIzISWgtSGCYJ8xbYyDQ9mASyWmWJgzyBT6AAAtLXzqUgyAiAgMgjEGbBhEABGBGaSsURCCoLUPw54o+bcU3n77IwAKUlw/DFYwQCDQ7HExbO/KM4QAMR/I">
+    <link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAUm0lEQVR42u1baZRdVZX+9jn33nffXFNGKqOFhAQIsRiCwbwKGcCIq3VpMTSCoItWEJuFrUtttcu0E4tusUVNA2o70dqLB7QiCCgkeUnIgMQwFpCQhApJJRWsVNWrN9zhnLP7x7tVqYQgqSRgu1bOyk1e8uree87e3/n2t/c+AU6ME+PEODFOjL/KEGhvlwBoVFftnr/xMWIRIrpGNTo6xPGaCr2NyyYAjPZ2iXxeZ2fPnmomjvvWoJHTEWpOJSQpJgKBwYfMi8AAsRBgDBTvqBTW/BS5nIVCQf2tGKC2+A4ILIOpX/DupRU3/RPf2GNbJzj47MIxWP74fqztqiLhChjDoNod4GGkEHzDcCSA/oHPV1atvuV4GIHetsUDFgBVd9EFHyki9vOEFPQvixqDq89rpIwreP53t+GJ3Z5MxiQb5hG3AUQEpRnNKWF2lTRJ27IxWLyuuqJw+7EaQbzlRAdww+mnNycvXHgnAej3rb+f3hinh66d7F/fNkZ6IYs9xVAMhkYKQQLMAoAEWAIQBAjDLC2CyF89RVwzJ4NqKQytdHp54vzzL0ahoI6FGMVb6vmODrS0IFYaP/7+Cpz5APD+WZnK/ddO4dmT4tQzUHOcMUTVgIkIzAdQyQBICiKvavCBWWnMmODSV5aOF2dPcqnsG6Zs6q7Y3LktyOf10a7lrTNALiexbJnZObntzkRDds6/Lm7aywB+dMUkOaXRoT8ParIkoSltYdDXKPnGSEEGgAKgATABHBqG6xA+Oa+Ri56mmEX0tfeNExYbw04sKzPJXwCw0N5OR7OlxVsW5goFFc+95wZOpa+Km8BcNCvjAEA10Kj6BilXIBkT+PHjvfzhH3eZQQ3LcmyLbduGbVuQUgpBxqtqvnxOluc0x1ENmEs+83nTk1g6My0qRS+UqdTc+AW5G5DPa7S3i7++ATo6BPJ5nTzvrNOQSv2bzRz2Vo1YuaUEAPA1UJe00D0Q8qU/2qE/fd9ea0eZbdLhHi4OPqL7+n7ExeI98PztEMKSlhS7BwIu+4osWXOwNuBrzqmDFBBGacMx98upM88cg3zejBYFx98AnZ0EQJhU9g7Yjgs2xoCwZluFAOCkOhsbtpdx4Q928GOvhk7G1c+nK4NXeZ0vzaw+tuKiYNXqa73HVrbXPfPs6bqveL3rmMrvX6jIrz38GtfFBQiEsq+pdVKSZ05wUfWVlnG30TTWfxIAI5cbFSHK4w79fF4ncrmPI5P+FJQKARJCCtHd63d7W7f+sOm0GZf84296Tt1X1VYD+Tf3/+4PV3ivdP0JAwNepPAkzjmHShs3Bqqr68lY09g1Vsa95ImdnjVvSoKnj4mJQd9gQsaiLT0+Nm6vkBsTZNicPCZbf0dp/fpgNCgQx5X183lT39qaNQl3GYwxtZDGEACqkaL5zP17rL7AIB0OfmT/Q49+EYCHXM4CQFi2zKBQUBGrE9rbndK6dWvcavl6BSHvWL+fAeaMK/GnXR7f/2yRYnFBSmmNmDupP51ePFoUiOPK+gD7dZlPi3h8IozRICEiHQsSNackHXLtgf4bi4+t+W/8Q6sNgCIhw2Ae6TlGPh8gl7P2P7b65w4Hq1bs8OzugVBXQuYrf7aTdg7WeMEGGxAxHOuDAICxY/lIp239RTKr7ec3H/v2EQBk5s5sCBznRlLKgCFAkZYlAhkdAoDoG/jq4Lp169HeLnFnPjwYQ/RGE6e0Ud/preq23zxTpDXbK7StN6BMyuJKaOjkjKQ9PlMFlENLSwz5vH+QlHy7pLC7cMHnRDZ7CwdBeMC4pEGQNFh8b2XVmkcOkccHyWW3bf5yCtTXq+vWdY/4GQLAE1pbE31jGrcIyznJV0rHbCmIGeXAYP5U13QP... [truncated]
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAABqXElEQVR42u29d4BdV3Uu/q21z7l9etOo2iqWJRdsywZMDKPQAiR5IQ9EAl4KpNBSSELyy0sDMZD3SHl5KZCEkuQBCSUM8MALCSEh8UAcShBuWG6ybHWNyoym3XbOXuv3x96n3JFssC2DpNydCKtMuXPuXnuv9a1vfR/QXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd11wS/qPoJv22JMTPAF96qmpy0A7b493fXUHTq7dpkLPji7N0B3PUUbSwCgb3z4hublm5/Oq8dUmpGBKoOgrOzfEznHp/GKv1+5X/3HkCgUBPInuYIABlQJROq+TP5jVaRQFBw+ymMP/MdHDs5jDhMTAaan424AdNf5WX5D7QAqD1xz1W9EgyM/R/09FTIGCnV7EwBBwQHBigJWQUQuIWHyH+MDgCjNU/L7nOATGAKg6v9L2TutuQ+g7M9KgFqBnji1t3T06A/NHzhwx3+GIOgGwLfmGTMA27Nm9Jnx2vV/qkMj1yEwQlZslm6TcoGoGYnYU00YQ1roLwIgzn0dv8e1861TKEhBINLk7PcXgGYfIlAiyn8dzX1zFZAxokFQ1Ln5M+WZo686c+8Dn7zUg6AbAE91yqOqRKTVKze9Oh4d/30a6K9CpAmrIcht7iBkNCNBNNfCuirrqyZGsWasrD/7kYMUVkJSVX9WU3Ku+9/5c5/8YZ9cJAQlBWtHMasKJep41/MXh0LdVYFYwyCg5boGMzOvXrzr639xKQcBd/foU7R2wQCQHURB5fqnvdeuv/w91N9fRiwRRAtKIGOgloDFmYaONyL7O/9ltd761mv1rT+yQdf2sEaREjEBAnEpiyqgcMd8doSpy2CgPqCgYFWIj5Xk49jnWLkYyKVGlCZThqJItFKx0arxPy9vv/pnMT0dY2IiuBTfpqC7U5+ifH9qOl4/XBm/97JtH7Hjq57DTBFiGwAwREQcQpdOtzGoip9+ySr85ItWYaRm9OTJFuZOqB442VaoCqkQSNNEx+XzmsRCkvaT+lBQ9wd/thPUl8D5ZMknUf5Tkq/n/o6ICAqiKCItF2NdO/5HVYYuT0+/81K8CboB8ORTSDoLspmejgfXr9p+ct2GT+jI6FYWaSKyBkQIAqJGJIiPN/HjNw3zG1++VjeOhTp3qsUzJyIAhGKBaSlyX9Ol80REbnsqVABigiZ1s4N2KKtvlVThymckMeHgnyRUXBXt8h4XEWKIjKoDh0AuEqwFqsXIjo38Qa19xaGl6elLribopkBPbvNrx+bf7QDGkSs23tJYt/FWHRrditi21WoBTAGH0MW5pqxvW/n46zbpO1+/MR4pQGaONWEBCQKPXxI0bseSpSgKf+CrO71V0mNd/R5XACpKfsMnx32a6KuK+yIq2WXgUiSrKuF8W5rLrYiMegwVgIC1bQ2qFbUb1n9s4LrrXnKppUPdAHjiz003Dgz0VS+//Fr/dwaT0NoVVwwvrF77NzI8NEJiYyhCZhACwvKxJl62tQf/+r+upudf16czMw1qxUImYL9PmQulosBi0wIE8XtYXVrjT3b1v3VbnRNcCMkprz7D0VzqQ+DkZkCaBREoYLQW2vjLV2/S/35VP9dPtSgMSTW9RJjJKrRS5sZg/1+ObN9yHaan44ugmdcNgKfsmRHJDiA8fuXWv7EbL/suV/TuMgDUbtxYop6ekokjC1EKDKFtQfZ4Q3/vFevpL3/pSi6J0Nx8zEHAQlkpyi4Fd0nKqboaEDjZp0ouQHzGk0CZCQxE6X2Q/NZXDLkLS8llQuknGyZqNCx9x/oqPe+6Gv... [truncated]
+    <link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAEAAElE... [truncated]
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAABZeUlEQVR42u2dd5xlRZn3v0/VOffezj05MTAwkjNKUECCICqKGHbNi7KmV8Wsq6u75qyYMCHqLiIquiYMoCRFgkRFkCEMzDBMDt3T6YZzqur9o+qE29MgYXBm8NbnMwzT09N9+57n1Hnq9/yCOOccndVZj5OlOm9BZ3UKurM6q1PQndVZnYLurM7qFHRndQq6szqrU9Cd1Vmdgu6szuoUdGd1VqegO6tT0J3VWZ2C7qzO6hR0Z3VWp6A7q7M6Bd1ZnYLurM7qFHRndda2X1HnLXjslnMO6xwist28HgGUevzuY9KRYD02y1q73RaOtQ6lhM4O3VkPaaXGEGmNM4YvnXsuv/nrX1G9XbSSBGtAAMHvI0oL1jj8R8HhcAhagbOlxrDt/x2iBBd+90Xq/7VQFKrDobWglcKi6UsSPvn61/OE3XbLX2Nnh+6sv9tiaKW46S9/5h1f/hLXrlmLxBE4ByI4CzryhTk+niLO0VWLcM6XohPA+YJ3Ej7mLxSu1LqUy5bwWVk5u/C9/P9nf+1wSjEttXznHe/gpOOOeVwWdaegH4MW46vnncv7zjuXRq2bigg2NSitUeJwWjE+niCjLZ68cw9jkeaOTS10rHDO4axFlPYF6pwvbiV50ZaL3uU7tUWUICgcky6nk1D9DgU0RVDjE3zx1a/m1f/6osddUXcKeissYy1aKUY3b+atn/405990A3F3N8oY0tSglOAiYXw8RY0mHL97H685cQ6nPmUmr/76XXz3xhF6ejXWFvXnABHfVoBDSdakiN+9yevUF3j7ZfWfEz4p+3o4fO8cR6QTdT76wn/lHaefnr/+Tg/dWfkOd++99/Kyj3yYmzdtpFLrwjRbWBF0RRhvWuz6Fkcv6uFdpy/mqfv2krQMo5tarNuUIhFhb53UUjiH7zLE79SCR00yvFXISzsv2sk7dCh/5fxnWgfSaBLVarz/xz8iSQ3vee1rHjc7daegH0Z/TNg1yztzpDXX3nQDL/rQh1mnoCfW1OstvxNGirGhOnv2xrzr9F153pEzkSRlaKiBs9DbV2GoFQrTCU6BOPKduFycTvxWK1K8FpyE/rq0Szshe4niv7D/UpFCjPPfRxSu1aLaXeVDP/s/5s6Yzitf8AKSNCWOok5B/zOsyVhydvj75SW/45Wf+yzjtSoxQr3eQkeKemJwGxu88agZ/Me/7MJADTZumMAphY40WIs1lmZqQKmsqrEuay9cdo6kqNryYbC9PclqX0o7vYj1LYmDxqYWtYEKSizGCUqEtJlS6arx1u98m7hS4WXPec4Ov1N3JoUPYWd2zmGNYdXq1XmboUS48obr+ddPf4p6tUqUOkxq0FXN+GiLBYnjJ2/ag0+dtiuulbJhUwsVabTK2gdFM7VYQ17AOPJeWUJrUTTLvl1wLoMusgba1zrZuTEr5lDxVgRpWb7+ol2YK466yxIp/yUMDtNMaMWaN3ztq/zx+uuItCY1plPQj/dJ32s+8mF+8adr84IGuHd4CPp6qYnvgFWsGF9X55k793DJh/bjafv3snZDA+scsRbEZYXq0OIYb1mG6qkvsLwnlgJ2k3zjBvG7qv+YKnZrYVJrUhS1UkKjYTl6l25e/cw5fPv0XZmVWlrloadTZB5OaG2dkR8pwJYqmppkyga8U8JaB+Oc8O4K76+3V3n35XPH91V8u7VPAn8RWfcdXfdf3/HjzwP9vfx/fzd/Pfd2hqcDhY0gFh7rIaWeJsxRB1W9O6Q0KXTE3Gz4Kd7kVsvK47a9df5q2eF1l4/1yGvXZdZd+7MrP7KyovxM3G1aOKNv+s2v3/Qt/RvH96y31mEpyBdOHj0zsn/p0fHb4sXXO1+cPrnP/SfG3vK6wS/euB8/8Fdf/t7vL6Z4uOh6xf3vC/d9+8iN37z5wNNXXdr1uU0Hb/2M+sK+7kIu5N7M3OJO5udz+kN/8sv/9Avxqv3r3/3dv7/txl988cHr1/W2bN+0e9eWrl... [truncated]
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABmAwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAy1JREFUeJxtU0tsVFUY/s9/7p25986UtkOHjjaiDWOqGGPLwoCgJW2nrU0ZcFE2uBDdGPGBSQ0mrcEmxJ2PlISFMW6ML9DEhZHADGUaYwksiKPpKAlKlFo6LfYxnem5r3N+c2dMUwj/6ry+75zzfd/PGAAQBNX2EDy9tc/axNtJsShyNlspuxOQy56rnhka4nDmjIS7isHWJ1ub2zcPv9mTOFisqKbxHxfBMhBsR0KijgMolbs5vXiUTf+UvxcJpg88+Onl0SdeeX5nvGm+5AJ4rk2ep0Ic4atDLfKLF1r3NrfFLuldXftYAD5+HO8guG3L2AeZWZEcyZ/8/OzNvfUhL6kcsYOE8/7p/Crf02Y5Qx0NpstCpxODvY/A2BhtJNGmbpSvTJ2bexn+mroUrIpYV4uYuJgHgPy4StGtNRrOFJbE/XHTrKyKdwDgEBQK6wQsECiYGf093RL1IwxomSs4VhZiqTkUeqDI+DUAxp/ZFmEzi3bxz6//TjL4pUKBfgCE5kBnwti1a4tE7UO0zOcAcb/rrzXA5KRfcd3V+jCWGDJsNBiYIdwMyWhi3YDgC8Ssb1XMMhmBAVJKkP4FrkceM/s7hRSBxSxKpCAe1divczaBxdVGEbXgFyykd4DvA7meItS60QgPyZLfxy3gUtfDEfC8eJ2uz5X8pbj/78JCDVuNDxIDzgIlgmsQEU0jRsK+7mQy5xH5sGNL2NFiqLLPaG3V/3mxUCj/70KNAJS6Sr73OzCwgWiFbPsNUZzfHu7tOQzhcBe5nhx8NMqz1ysMSX1WfX8ut+4C2sWF10GIj5jt7TbJ67W//2HcaGx8KmQZp8rLjjzYUU/zAvhvf6xcO9Kuf1NVf3Lyrkh3dhrr453dr0XSgzakBqj98AH/409edCPpNFmpVG91P4jzxl6wBvpfImS6b8vW3cm6Z492Jx5/67sZxQnU26kmGs2u6P/MrrwHFzMj9+oFDTXtWIWFHx5Nx+Ddvi2QmV6GVNsmvK9ew9HzSzBTLJ3CXHZE1cB3WFjLAVCGOfYtw3fUq1/e4CWhsKVBVycyC9wRzlmcyJ5QgepjYwG41vkb6j/XYHKmMJnwtgAAAABJRU5ErkJggg==">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="64x64" href="../images/favicon-64-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/favicon-512-new.png?v=17">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-new.png?v=17">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon-new.ico?v=17">
+    <link rel="canonical" href="https://playcanadiancasino.ca/blog/pure-casino-gamehost-acquisition-2026.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://playcanadiancasino.ca/blog/game-on-ontario-gift-card-launch-june-2026.html">
+    <meta property="og:title" content="Pure Casino Entertainment Cleared to Acquire Gamehost — First Nations-Led Casino Group Now Controls Seven Alberta Properties | PlayCanadianCasino">
+    <meta property="og:description" content="Pure Casino Entertainment has cleared its final regulatory hurdle to acquire Gamehost Inc. for $13.65 per share, adding three Alberta properties (including Calgary's Deerfoot Inn & Casino) to its portfolio and bringing its First Nations-backed Alberta footprint to seven casinos.">
+    <meta property="og:image" content="https://playcanadiancasino.ca/images/articles/pure-casino-gamehost-acquisition-2026.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Editorial photograph of the illuminated facade of the Deerfoot Inn & Casino in Calgary at dusk, one of three Alberta properties Pure Casino Entertainment has been cleared to acquire from Gamehost Inc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://playcanadiancasino.ca/images/articles/pure-casino-gamehost-acquisition-2026.jpg">
+    <meta name="twitter:image:alt" content="Editorial photograph of the illuminated facade of the Deerfoot Inn & Casino in Calgary at dusk, one of three Alberta properties Pure Casino Entertainment has been cleared to acquire from Gamehost Inc.">
+    <meta property="article:published_time" content="2026-06-17">
+    <meta property="article:modified_time" content="2026-06-17">
+
+    <title>Pure Casino Entertainment Cleared to Acquire Gamehost — First Nations-Led Casino Group Now Controls Seven Alberta Properties | PlayCanadianCasino</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=15">
+    <link rel="alternate" type="application/rss+xml" title="PlayCanadianCasino RSS" href="../feed.xml">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Pure Casino Entertainment Cleared to Acquire Gamehost — First Nations-Led Casino Group Now Controls Seven Alberta Properties",
+      "description": "Pure Casino Entertainment has cleared its final regulatory hurdle to acquire Gamehost Inc. for $13.65 per share, adding three Alberta properties (including Calgary's Deerfoot Inn & Casino) to its portfolio and bringing its First Nations-backed Alberta footprint to seven casinos.",
+      "datePublished": "2026-06-17",
+      "dateModified": "2026-06-17",
+      "author": { "@type": "Organization", "name": "PlayCanadianCasino" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PlayCanadianCasino",
+        "url": "https://playcanadiancasino.ca/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://playcanadiancasino.ca/blog/pure-casino-gamehost-acquisition-2026.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://playcanadiancasino.ca/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Casino Guides & News",
+            "item": "https://playcanadiancasino.ca/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pure Casino Entertainment Cleared to Acquire Gamehost — First Nations-Led Casino Group Now Controls Seven Alberta Properties",
+            "item": "https://playcanadiancasino.ca/blog/pure-casino-gamehost-acquisition-2026.html"
+        }
+    ]
+}
+    </script>
+
+    <link rel="alternate" hreflang="en-CA" href="https://playcanadiancasino.ca/blog/game-on-ontario-gift-card-launch-june-2026.html">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Who is acquiring Gamehost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pure Casino Entertainment Limited Partnership is acquiring Gamehost Inc. Pure is privately held by Indigenous Gaming Partners Inc. (IGP), a gaming partnership between five Nova Scotia First Nations and Sonco Gaming Inc. IGP took over Pure Casino last year and already owned four Alberta casinos before today's acquisition."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much is Pure paying for Gamehost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pure is paying $13.65 per share in cash for all of Gamehost's issued and outstanding common shares. The price represents a 16% premium over Gamehost's $11.75 closing price on the Toronto Stock Exchange on March 27, 2026 (the last trading day before the deal was announced), and a 17% premium over Gamehost's 20-day volume-weighted average price of $11.67 as of March 27, 2026."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Which Gamehost properties is Pure acquiring?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pure is acquiring three Gamehost properties: Great Northern Casino in Grande Prairie, Rivers Casino and Entertainment Centre in Fort McMurray, and Deerfoot Inn & Casino in Calgary. The deal also includes two hotels in Grande Prairie. With the closing, Pure's Alberta land-based portfolio grows to seven casinos."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Who owns the real estate under the Gamehost casinos after the deal closes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "VICI Properties will own the real estate for Great Northern Casino, the Grande Prairie hotels, and Deerfoot Inn & Casino through a master lease agreement with Pure. Rivers Casino's real estate remains with a third-party landlord and was not part of VICI's transaction; Pure acquired the Rivers Casino operating business only."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "When will the Gamehost acquisition close?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pure received final regulatory approval (including from the Court of King's Bench of Alberta) on June 17, 2026. Gamehost shareholders approved the transaction at a special meeting on June 11, 2026. Closing is expected later this month (June 2026)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does Pure Casino's expansion into Alberta affect the upcoming Alberta iGaming market?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Pure's parent, Indigenous Gaming Partners Inc., has publicly stated it plans to expand into online gaming in Alberta, taking advantage of the province's regulated iGaming market opening on July 13, 2026. The Gamehost acquisition adds retail-scale casino operations in three major Alberta cities and may position IGP to compete in the online vertical from a much larger land-based footprint than First Nations competitors entering the market for the first time."
+                    }
+                }
+            ]
+        }
+    </script>
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbce7893-7bf8-4c76-a76a-8ae8834d3051"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="PlayCanadianCasino - Home">
+                <span class="logo-icon">🍁</span>
+                <span class="logo-text">Play<span>CanadianCasino</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="/#featured">Top Casinos</a></li>
+                    <li><a href="/#offers">Bonuses</a></li>
+                    <li><a href="/blog/">News & Guides</a></li>
+                    <li><a href="/#methodology">How We Rate</a></li>
+                    <li><a href="/#responsible" class="highlight-link">19+ Play Safe</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container article-layout">
+            <div class="article-hero">
+                <div class="article-tag">🏢 M&A</div>
+                <h1 class="article-title">Pure Casino Entertainment Cleared to Acquire Gamehost — First Nations-Led Casino Group Now Controls Seven Alberta Properties</h1>
+                <div class="article-meta">
+                    <time datetime="2026-06-17">June 17, 2026</time>
+                    <span>•</span>
+                    <span>6 min read</span>
+                    <span>•</span>
+                    <span>By PlayCanadianCasino Team</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+
+<div class="article-content">
+    <p>Calgary-based multi-property casino operator <strong>Gamehost Inc. (TSX: GH)</strong> has cleared its final regulatory hurdle to be acquired by <strong>Pure Casino Entertainment Limited Partnership</strong>, a privately held gaming operator backed by a partnership of five Nova Scotia First Nations. Pure received approval from the Court of King's Bench of Alberta on <strong>June 17, 2026</strong>, completing a deal announced March 30, 2026 and approved by Gamehost shareholders on June 11, 2026. Closing is expected later this month.</p>
+
+    <p>Under the terms of the all-cash transaction, Pure will acquire 100% of Gamehost's issued and outstanding common shares for <strong>$13.65 per share</strong> — a 16% premium over Gamehost's $11.75 closing price on the Toronto Stock Exchange on March 27, 2026, the last trading day before the deal was announced. The acquisition adds three casinos — including the high-profile <strong>Deerfoot Inn &amp; Casino</strong> in southeast Calgary — plus two hotels in Grande Prairie, lifting Pure's Alberta land-based footprint to seven casinos and making it one of the largest Indigenous-owned casino operators in Western Canada.</p>
+
+    <div class="key-stats-box">
+        <h3>Key Facts: Pure Casino / Gamehost Deal at a Glance</h3>
+        <ul>
+            <li><strong>Acquirer:</strong> Pure Casino Entertainment Limited Partnership, a subsidiary of <strong>Indigenous Gaming Partners Inc. (IGP)</strong> — five Nova Scotia First Nations and Sonco Gaming Inc.</li>
+            <li><strong>Target:</strong> Gamehost Inc. (TSX: GH), Calgary-based casino and hotel operator.</li>
+            <li><strong>Price:</strong> <strong>$13.65 per share</strong> in cash (16% premium to Gamehost's March 27, 2026 close of $11.75).</li>
+            <li><strong>Acquired properties:</strong> <strong>Great Northern Casino</strong> (Grande Prairie), <strong>Rivers Casino &amp; Entertainment Centre</strong> (Fort McMurray), and <strong>Deerfoot Inn &amp; Casino</strong> (Calgary), plus two hotels in Grande Prairie.</li>
+            <li><strong>Real-estate buyer:</strong> <strong>VICI Properties</strong> (master lease with Pure) for Great Northern, the Grande Prairie hotels, and Deerfoot. Rivers Casino real estate remains with a third party.</li>
+            <li><strong>Approvals received:</strong> Gamehost shareholders (June 11, 2026) and Court of King's Bench of Alberta (June 17, 2026).</li>
+            <li><strong>Expected closing:</strong> Later in June 2026.</li>
+        </ul>
+        <p class="key-stats-source"><strong>Source:</strong> <a href="https://www.casino.org/news/canadian-gaming-pure-casino-entertainment-gamehost-deal/" rel="noopener noreferrer">Casino.org reporting</a> (June 17, 2026) &middot; <strong>Last updated:</strong> June 17, 2026.</p>
+    </div>
+
+    <h2>What's Actually Changing in Alberta</h2>
+
+    <p>The deal is structurally simple on paper and consequential in practice. Gamehost shareholders approved the arrangement on June 11, the Court of King's Bench signed off on June 17, and closing is expected later this month. After closing:</p>
+
+    <ul>
+        <li><strong>Pure will operate</strong> Great Northern Casino (Grande Prairie), Rivers Casino &amp; Entertainment Centre (Fort McMurray), and Deerfoot Inn &amp; Casino (Calgary), plus the two hotels attached to the Grande Prairie property.</li>
+        <li><strong>VICI Properties</strong> — one of the largest gaming-focused real-estate investment trusts in North America — will own the real estate under Great Northern, the Grande Prairie hotels, and Deerfoot Inn &amp; Casino under a long-term triple-net master lease with Pure. Rivers Casino's real estate is staying with its existing landlord; only the operating business changes hands.</li>
+        <li><strong>Indigenous Gaming Partners</strong> (IGP), Pure's parent, expands from four Alberta casinos to seven, with operations spanning Grande Prairie, Fort McMurray, Calgary, and the existing Pure footprint in the Edmonton region and northern Alberta.</li>
+    </ul>
+
+    <p>The split of operations and real estate is a familiar structure in North American gaming — VICI has been the dominant buyer of gaming real estate since the Caesars–Eldorado merger — but it's the first time a First Nations-owned operator has been the operating counterparty on a deal of this size in Alberta. The master-lease structure means IGP and its First Nations partners control the operating decisions, customer experience, and brand strategy, while VICI takes the underlying real-estate risk off the balance sheet.</p>
+
+    <h2>Why This Matters for Ontario Readers</h2>
+
+    <p>Gamehost is not an Ontario operator, and Pure Casino Entertainment does not hold an AGCO or iGaming Ontario registration. So why cover a Western Canadian land-based deal in a publication focused on Ontario's regulated online casino market? Three reasons.</p>
+
+    <p><strong>1. The same Indigenous ownership trend is coming east.</strong> The structural shift toward First Nations–owned gaming operators — accelerated by Great Canadian Entertainment's sale of several British Columbia properties to First Nations groups over the past two years — is one of the defining features of the Canadian gaming landscape in 2026. IGP's Michael Peters, CEO of Glooscap Ventures (the economic-development arm of Glooscap First Nation, one of IGP's five First Nations partners), put the strategy plainly at the recent SBC Summit Canada panel: <em>"By diversifying not only by industry but also by geography, we can build that independence. That's why we started looking at gaming opportunities beyond Nova Scotia and across the country. Alberta represents a fantastic market for that growth."</em> Ontario, with the largest regulated online market in North America outside the U.S. state-level markets, is a logical next step on that geographic-diversification arc.</p>
+
+    <p><strong>2. The Alberta iGaming market opens July 13.</strong> Pure's parent IGP has publicly committed to expanding into online gaming in Alberta ahead of the province's regulated iGaming launch on July 13, 2026. The Gamehost acquisition gives IGP a land-based footprint in three of Alberta's largest population centres (Calgary, Fort McMurray, Grande Prairie) from which to cross-promote an online product, recruit land-based loyalty members, and offer integrated retail-and-online experiences. That's the same omnichannel playbook the largest U.S. operators have used to grow market share against digital-only competitors, and it puts IGP in a structurally stronger position than the digital-only brands entering Alberta's online market this summer.</p>
+
+    <p><strong>3. It sets a comp for what Indigenous-led deals will look like.</strong> The $13.65-per-share all-cash take-private price, the 16% control premium, and the VICI master-lease structure give Indigenous economic-development corporations in other provinces a benchmark for negotiating similar transactions with private-equity and public-market gaming operators. For Ontario's Mississauga, Rama, and Akwesasne First Nations economic arms — all of which operate gaming facilities — the Pure/Gamehost deal is the kind of precedent that gets discussed in board meetings.</p>
+
+    <h2>Who Is Indigenous Gaming Partners?</h2>
+
+    <p>Pure Casino Entertainment is the operating entity of <strong>Indigenous Gaming Partners Inc. (IGP)</strong>, a gaming partnership formed by five Nova Scotia First Nations and Sonco Gaming Inc. The five First Nations — Millbrook, Membertou, Eskasoni, Pictou Landing, and Glooscap — partnered with Sonco to acquire Pure Casino last year, gaining operational control of four Alberta casinos in the initial transaction.</p>
+
+    <p>At the SBC Summit Canada panel this month, Chief <strong>Paul Rice of the Mohawk Council of Kahnawàke</strong> framed the broader trend in stark terms: <em>"First Nations are in the lead — and need to be in the lead — when it comes to ownership and partnerships in gaming. If you want to see the Canadian economy recover from the better part of 10 years of stagnant growth, gaming is a huge part of that, and partnering with First Nations is a huge part of that."</em></p>
+
+    <p>Michael Peters, CEO of Glooscap Ventures, took the strategy further: <em>"It makes us stronger when we're together and united in what we're trying to do. We're trying to diversify our economic development and resources to become more independent at home. One of the primary ways to do that is by becoming financially independent from the government."</em> Gaming — and the regulated online gaming market specifically — is one of the few sectors in Canada where First Nations–led ownership is structurally protected by federal and provincial regulatory frameworks.</p>
+
+    <p>The deal's VICI component matters here: the master-lease arrangement means IGP's First Nations partners retain operational control without taking on real-estate debt, which is the typical financing risk that has historically limited Indigenous participation in capital-intensive gaming expansions. VICI's underwriting effectively transfers that risk to public-market investors, leaving IGP with a clean operating business model.</p>
+
+    <h2>What Gamehost Brings to the Deal</h2>
+
+    <p>Gamehost is a well-established Alberta operator that has run the Deerfoot Inn &amp; Casino in Calgary for decades — it's the largest single asset in the deal and the brand most readers will recognize. The Great Northern Casino in Grande Prairie and the Rivers Casino &amp; Entertainment Centre in Fort McMurray are smaller but profitable properties in markets with less direct competition. Combined, the three properties generate the kind of stable, regionally diverse cash flows that justify a 16% control premium in a take-private transaction.</p>
+
+    <p>For Pure, the strategic value is not just the EBITDA — it's the geographic spread. Grande Prairie and Fort McMurray are resource-economy cities with high per-capita gaming spend; Calgary is the largest urban market in Alberta. After closing, Pure's Alberta footprint will look like this:</p>
+
+    <ul>
+        <li><strong>Calgary</strong> — Deerfoot Inn &amp; Casino</li>
+        <li><strong>Edmonton region</strong> — Pure's existing four casinos (from the 2024 acquisition)</li>
+        <li><strong>Fort McMurray</strong> — Rivers Casino &amp; Entertainment Centre</li>
+        <li><strong>Grande Prairie</strong> — Great Northern Casino</li>
+    </ul>
+
+    <p>That footprint covers more than 80% of Alberta's population and gives Pure a defensible regional position before the July 13 Alberta iGaming launch.</p>
+
+    <h2>The Alberta iGaming Connection</h2>
+
+    <p>Alberta's regulated iGaming market opens <strong>July 13, 2026</strong>, and as of the most recent AGLC registry update, 47 sites have been pre-registered for the launch. IGP has publicly committed to entering the Alberta online market, which means the Gamehost acquisition is also a strategic positioning play ahead of the online launch.</p>
+
+    <p>The integration question will be whether IGP launches its Alberta online brand as a Pure-branded product, a co-branded product with one of the existing casino brands (Deerfoot Online, perhaps, or Great Northern Online), or as a standalone brand. The answer will determine whether the land-based footprint becomes a marketing channel for the online product or whether the online brand is treated as a separate business line.</p>
+
+    <p>For Ontario readers tracking how the national iGaming landscape is shaping up, the Alberta launch is the second big test case after Ontario's April 2022 launch. The Alberta framework is structurally different from Ontario's — Alberta's regulator is the Alberta Gaming, Liquor and Cannabis Commission (AGLC), not a separate iGaming Ontario entity, and the province has chosen a more conservative operator-tax structure. Watching how an Indigenous-led land-based operator with seven casinos integrates online play in Alberta will be informative for what First Nations–led participation in Ontario's online market might look like in the future.</p>
+
+    <h2>What to Watch Over the Next 30 Days</h2>
+
+    <p>Three signals will tell us how the Pure/Gamehost integration is going and how aggressively IGP plans to push into Alberta online gaming.</p>
+
+    <p><strong>1. Closing announcement.</strong> The deal is approved but not closed. Watch for the closing announcement, which is expected later this month. The closing will trigger the delisting of Gamehost from the TSX and the formal transfer of the three properties to Pure's operating structure.</p>
+
+    <p><strong>2. Online gaming plans.</strong> IGP has stated publicly that it plans to enter the Alberta online market. Watch for announcements of an Alberta online gaming brand, partnerships with established platform providers, and AGLC registrations. The first IGP-branded online product in Alberta will be a significant marker for how Indigenous-led gaming groups intend to compete with major U.S. and European operators in the Canadian online market.</p>
+
+    <p><strong>3. Branding decisions at the property level.</strong> The three Gamehost casinos currently operate under their own brands (Deerfoot Inn &amp; Casino, Great Northern Casino, Rivers Casino). Pure will need to decide whether to retain those brands, rebrand them under the Pure Casino name, or adopt a hybrid approach. Brand loyalty at the property level in Alberta is meaningful — Deerfoot in particular has decades of local brand equity — so a clean rebrand would carry reputational risk that IGP is unlikely to take on lightly.</p>
+
+    <h2>The Bottom Line</h2>
+
+    <p>Pure Casino Entertainment's clearance to acquire Gamehost is the most significant Indigenous-led gaming transaction in Western Canada in the past year. It consolidates Pure's Alberta land-based footprint to seven casinos, brings VICI Properties into the deal as the real-estate counterparty, and sets up IGP for an entry into Alberta's regulated online gaming market that opens July 13, 2026.</p>
+
+    <p>For Ontario readers, the deal is most interesting as a marker of where the broader Canadian iGaming landscape is heading. The Indigenous ownership model, the omnichannel retail-and-online integration, and the VICI master-lease structure are all elements that will likely appear in Ontario as the province's online market matures. The Pure/Gamehost deal is the cleanest version of all three in a single transaction.</p>
+
+    <p>For more on the Ontario-specific context — particularly the channelization rate that now exceeds 91% and the April 2026 monthly report — see our <a href="ontario-igaming-channelization-record-91-percent.html">Channelization 91% explainer</a> and our <a href="ontario-igaming-april-2026-monthly.html">April 2026 monthly report explainer</a>.</p>
+  </div>
+  <footer class="article-footer">
+    <div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <span itemprop="name">PlayCanadianCasino Editorial Team</span>
+    </div>
+    <div class="rg-footer">
+      <p>Problem gambling help: <a href="tel:1-866-531-2600">ConnexOntario 1-866-531-2600</a></p>
+    </div>
+  </footer>
+
+            </div>
+
+            <div style="margin: 40px 0 20px;">
+                <a href="/blog/" class="btn btn-outline" style="color: var(--green-dark); border-color: var(--green-primary);">← Back to News & Guides</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-icon">🍁</span>
+                        <span class="logo-text">Play<span>CanadianCasino</span></span>
+                    </a>
+                    <p>Independent casino reviews for Ontario players. All casinos shown are AGCO-licensed.</p>
+                    <p class="footer-disclaimer">Terms apply to all bonuses. Must be 19+ and physically located in Ontario. Gamble responsibly.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Reviews</h4>
+                    <ul>
+                        <li><a href="/reviews/leovegas.html">LeoVegas Review</a></li>
+                        <li><a href="/reviews/betmgm.html">BetMGM Review</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="/#methodology">How We Rate</a></li>
+                        <li><a href="/blog/">News & Guides</a></li>
+                        <li><a href="/#responsible">Responsible Gambling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PlayCanadianCasino.ca — For educational and informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=15"></script>
+<!-- Custom event tracking for affiliate conversions (added by inject-umami.py) -->
+<script id="umami-track-casino">
+(function() {
+  if (typeof window.umami === 'undefined') {
+    // Umami not loaded yet — wait for it
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.umami !== 'undefined') initUmamiTrackers();
+    });
+  } else {
+    initUmamiTrackers();
+  }
+
+  function initUmamiTrackers() {
+    // Track all clicks, then filter to affiliate + outbound
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+
+      var href = link.getAttribute('href') || '';
+      var hostname = link.hostname || '';
+      var currentHost = window.location.hostname;
+
+      // Skip same-page anchors, mailto, tel, internal nav
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+          href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+      // Affiliate link: contains ?s=sp51774 (our tag) — this is the conversion event
+      if (href.indexOf('s=sp51774') !== -1) {
+        var operator = (link.getAttribute('data-casino-link') || hostname || 'unknown');
+        var page = window.location.pathname;
+        window.umami.track('Casino Click', { operator: operator, page: page, href: href });
+        return;
+      }
+
+      // Other outbound link to a different domain — useful for link-building tracking
+      if (hostname && hostname !== currentHost && !hostname.endsWith('playcanadiancasino.ca')) {
+        window.umami.track('Outbound Click', { domain: hostname, page: window.location.pathname, href: href });
+      }
+    }, true);  // capture phase to catch programmatic clicks
+
+    // Optional: track form submissions (for future "Join Now" forms on review pages)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (form && form.action && form.action.indexOf('s=sp51774') !== -1) {
+        window.umami.track('Conversion', { page: window.location.pathname });
+      }
+    }, true);
+  }
+})();
+</script>
+
+</body>
+</html>
