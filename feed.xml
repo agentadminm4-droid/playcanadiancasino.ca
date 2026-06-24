@@ -10,13 +10,36 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Tue, 23 Jun 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Spinberry's Itzcoatl's Empire Ditches Mystery for a Fully Transparent Bonus Round</title>
+      <link>https://playcanadiancasino.ca/blog/spinberry-itzcoatl-empire-transparent-bonus-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/spinberry-itzcoatl-empire-transparent-bonus-june-2026.html</guid>
+      <description><![CDATA[<p>Spinberry rolled out Itzcoatl's Empire on Wednesday, June 24, 2026 — an Aztec-themed online slot whose defining feature is honesty about how close a player is to the bonus round. According to Dan Katz's coverage on Ve...</p>]]></description>
+      <pubDate>Wed, 24 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎰 Slot Release</category>
+      <schema:Article schema:datemodified="2026-06-24">
+        <schema:headline>Spinberry's Itzcoatl's Empire Ditches Mystery for a Fully Transparent Bonus Round</schema:headline>
+        <schema:description>Spinberry launched Itzcoatl's Empire on June 24, 2026 — a 6x5 cascade Aztec slot whose mini-grid progress meter makes the bonus trigger fully visible to players, distributed via the Pragmatic Play aggregation platform.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/spinberry-itzcoatl-empire-transparent-bonus-june-2026.jpg</schema:image>
+        <schema:datepublished>2026-06-24</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/spinberry-itzcoatl-empire-transparent-bonus-june-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>Yggdrasil Launches YGG Champions — A New House-of-Brands Programme for Slot Studios</title>
