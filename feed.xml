@@ -10,13 +10,36 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Wed, 24 Jun 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Ontario iGaming Posts $413 Million in May Revenue on $9.48 Billion in Wagers — Casino Handle Nears March Record as Betting Slips</title>
+      <link>https://playcanadiancasino.ca/blog/ontario-igaming-may-2026-monthly.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/ontario-igaming-may-2026-monthly.html</guid>
+      <description><![CDATA[<p>iGaming Ontario's May 2026 monthly report posted $9.48B in total wagers, $413.1M in NAGGR, and 1.257M active player accounts. Casino drove 88% of wagers; betting slipped 7% MoM.</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>Report</category>
+      <schema:Article schema:datemodified="2026-06-25">
+        <schema:headline>Ontario iGaming Posts $413 Million in May Revenue on $9.48 Billion in Wagers — Casino Handle Nears March Record as Betting Slips</schema:headline>
+        <schema:description>iGaming Ontario's May 2026 monthly report posted $9.48B in total wagers, $413.1M in NAGGR, and 1.257M active player accounts. Casino drove 88% of wagers; betting slipped 7% MoM.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/ontario-igaming-may-2026-monthly.jpg</schema:image>
+        <schema:datepublished>2026-06-25</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/ontario-igaming-may-2026-monthly.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>ToonieBet Expands Ontario Footprint with Hamilton Tiger-Cats Deal</title>
