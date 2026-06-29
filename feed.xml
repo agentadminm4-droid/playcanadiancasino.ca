@@ -10,13 +10,40 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Fri, 26 Jun 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>AGCO Fines Great Canadian Entertainment $120,000 Over Unauthorized Gaming System Software at Four Casinos</title>
+      <link>https://playcanadiancasino.ca/blog/agco-fines-great-canadian-entertainment-120000-unauthorized-software-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/agco-fines-great-canadian-entertainment-120000-unauthorized-software-june-2026.html</guid>
+      <description><![CDATA[<p>Toronto, ON — The Alcohol and Gaming Commission of Ontario (AGCO) has ordered monetary penalties totalling $120,000 against Great Canadian Entertainment (GCE) for using unauthorized gaming system software at four Ontario casino sites. The Orders of Monetary Penalty, announced June 29, 2026, follow an AGCO review of 40 instances where revoked or unapproved bill validator software was deployed between February 20 and March 15, 2025.</p>]]></description>
+      <pubDate>Mon, 29 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>📈 News</category>
+      <schema:Article schema:datemodified="2026-06-29">
+        <schema:headline>AGCO Fines Great Canadian Entertainment $120,000 Over Unauthorized Gaming System Software at Four Casinos</schema:headline>
+        <schema:description>AGCO has ordered Great Canadian Entertainment to pay $120,000 in monetary penalties after 40 instances of revoked or unapproved bill validator software were installed at four Ontario casino sites between February and March 2025.</schema:description>
+        <schema:datePublished>2026-06-29</schema:datePublished>
+        <schema:author>
+          <schema:Organization>
+            <schema:name>PlayCanadianCasino</schema:name>
+          </schema:Organization>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>
+            <schema:name>PlayCanadianCasino</schema:name>
+            <schema:url>https://playcanadiancasino.ca/</schema:url>
+          </schema:Organization>
+        </schema:publisher>
+        <schema:image>https://playcanadiancasino.ca/images/articles/agco-fines-great-canadian-entertainment-120000-unauthorized-software-june-2026.jpg</schema:image>
+      </schema:Article>
+    </item>
 
     <item>
       <title>Play'n GO's Triple Launch Fortune Wild Stacks Three Combinable Wild Modifiers</title>

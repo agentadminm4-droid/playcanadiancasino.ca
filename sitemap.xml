@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://playcanadiancasino.ca/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://playcanadiancasino.ca/reviews/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -63,6 +63,12 @@
   <url>
     <loc>https://playcanadiancasino.ca/blog/agco-enforcement-relax-gaming-unregulated-2026.html</loc>
     <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playcanadiancasino.ca/blog/agco-fines-great-canadian-entertainment-120000-unauthorized-software-june-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -105,6 +111,12 @@
   <url>
     <loc>https://playcanadiancasino.ca/blog/game-on-ontario-gift-card-launch-june-2026.html</loc>
     <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playcanadiancasino.ca/blog/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.html</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -193,6 +205,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://playcanadiancasino.ca/blog/playngo-triple-launch-fortune-wild-slot-june-2026.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playcanadiancasino.ca/blog/pragmatic-play-fury-of-anubis-tumble-multiplier-june-2026.html</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://playcanadiancasino.ca/blog/pragmatic-play-hell-butcher-slot-release-june-2026.html</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
@@ -233,11 +257,5 @@
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://playcanadiancasino.ca/blog/playngo-triple-launch-fortune-wild-slot-june-2026.html</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
