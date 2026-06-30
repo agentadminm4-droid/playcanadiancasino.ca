@@ -10,13 +10,49 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Mon, 29 Jun 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Yggdrasil's MultiFly! 2 MultiMax™ Returns With Persistent Wilds and a 10,311x Max Win</title>
+      <link>https://playcanadiancasino.ca/blog/yggdrasil-multifly-2-multimax-ontario-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/yggdrasil-multifly-2-multimax-ontario-june-2026.html</guid>
+      <description><![CDATA[<p>Slot players at AGCO-licensed Ontario online casinos are getting a major sequel this week, after Yggdrasil confirmed on June 30, 2026 that MultiFly! 2 MultiMax™ — the long-awaited follow-up to the studio's 2020 Amazon...</p>]]></description>
+      <pubDate>Tue, 30 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎰 Slot Release</category>
+      <schema:Article schema:datemodified="2026-06-30">
+        <schema:headline>Yggdrasil's MultiFly! 2 MultiMax™ Returns With Persistent Wilds and a 10,311x Max Win</schema:headline>
+        <schema:description>Yggdrasil's MultiFly! 2 MultiMax™ is a 5x3 Amazon-themed slot sequel with 243 ways to win, an upgraded MultiMax™ reel-multiplier engine, persistent wilds across avalanches, an RTP up to 96%, and a 10,311x max win — rolling out across AGCO-licensed Ontario operators this week.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/yggdrasil-multifly-2-multimax-ontario-june-2026.jpg</schema:image>
+        <schema:datepublished>2026-06-30</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/yggdrasil-multifly-2-multimax-ontario-june-2026.jpg"/>
+      </schema:Article>
+    </item>
+
+    <item>
+      <title>OLG Selects Intralot Canada to Modernize Ontario Lottery System, Targeting 2029 Rollout</title>
+      <link>https://playcanadiancasino.ca/blog/olg-intralot-canada-lottery-modernization-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/olg-intralot-canada-lottery-modernization-june-2026.html</guid>
+      <description><![CDATA[<p>The Ontario Lottery and Gaming Corporation (OLG) has selected Intralot Canada Ltd., a subsidiary of Bally's Intralot Group, as its new lottery technology provider following a competitive procurement process. The multi-year modernization is expected to be fully deployed by 2029, replacing the legacy platform that underpins LOTTO MAX, LOTTO 6/49, LOTTARIO, and DAILY GRAND.</p>]]></description>
+      <pubDate>Mon, 29 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>📈 News</category>
+      <schema:Article schema:datemodified="2026-06-29">
+        <schema:headline>OLG Selects Intralot Canada to Modernize Ontario Lottery System, Targeting 2029 Rollout</schema:headline>
+      </schema:Article>
+    </item>
 
     <item>
       <title>AGCO Fines Great Canadian Entertainment $120,000 Over Unauthorized Gaming System Software at Four Casinos</title>
