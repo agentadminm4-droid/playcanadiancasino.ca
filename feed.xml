@@ -11,13 +11,36 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Thu, 02 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Amusnet Rolls Out a Summer 2026 Live Dealer Roulette Portfolio — Greek Roulette 500x, VIP LIVE Roulette, and an Ontario Footprint</title>
+      <link>https://playcanadiancasino.ca/blog/amusnet-summer-live-roulette-portfolio-ontario-july-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/amusnet-summer-live-roulette-portfolio-ontario-july-2026.html</guid>
+      <description><![CDATA[<p>Amusnet used July 3, 2026 to bundle its summer 2026 live dealer roulette roadmap into a single portfolio announcement, surfacing the rollout that Ontario players can now actually see in lobby tiles. According to the G...</p>]]></description>
+      <pubDate>Fri, 03 Jul 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎥 Live Dealer</category>
+      <schema:Article schema:datemodified="2026-07-03">
+        <schema:headline>Amusnet Rolls Out a Summer 2026 Live Dealer Roulette Portfolio — Greek Roulette 500x, VIP LIVE Roulette, and an Ontario Footprint</schema:headline>
+        <schema:description>Amusnet rolled out a Summer 2026 live dealer roulette portfolio on July 3, anchored by Greek Roulette 500x (released June 30), VIP LIVE Roulette launching July 7, and Italian Roulette on August 4 — distributed to AGCO-licensed Ontario operators following the provider's Gaming-Related Supplier registration in April 2026.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/amusnet-summer-live-roulette-portfolio-ontario-july-2026.jpg</schema:image>
+        <schema:datepublished>2026-07-03</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/amusnet-summer-live-roulette-portfolio-ontario-july-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>NetEnt Reopens the Iconic Fruit Shop — Grand Re-Opening Brings a 36-Step Flavor Meter and 5,000x Max Win</title>
