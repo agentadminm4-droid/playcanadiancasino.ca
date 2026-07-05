@@ -71,7 +71,7 @@
                     </ul>
                 </nav>
                 
-                <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-overlay">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -79,6 +79,20 @@
             </div>
         </div>
     </header>
+
+    <div class="mobile-overlay" id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Mobile menu">
+        <nav>
+            <ul>
+                <li><a href="#top-casinos">Top Casinos</a></li>
+                <li><a href="#best-for">Best For</a></li>
+                <li><a href="#comparison">Compare</a></li>
+                <li><a href="reviews/">Reviews</a></li>
+                <li><a href="blog/">Guides &amp; News</a></li>
+                <li><a href="#responsible">Responsible Gambling</a></li>
+            </ul>
+            <a href="#top-casinos" class="mobile-cta">Get Started</a>
+        </nav>
+    </div>
 
     <main>
         <!-- Hero Section -->
