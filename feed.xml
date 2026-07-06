@@ -11,13 +11,36 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Fri, 03 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Pragmatic Play Powers Up the Big Bass Franchise With Big Bass Blast — 5x3 Slot, 2x-10x Wild Multipliers, and 5,000x Max Win</title>
+      <link>https://playcanadiancasino.ca/blog/pragmatic-play-big-bass-blast-ontario-july-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/pragmatic-play-big-bass-blast-ontario-july-2026.html</guid>
+      <description><![CDATA[<p>Pragmatic Play dropped the next chapter in its most-played slot franchise on July 6, 2026 with the global launch of Big Bass Blast, a 5x3 release that pairs the studio's signature money-collect mechanic with random wi...</p>]]></description>
+      <pubDate>Mon, 06 Jul 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎰 Slot Release</category>
+      <schema:Article schema:datemodified="2026-07-06">
+        <schema:headline>Pragmatic Play Powers Up the Big Bass Franchise With Big Bass Blast — 5x3 Slot, 2x-10x Wild Multipliers, and 5,000x Max Win</schema:headline>
+        <schema:description>Pragmatic Play's Big Bass Blast is the latest entry in the Big Bass franchise, a 5x3 slot with 10 paylines, random 2x-10x wild multipliers on reels 1 and 5, an expanding free spins round with hook and bazooka mechanics, an RTP of 96.50% (with 95.50% and 94.50% alternate tiers), and a 5,000x max win — rolling out across AGCO-licensed Ontario operators today.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/pragmatic-play-big-bass-blast-ontario-july-2026.jpg</schema:image>
+        <schema:datepublished>2026-07-06</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/pragmatic-play-big-bass-blast-ontario-july-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>Amusnet Rolls Out a Summer 2026 Live Dealer Roulette Portfolio — Greek Roulette 500x, VIP LIVE Roulette, and an Ontario Footprint</title>
@@ -152,33 +175,6 @@
     </item>
 
     <item>
-      <title>Gaming Corps Adds Soccer-Themed Slots to OLG Ahead of FIFA World Cup</title>
-      <link>https://playcanadiancasino.ca/blog/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.html</link>
-      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.html</guid>
-      <description><![CDATA[<p>Sweden-based slot studio Gaming Corps announced on June 25, 2026 the launch of a slate of soccer-themed and broader slot content on the Ontario Lottery and Gaming Corporation (OLG), the provincial crown corporation that operates OLG.ca and related digital gambling products. The rollout adds the Goals to Glory soccer franchise and other Gaming Corps titles to OLG's regulated Ontario digital casino library.</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 18:00:00 +0000</pubDate>
-      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
-      <category>📈 News</category>
-      <schema:Article schema:datemodified="2026-06-25">
-        <schema:headline>Gaming Corps Adds Soccer-Themed Slots to OLG Ahead of FIFA World Cup</schema:headline>
-        <schema:description>Gaming Corps launched a slate of soccer-themed and broader slot content on the Ontario Lottery and Gaming Corporation on June 25, 2026, timed to the FIFA World Cup. The rollout adds the Goals to Glory franchise and other Gaming Corps titles to OLG's regulated Ontario library.</schema:description>
-        <schema:datePublished>2026-06-25</schema:datePublished>
-        <schema:author>
-          <schema:Organization>
-            <schema:name>PlayCanadianCasino</schema:name>
-          </schema:Organization>
-        </schema:author>
-        <schema:publisher>
-          <schema:Organization>
-            <schema:name>PlayCanadianCasino</schema:name>
-            <schema:url>https://playcanadiancasino.ca/</schema:url>
-          </schema:Organization>
-        </schema:publisher>
-        <schema:image>https://playcanadiancasino.ca/images/articles/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.jpg</schema:image>
-      </schema:Article>
-    </item>
-
-    <item>
       <title>Play'n GO's Triple Launch Fortune Wild Stacks Three Combinable Wild Modifiers</title>
       <link>https://playcanadiancasino.ca/blog/playngo-triple-launch-fortune-wild-slot-june-2026.html</link>
       <guid isPermaLink="true">https://playcanadiancasino.ca/blog/playngo-triple-launch-fortune-wild-slot-june-2026.html</guid>
@@ -244,6 +240,33 @@
           <schema:Organization>PlayCanadianCasino</schema:Organization>
         </schema:publisher>
         <schema:image url="https://playcanadiancasino.ca/images/articles/ontario-igaming-may-2026-monthly.jpg"/>
+      </schema:Article>
+    </item>
+
+    <item>
+      <title>Gaming Corps Adds Soccer-Themed Slots to OLG Ahead of FIFA World Cup</title>
+      <link>https://playcanadiancasino.ca/blog/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.html</guid>
+      <description><![CDATA[<p>Sweden-based slot studio Gaming Corps announced on June 25, 2026 the launch of a slate of soccer-themed and broader slot content on the Ontario Lottery and Gaming Corporation (OLG), the provincial crown corporation that operates OLG.ca and related digital gambling products. The rollout adds the Goals to Glory soccer franchise and other Gaming Corps titles to OLG's regulated Ontario digital casino library.</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>📈 News</category>
+      <schema:Article schema:datemodified="2026-06-25">
+        <schema:headline>Gaming Corps Adds Soccer-Themed Slots to OLG Ahead of FIFA World Cup</schema:headline>
+        <schema:description>Gaming Corps launched a slate of soccer-themed and broader slot content on the Ontario Lottery and Gaming Corporation on June 25, 2026, timed to the FIFA World Cup. The rollout adds the Goals to Glory franchise and other Gaming Corps titles to OLG's regulated Ontario library.</schema:description>
+        <schema:datePublished>2026-06-25</schema:datePublished>
+        <schema:author>
+          <schema:Organization>
+            <schema:name>PlayCanadianCasino</schema:name>
+          </schema:Organization>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>
+            <schema:name>PlayCanadianCasino</schema:name>
+            <schema:url>https://playcanadiancasino.ca/</schema:url>
+          </schema:Organization>
+        </schema:publisher>
+        <schema:image>https://playcanadiancasino.ca/images/articles/gaming-corps-ontario-lottery-gaming-soccer-content-june-2026.jpg</schema:image>
       </schema:Article>
     </item>
 
