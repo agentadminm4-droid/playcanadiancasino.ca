@@ -11,13 +11,36 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Tue, 07 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>Push Gaming's Reel Hot Games Studio Releases Jiggy's Pot O'Gold — A Compact 3x3 Irish Slot With Cash Collection, 96.28% RTP, and 15x-1,000x Jackpot Tiers</title>
+      <link>https://playcanadiancasino.ca/blog/push-gaming-jiggys-pot-ogold-ontario-july-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/push-gaming-jiggys-pot-ogold-ontario-july-2026.html</guid>
+      <description><![CDATA[<p>Push Gaming released Jiggy's Pot O'Gold globally on July 8, 2026 — a compact 3x3 Irish-themed slot built by the studio's Reel Hot Games sub-studio and rolled out across the studio's worldwide distribution network on t...</p>]]></description>
+      <pubDate>Wed, 08 Jul 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎰 Slot Release</category>
+      <schema:Article schema:datemodified="2026-07-08">
+        <schema:headline>Push Gaming's Reel Hot Games Studio Releases Jiggy's Pot O'Gold — A Compact 3x3 Irish Slot With Cash Collection, 96.28% RTP, and 15x-1,000x Jackpot Tiers</schema:headline>
+        <schema:description>Push Gaming's Reel Hot Games sub-studio releases Jiggy's Pot O'Gold, a compact 3x3 Irish-themed slot with a cash-collect mechanic, fixed jackpot tiers from 15x up to 1,000x, an RTP of 96.28% at the top tier, low-medium volatility, and an unlimited Cash Booster feature during the Instant Prize bonus round — rolling out across AGCO-licensed Ontario operators today.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/push-gaming-jiggys-pot-ogold-ontario-july-2026.jpg</schema:image>
+        <schema:datepublished>2026-07-08</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/push-gaming-jiggys-pot-ogold-ontario-july-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>AGCO Fines Great Canadian Entertainment $170,000 for Money Laundering Reporting Failures at Pickering Casino Resort</title>
