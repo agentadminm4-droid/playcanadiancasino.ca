@@ -1,7 +1,8 @@
 {
   "last_pick": "news",
-  "last_pick_date": "2026-07-07",
+  "last_pick_date": "2026-07-08",
   "consecutive_silent": 0,
-  "last_silent_date": null,
+  "weekend_silent_count": 2,
+  "last_silent_date": "2026-07-07",
   "written_guides": []
 }
