@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A practical guide to slot volatility, RTP, and hit frequency for Ontario players — how the three mechanics interact, how to match them to your bankroll, and where to find AGCO-licensed operators that publish the numbers.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicons (data URI - bypasses all browser caching) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADJ0lEQVR42m2TS0ycZRSG3/N9/z/zzz9DgSlTRolV4hi8xAhdmNaqNMAAEhzrYrqpC6sbY73UBFMTMEjSuPMSTLowxo3xVjRxYWzamdIhRhpdGEfDaJNqo0XKgHIZZvjv33GBmVDSd3U251mc9zxEABgA0HEHHtk7YO6SnawoJiQt1KruNAr5cwSAs1mJqakAO0LY+2B7a+fukVf6kkfKNdUy+e0KTEPAdgIkGySgVOHa3MoJmvuueDOIyBy+/cPvxx54/qn9iZaligt4rs2ep0JS4LOjbcEnT7cfau2IX9J7eh6nqakA4+PiBsA/dhB/O7dgpUaL73189tqhxpCXUo61jy3nrTPFDflwh+lku5oiLoXOJIf778bEBG+HaLNXqz/Mnlt8Dn/OXhIArHhPmzV9sQigOKnSfH2TR3KlVevWRCRS27BeB3AUpVIdQARAADAG+3oDoR8n8JpUOFm1rNXWUOi2MsnLAMlH74zS/Ipd/uPzv1KEn2sMEAAWkaHupHHgwJ5AaO8IM/IkhHjC9TebMDPj11x3ozEsKiRINBuESEjsRiqWrBcAQGMyv1RxM0IMA0EQIPAvSD16X2Sw2wosgEExZoVETKNfFm2GKdX2I2oAEYX0Lvg+2PUUC61XGOFsUPEHpAkZ6Ho4Cs9LNOj6YsVfTfj/Li9v7TIACCZIIgKYFYQQImLE2bKvOLnceSHkiGMH2NdmqKpPvLnh/7RSKlX/b2ELAKV+ZN/7DQQbzOts2y9b5aV7w/19xxAO97DrBcP3xGT+So0Eq48UABQK9RaEXV5+CZb1LtnewQh7/fbX30wazc0PhUzjdHXNCY50NfKSBfnr7+uXj3fqXzBAmJnZ8dLd3UZ93t/7YjQzbCM9xJ3HDvvvf/CMG81k2Eyn+wEA2ay8wQVzaPBZFqT7dtB+MNXw2Ine5P2vfjWvJEO9lm7hsfy6/vfC+pu4mBu9mQua0LSTNQrfNZaJ442BPcjNrSHdsUvc0qiJsfOrmC9XTotCflRtLaudNmoMzpFjXzd8R73w6VVZsZRoa9LVqdyydCznrJjOn1Lj4wITE6pu/rb8B9dgcqYGgrY+AAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJRklEQVR42p1Xa3BV1RX+1t773HPPfSW5IbeEpCBakUYqnYaXogaEINqMr5Fa0XY6VLFaqXTaqv2hMUxb2jqjTnWsjsVx2lpbL8xYReUtQZ5B9EElPiBAMDGEV5J77zn3cc7eqz8S0FZAcP8458fee61v1vq+tdYmfLIIDQ0Sra0BARAAAkA406fXklKpkELMgIvwcbRs377u7u7u/Mmb8+ZJpNMaX2DRpw0IALMaL4muzVU0glSTiquplhKjwRwnIYiZAWYPRB+Duc0hvXzR/p7XWzo6SsM2DAA+ZwAEYOqcacntrnMPbOuOcTWxMdfUJbBxTxa7ewuwLcAYZhANARYCUknkvAAIgt1J5Tcff3P9CgBAc7NAS4s5awD19fVWux27DU54yYy6ii8vmJTAlWOdoKbc4hlP7qMtXZ6I2gKGh6MFQBDYzRuzcFoF9vQH6q0PXSRsXmbv61p8pKMjdy4pUe8mRyysq40/9bMrK3B9Xdy3LSGEAB13NR/KBpCSwCABsAFgJIFyBSMaL4rJR2+oRklz8IO/9mDF+/nvxy8YM8lOJG4uptN7zzYShOmNj7x49wUPzZ+cCLI5LfsGfV69x1Ovvedi8wEXRmtAG5AUIKXga8YIZfSW+84nJyTJ14ywRbjuuf3+tp4gFFemm44NzMhs3do5zOUzghBg9t98Lysy2cD8dsMxOfu5g+relw7sX93e97R2c7dabmZqMJiZIL3sZeS5d6uguHkwIPnLtUeIwGwYMAw8fmONlVTG96VVG5TFX8Ell0TR3PwJ0U+XglAihDUfuubSp7rCHfszH4DM0ttrxfK//HmDWwBQGD7oD/22EfBMdG7jPX/YXPodg/DYDSPBIFKCUB5VKjNQ8q2IMyEyMrXEa2n5yefxQdrjL5pZkOqq3r7Mk/Oq/Fvee+Otnbt27fO5oUGhq4tPMjuVEqiqkpgyhUqvvtZWcfF5h7Z26+um1obN7r4i3frCQRz2NGIhIpuNKULUx0bVvFh8443+4VScUp4UuXbuw0Jr3129dimfqAmHDxNaW4OyiRPLi6lkc6Gn7wF0dAQnjdTXK2pv90NzGjdWlMcajmWLAYOlJQm2IEyrtf31PTpk57PNuTUblqChQaG1NTglB8JHjz+RW712KTc3CwCEdJqHD4tSzcgVFHIWQynrU2RixGLMACkTPHu8qGEpQkgJEBG5PmNCjSMSFrgEdQ0AoLX1tClQx9vaMpg3T2LHDgWgGJ4z+2FIkSTDMXIiV3Gh4MYdZxQ3NMhcKrUH6bTGjFaDVrAoee8oOxywEArMLIjY14wRUSmSNlE/Y/yoyZMrP96589gwGfmzKgCAdFpj1aoiABCJ8SKe+BFsewEXixpAOEhVrQ9s61dIp3lI30OG6Gj2GBuTBQl82ngyIuEosBGi3IvbNcM8OqUalD1r1vm26w6UIpE5Ba2Xs6AolUoaxmgACkIyjB4Fg8UADFmutIb6FEBSMkAndc4AlCQkIxLaMJOQRFLFAQAdHacGANv+XskJ30WSUuHBgV4wKRBJMAAiQ5ZSyLjfza9761ByypTE8ba2zInLxVgsQUQxgEEABYZRHhYocwQG8gZKAIGRZy5EJFCkkJWCgYYTXQaByaw1QGAopTjvtQrf7Heu++ZuL5FYFG1svCpy9RXVACAdZxwsZcMYTUTwA8bYCgsEoiOuFgqGjSkMAa6r41NHACAYw2DDZFkXgAEYAwASWoNJXKhjkU0gSRSL/EIXilm4uBgAjBIzISWgtSGCYJ8xbYyDQ9mASyWmWJgzyBT6AAAtLXzqUgyAiAgMgjEGbBhEABGBGaSsURCCoLUPw54o+bcU3n77IwAKUlw/DFYwQCDQ7HExbO/KM4QAMR/I">
+    <link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAUm0lEQVR42u1baZRdVZX+9jn33nffXFNGKqOFhAQIsRiCwbwKGcCIq3VpMTSCoItWEJuFrUtttcu0E4tusUVNA2o70dqLB7QiCCgkeUnIgMQwFpCQhApJJRWsVNWrN9zhnLP7x7tVqYQgqSRgu1bOyk1e8uree87e3/n2t/c+AU6ME+PEODFOjL/KEGhvlwBoVFftnr/xMWIRIrpGNTo6xPGaCr2NyyYAjPZ2iXxeZ2fPnmomjvvWoJHTEWpOJSQpJgKBwYfMi8AAsRBgDBTvqBTW/BS5nIVCQf2tGKC2+A4ILIOpX/DupRU3/RPf2GNbJzj47MIxWP74fqztqiLhChjDoNod4GGkEHzDcCSA/oHPV1atvuV4GIHetsUDFgBVd9EFHyki9vOEFPQvixqDq89rpIwreP53t+GJ3Z5MxiQb5hG3AUQEpRnNKWF2lTRJ27IxWLyuuqJw+7EaQbzlRAdww+mnNycvXHgnAej3rb+f3hinh66d7F/fNkZ6IYs9xVAMhkYKQQLMAoAEWAIQBAjDLC2CyF89RVwzJ4NqKQytdHp54vzzL0ahoI6FGMVb6vmODrS0IFYaP/7+Cpz5APD+WZnK/ddO4dmT4tQzUHOcMUTVgIkIzAdQyQBICiKvavCBWWnMmODSV5aOF2dPcqnsG6Zs6q7Y3LktyOf10a7lrTNALiexbJnZObntzkRDds6/Lm7aywB+dMUkOaXRoT8ParIkoSltYdDXKPnGSEEGgAKgATABHBqG6xA+Oa+Ri56mmEX0tfeNExYbw04sKzPJXwCw0N5OR7OlxVsW5goFFc+95wZOpa+Km8BcNCvjAEA10Kj6BilXIBkT+PHjvfzhH3eZQQ3LcmyLbduGbVuQUgpBxqtqvnxOluc0x1ENmEs+83nTk1g6My0qRS+UqdTc+AW5G5DPa7S3i7++ATo6BPJ5nTzvrNOQSv2bzRz2Vo1YuaUEAPA1UJe00D0Q8qU/2qE/fd9ea0eZbdLhHi4OPqL7+n7ExeI98PztEMKSlhS7BwIu+4osWXOwNuBrzqmDFBBGacMx98upM88cg3zejBYFx98AnZ0EQJhU9g7Yjgs2xoCwZluFAOCkOhsbtpdx4Q928GOvhk7G1c+nK4NXeZ0vzaw+tuKiYNXqa73HVrbXPfPs6bqveL3rmMrvX6jIrz38GtfFBQiEsq+pdVKSZ05wUfWVlnG30TTWfxIAI5cbFSHK4w79fF4ncrmPI5P+FJQKARJCCtHd63d7W7f+sOm0GZf84296Tt1X1VYD+Tf3/+4PV3ivdP0JAwNepPAkzjmHShs3Bqqr68lY09g1Vsa95ImdnjVvSoKnj4mJQd9gQsaiLT0+Nm6vkBsTZNicPCZbf0dp/fpgNCgQx5X183lT39qaNQl3GYwxtZDGEACqkaL5zP17rL7AIB0OfmT/Q49+EYCHXM4CQFi2zKBQUBGrE9rbndK6dWvcavl6BSHvWL+fAeaMK/GnXR7f/2yRYnFBSmmNmDupP51ePFoUiOPK+gD7dZlPi3h8IozRICEiHQsSNackHXLtgf4bi4+t+W/8Q6sNgCIhw2Ae6TlGPh8gl7P2P7b65w4Hq1bs8OzugVBXQuYrf7aTdg7WeMEGGxAxHOuDAICxY/lIp239RTKr7ec3H/v2EQBk5s5sCBznRlLKgCFAkZYlAhkdAoDoG/jq4Lp169HeLnFnPjwYQ/RGE6e0Ud/preq23zxTpDXbK7StN6BMyuJKaOjkjKQ9PlMFlENLSwz5vH+QlHy7pLC7cMHnRDZ7CwdBeMC4pEGQNFh8b2XVmkcOkccHyWW3bf5yCtTXq+vWdY/4GQLAE1pbE31jGrcIyznJV0rHbCmIGeXAYP5U13QP... [truncated]
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAABqXElEQVR42u29d4BdV3Uu/q21z7l9etOo2iqWJRdsywZMDKPQAiR5IQ9EAl4KpNBSSELyy0sDMZD3SHl5KZCEkuQBCSUM8MALCSEh8UAcShBuWG6ybHWNyoym3XbOXuv3x96n3JFssC2DpNydCKtMuXPuXnuv9a1vfR/QXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd11wS/qPoJv22JMTPAF96qmpy0A7b493fXUHTq7dpkLPji7N0B3PUUbSwCgb3z4hublm5/Oq8dUmpGBKoOgrOzfEznHp/GKv1+5X/3HkCgUBPInuYIABlQJROq+TP5jVaRQFBw+ymMP/MdHDs5jDhMTAaan424AdNf5WX5D7QAqD1xz1W9EgyM/R/09FTIGCnV7EwBBwQHBigJWQUQuIWHyH+MDgCjNU/L7nOATGAKg6v9L2TutuQ+g7M9KgFqBnji1t3T06A/NHzhwx3+GIOgGwLfmGTMA27Nm9Jnx2vV/qkMj1yEwQlZslm6TcoGoGYnYU00YQ1roLwIgzn0dv8e1861TKEhBINLk7PcXgGYfIlAiyn8dzX1zFZAxokFQ1Ln5M+WZo686c+8Dn7zUg6AbAE91yqOqRKTVKze9Oh4d/30a6K9CpAmrIcht7iBkNCNBNNfCuirrqyZGsWasrD/7kYMUVkJSVX9WU3Ku+9/5c5/8YZ9cJAQlBWtHMasKJep41/MXh0LdVYFYwyCg5boGMzOvXrzr639xKQcBd/foU7R2wQCQHURB5fqnvdeuv/w91N9fRiwRRAtKIGOgloDFmYaONyL7O/9ltd761mv1rT+yQdf2sEaREjEBAnEpiyqgcMd8doSpy2CgPqCgYFWIj5Xk49jnWLkYyKVGlCZThqJItFKx0arxPy9vv/pnMT0dY2IiuBTfpqC7U5+ifH9qOl4/XBm/97JtH7Hjq57DTBFiGwAwREQcQpdOtzGoip9+ySr85ItWYaRm9OTJFuZOqB442VaoCqkQSNNEx+XzmsRCkvaT+lBQ9wd/thPUl8D5ZMknUf5Tkq/n/o6ICAqiKCItF2NdO/5HVYYuT0+/81K8CboB8ORTSDoLspmejgfXr9p+ct2GT+jI6FYWaSKyBkQIAqJGJIiPN/HjNw3zG1++VjeOhTp3qsUzJyIAhGKBaSlyX9Ol80REbnsqVABigiZ1s4N2KKtvlVThymckMeHgnyRUXBXt8h4XEWKIjKoDh0AuEqwFqsXIjo38Qa19xaGl6elLribopkBPbvNrx+bf7QDGkSs23tJYt/FWHRrditi21WoBTAGH0MW5pqxvW/n46zbpO1+/MR4pQGaONWEBCQKPXxI0bseSpSgKf+CrO71V0mNd/R5XACpKfsMnx32a6KuK+yIq2WXgUiSrKuF8W5rLrYiMegwVgIC1bQ2qFbUb1n9s4LrrXnKppUPdAHjiz003Dgz0VS+//Fr/dwaT0NoVVwwvrF77NzI8NEJiYyhCZhACwvKxJl62tQf/+r+upudf16czMw1qxUImYL9PmQulosBi0wIE8XtYXVrjT3b1v3VbnRNcCMkprz7D0VzqQ+DkZkCaBREoYLQW2vjLV2/S/35VP9dPtSgMSTW9RJjJKrRS5sZg/1+ObN9yHaan44ugmdcNgKfsmRHJDiA8fuXWv7EbL/suV/TuMgDUbtxYop6ekokjC1EKDKFtQfZ4Q3/vFevpL3/pSi6J0Nx8zEHAQlkpyi4Fd0nKqboaEDjZp0ouQHzGk0CZCQxE6X2Q/NZXDLkLS8llQuknGyZqNCx9x/oqPe+6Gv... [truncated]
+    <link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAEAAElE... [truncated]
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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... [truncated]
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABmAwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAy1JREFUeJxtU0tsVFUY/s9/7p25986UtkOHjjaiDWOqGGPLwoCgJW2nrU0ZcFE2uBDdGPGBSQ0mrcEmxJ2PlISFMW6ML9DEhZHADGUaYwksiKPpKAlKlFo6LfYxnem5r3N+c2dMUwj/6ry+75zzfd/PGAAQBNX2EDy9tc/axNtJsShyNlspuxOQy56rnhka4nDmjIS7isHWJ1ub2zcPv9mTOFisqKbxHxfBMhBsR0KijgMolbs5vXiUTf+UvxcJpg88+Onl0SdeeX5nvGm+5AJ4rk2ep0Ic4atDLfKLF1r3NrfFLuldXftYAD5+HO8guG3L2AeZWZEcyZ/8/OzNvfUhL6kcsYOE8/7p/Crf02Y5Qx0NpstCpxODvY/A2BhtJNGmbpSvTJ2bexn+mroUrIpYV4uYuJgHgPy4StGtNRrOFJbE/XHTrKyKdwDgEBQK6wQsECiYGf093RL1IwxomSs4VhZiqTkUeqDI+DUAxp/ZFmEzi3bxz6//TjL4pUKBfgCE5kBnwti1a4tE7UO0zOcAcb/rrzXA5KRfcd3V+jCWGDJsNBiYIdwMyWhi3YDgC8Ssb1XMMhmBAVJKkP4FrkceM/s7hRSBxSxKpCAe1divczaBxdVGEbXgFyykd4DvA7meItS60QgPyZLfxy3gUtfDEfC8eJ2uz5X8pbj/78JCDVuNDxIDzgIlgmsQEU0jRsK+7mQy5xH5sGNL2NFiqLLPaG3V/3mxUCj/70KNAJS6Sr73OzCwgWiFbPsNUZzfHu7tOQzhcBe5nhx8NMqz1ysMSX1WfX8ut+4C2sWF10GIj5jt7TbJ67W//2HcaGx8KmQZp8rLjjzYUU/zAvhvf6xcO9Kuf1NVf3Lyrkh3dhrr453dr0XSgzakBqj98AH/409edCPpNFmpVG91P4jzxl6wBvpfImS6b8vW3cm6Z492Jx5/67sZxQnU26kmGs2u6P/MrrwHFzMj9+oFDTXtWIWFHx5Nx+Ddvi2QmV6GVNsmvK9ew9HzSzBTLJ3CXHZE1cB3WFjLAVCGOfYtw3fUq1/e4CWhsKVBVycyC9wRzlmcyJ5QgepjYwG41vkb6j/XYHKmMJnwtgAAAABJRU5ErkJggg==">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="64x64" href="../images/favicon-64-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/favicon-512-new.png?v=17">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-new.png?v=17">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon-new.ico?v=17">
+    <link rel="canonical" href="https://playcanadiancasino.ca/blog/slot-volatility-ontario-guide.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://playcanadiancasino.ca/blog/slot-volatility-ontario-guide.html">
+    <meta property="og:title" content="Slot Volatility for Ontario Players: A Practical Guide to RTP, Hit Frequency, and Bankroll Planning | PlayCanadianCasino">
+    <meta property="og:description" content="A practical guide to slot volatility, RTP, and hit frequency for Ontario players — how the three mechanics interact, how to match them to your bankroll, and where to find AGCO-licensed operators that publish the numbers.">
+    <meta property="og:image" content="https://playcanadiancasino.ca/images/articles/slot-volatility-ontario-guide.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Editorial photograph of three slot reels showing different symbol combinations (high-paying, mid-paying, low-paying) with a small volatility scale and an AGCO licence badge in the corner.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://playcanadiancasino.ca/images/articles/slot-volatility-ontario-guide.jpg">
+    <meta name="twitter:image:alt" content="Editorial photograph of three slot reels showing different symbol combinations (high-paying, mid-paying, low-paying) with a small volatility scale and an AGCO licence badge in the corner.">
+    <meta property="article:published_time" content="2026-07-13">
+
+    <title>Slot Volatility for Ontario Players: A Practical Guide to RTP, Hit Frequency, and Bankroll Planning | PlayCanadianCasino</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=15">
+    <link rel="alternate" type="application/rss+xml" title="PlayCanadianCasino RSS" href="../feed.xml">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Slot Volatility for Ontario Players: A Practical Guide to RTP, Hit Frequency, and Bankroll Planning",
+      "description": "A practical guide to slot volatility, RTP, and hit frequency for Ontario players — how the three mechanics interact, how to match them to your bankroll, and where to find AGCO-licensed operators that publish the numbers.",
+      "datePublished": "2026-07-13",
+      "author": { "@type": "Organization", "name": "PlayCanadianCasino" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PlayCanadianCasino",
+        "url": "https://playcanadiancasino.ca/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://playcanadiancasino.ca/blog/slot-volatility-ontario-guide.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://playcanadiancasino.ca/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Casino Guides & News",
+            "item": "https://playcanadiancasino.ca/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Slot Volatility for Ontario Players: A Practical Guide to RTP, Hit Frequency, and Bankroll Planning",
+            "item": "https://playcanadiancasino.ca/blog/slot-volatility-ontario-guide.html"
+        }
+    ]
+}
+    </script>
+
+    <link rel="alternate" hreflang="en-CA" href="https://playcanadiancasino.ca/blog/slot-volatility-ontario-guide.html">
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbce7893-7bf8-4c76-a76a-8ae8834d3051"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="PlayCanadianCasino - Home">
+                <span class="logo-icon">🍁</span>
+                <span class="logo-text">Play<span>CanadianCasino</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="/#featured">Top Casinos</a></li>
+                    <li><a href="/#offers">Bonuses</a></li>
+                    <li><a href="/blog/">News & Guides</a></li>
+                    <li><a href="/#methodology">How We Rate</a></li>
+                    <li><a href="/#responsible" class="highlight-link">19+ Play Safe</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container article-layout">
+            <div class="article-hero">
+                <div class="article-tag">🎰 Slots Guide</div>
+                <h1 class="article-title">Slot Volatility for Ontario Players: A Practical Guide to RTP, Hit Frequency, and Bankroll Planning</h1>
+                <div class="article-meta">
+                    <time datetime="2026-07-13">July 13, 2026</time>
+                    <span>•</span>
+                    <span>9 min</span>
+                    <span>•</span>
+                    <span>By PlayCanadianCasino Team</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+
+<div class="article-content">
+<p>Slot volatility, RTP, and hit frequency are the three mechanical dials that determine what a slot game feels like over a session — and knowing how they interact is the single most practical skill an Ontario player can bring to the lobby. The first two are published by every reputable studio and shown in the in-game help panel of every AGCO-licensed release. The third, hit frequency, is usually buried in the paytable or implied by the volatility rating. Used together, they answer a simple question: "Is this game going to feel steady and quiet, or loud and swingy?"</p>
+
+<p>This guide is the practical companion to our existing <a href="best-slot-games-ontario.html">Best Slot Games in Ontario</a> roundup and the broader <a href="wagering-requirements-guide.html">Wagering Requirements Guide</a>. Where those pieces cover what to play and how bonus terms interact with your play, this one covers the mechanical vocabulary that lets you compare two games side-by-side before you deposit — and decide which one actually matches your bankroll.</p>
+
+<h2>Volatility: The "How Loud Does This Game Get" Slider</h2>
+
+<p>Slot volatility (sometimes called variance) describes how a game distributes its payouts over time. A low-volatility slot pays out often, but the wins tend to be small — typically a fraction of your stake. A high-volatility slot pays out rarely, but when it does, the wins can be 50x, 100x, or more. The total RTP can be identical between the two; the experience is completely different.</p>
+
+<p>Think of volatility as a budget curve. If you load a $20 budget into a low-volatility game, you can expect to grind through 80-150 spins with regular small wins extending your playtime. If you load the same $20 into a high-volatility game, you might burn through it in 30-50 spins with no return — or you might hit a single $400 spin that turns the session around. The expected value is similar in both cases, but the experience is not. Choosing between them is choosing which experience you want to have.</p>
+
+<p>Ontario-licensed operators do not currently require volatility to be displayed in the game tile, but most studios (Pragmatic Play, NetEnt, Play'n GO, Hacksaw Gaming, Push Gaming, Yggdrasil, Relax Gaming) include it in the in-game help panel alongside the RTP. If a slot's volatility is not labeled, the rule of thumb is that games with a top payout below 500x tend to be low-to-medium volatility, 500x-2,000x is medium-to-high, and 5,000x or higher is high — but this is a rough proxy, not a published spec.</p>
+
+<h2>RTP: The "How Much of Every Dollar Comes Back" Number</h2>
+
+<p>RTP (return to player) is the long-run theoretical percentage of total wagers that a slot pays back to players. A 96% RTP slot pays back $96 for every $100 wagered across millions of spins. Ontario's regulated market sits at the higher end of the global range — most AGCO-licensed slots publish RTP between 94% and 96.5%, with some high-end Megaways and branded titles reaching 97% or slightly higher.</p>
+
+<p>RTP is not a session number. If you sit down with $50 at a 96% RTP slot, you are not "owed" $48 back. You are buying entries into a game where the long-run average is 96 cents on the dollar — but the short-run variance is governed by volatility. A 96% RTP high-volatility slot can still eat your $50 in ten spins without a single feature trigger. The number is a regulator-required disclosure, not a guarantee.</p>
+
+<p>Two practical points. First, RTP is usually fixed per game, but some operators offer configurable RTP versions of the same title. Always check the in-game help panel — if the RTP shown there is lower than the studio's published default, you are playing the lower-paying version. Second, RTP does not change based on bet size, time of day, or session length. Slots do not have "hot" or "cold" streaks that bend the math; what looks like a streak is just the variance of high-volatility math over a small sample.</p>
+
+<h2>Hit Frequency: The "How Often Does Anything Land" Number</h2>
+
+<p>Hit frequency is the percentage of spins that produce any win at all, regardless of size. A 35% hit frequency means roughly one in three spins lands some kind of payout. Most modern slots publish hit frequencies between 15% and 45%, with the average sitting around 25-30%. Low-volatility games typically cluster at the top of this range, and high-volatility games at the bottom.</p>
+
+<p>Hit frequency is the underrated third dial because it shapes the session rhythm. A 40% hit frequency at low volatility feels like a steady shower of small wins — your balance wobbles in a tight band, occasionally punctuated by a feature. A 15% hit frequency at high volatility feels like long stretches of dead spins punctuated by occasional big features. Neither is "better" — they are different experiences that suit different bankrolls and temperaments.</p>
+
+<h2>How the Three Dials Interact</h2>
+
+<p>Volatility, RTP, and hit frequency are independent parameters that together define a slot's character. Two slots can have the same 96% RTP but feel completely different because one is high-volatility with a 20% hit frequency and the other is low-volatility with a 40% hit frequency. The first will eat your bankroll in long quiet stretches and occasionally pay back in big features; the second will return small wins frequently and rarely produce a large payout.</p>
+
+<p>The combined metric that matters for bankroll planning is the "expected loss per spin." Multiply your stake by (1 - RTP). A $1 spin at 96% RTP has an expected loss of $0.04 per spin. Over 100 spins, the expected loss is $4 — but the actual outcome could be anywhere from a $60 gain (rare) to a $100 loss (common at high volatility). The volatility rating tells you which end of that distribution is more likely at your sample size.</p>
+
+<h2>Matching the Game to Your Bankroll</h2>
+
+<p>A rough but workable rule: a single session bankroll should be at least 200x your average bet size for low-volatility slots, 300x for medium volatility, and 500x or more for high-volatility slots. If you are betting $0.20 per spin, plan for at least $40 of bankroll for a low-volatility session, $60 for medium, and $100+ for high. This is not a guarantee — it is a "your session is unlikely to be cut off by a single feature dry spell" guideline.</p>
+
+<p>For Ontario players specifically, the AGCO-licensed roster gives you access to both ends of the spectrum at the same operator. The pragmatic approach is to start a new release at the lowest bet size for 30-50 spins to gauge the hit rhythm, then scale up only if the volatility profile matches your bankroll. If the game feels too quiet too quickly, drop your bet size or switch to a lower-volatility title from the same provider.</p>
+
+<p>If you want a curated list of games by volatility profile, our <a href="best-slot-games-ontario.html">Best Slot Games in Ontario</a> guide breaks the AGCO-licensed roster into low/medium/high buckets. For the budget-side of the equation — how much to deposit, how wagering requirements interact with high-volatility play, and how to plan session-by-session — the <a href="wagering-requirements-guide.html">Wagering Requirements Guide</a> covers the math side of slot planning in detail.</p>
+
+<h2>Responsible Play and the AGCO Framework</h2>
+
+<p>The same mechanical vocabulary that helps you choose the right slot also helps you set the right limits. AGCO standards require every licensed Ontario operator to offer deposit limits, time-out sessions, and self-exclusion tools directly in the player account. If you are running high-volatility play with a tight bankroll, the structural answer is to set a session deposit limit before you start — not to chase a session that has gone quiet.</p>
+
+<p>Ontario's regulated market has the strongest responsible-gaming framework in North America, with an IPSOS-commissioned study showing 91% of Ontario online players are now on regulated sites rather than offshore alternatives. The framework only works if the player uses it: set a deposit limit that matches your weekly entertainment budget, use the time-out tool if a session runs longer than planned, and remember that the math is always the same regardless of how a session feels in the moment. For operator reviews that highlight deposit-limit tools and self-exclusion integrations, see our <a href="../reviews/betway.html">Betway Ontario review</a> and <a href="../reviews/jackpot-city.html">Jackpot City Ontario review</a>.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is slot volatility and how does it affect gameplay?</h3>
+<p>Slot volatility (or variance) describes how a slot distributes its payouts over time. Low-volatility slots pay out often but in small amounts, while high-volatility slots pay out rarely but in larger amounts. A 96% RTP slot can feel very different depending on whether it is low or high volatility. Volatility is the most important dial for matching a slot to your bankroll, because it determines how long a session typically lasts and how swingy the balance curve is.</p>
+
+<h3>What RTP should I look for in an Ontario slot?</h3>
+<p>AGCO-licensed slots typically publish RTP between 94% and 96.5%, with some titles reaching 97%. Anything above 96% is in the upper tier of the global range. Always check the in-game help panel rather than relying on the lobby tile — some operators offer multiple RTP versions of the same title, and the lower-paying version is the one shown in the help panel by default at some operators.</p>
+
+<h3>What is a good hit frequency?</h3>
+<p>Most modern slots publish hit frequencies between 15% and 45%. A 25-30% hit frequency is the typical mid-range. Lower hit frequencies (15-20%) pair with high volatility and longer quiet stretches between features. Higher hit frequencies (35%+) pair with low volatility and steadier small wins. Hit frequency is rarely displayed in the lobby tile, so you usually discover it through play — which is why starting at a low bet for the first 30-50 spins is a useful diagnostic.</p>
+
+<h3>How much bankroll do I need for high-volatility slots?</h3>
+<p>A rough rule of thumb is 500x your average bet size for high-volatility sessions, 300x for medium volatility, and 200x for low volatility. At $0.20 per spin, that is $100, $60, and $40 respectively. This is not a guarantee against a quick loss — high-volatility slots can still eat $100 in 50 spins — but it gives the session enough runway to reach a feature trigger on most reasonable math.</p>
+
+<h3>Does RTP change based on bet size or session length?</h3>
+<p>No. RTP is fixed by the game's math and does not vary based on bet size, time of day, or session length. Slots do not have hot or cold streaks in the long-run mathematical sense — what feels like a streak is variance of the high-volatility math over a small sample. The total RTP across millions of spins is what the regulator certifies, not the RTP over your specific session.</p>
+
+<h3>Can I set deposit limits at Ontario casinos?</h3>
+<p>Yes. AGCO standards require every licensed Ontario operator to offer deposit limits, time-out sessions, and self-exclusion tools in the player account. Deposit limits can be set daily, weekly, or monthly and take effect immediately. Time-out sessions range from 24 hours to several weeks. Self-exclusion through the central BetGuard system is also available across all 48+ AGCO-licensed operators. These tools are the structural answer to managing a slot bankroll across multiple sessions.</p>
+
+<p>For slot game selection by volatility profile, our <a href="best-slot-games-ontario.html">Best Slot Games in Ontario</a> guide breaks the AGCO-licensed roster into low/medium/high buckets. For budget math and how wagering requirements interact with high-volatility play, see the <a href="wagering-requirements-guide.html">Wagering Requirements Guide</a>. For recent Ontario release coverage, our <a href="pragmatic-play-out-of-the-woods-ontario-july-2026.html">Pragmatic Play "Out of the Woods"</a> article and the <a href="soft2bet-wpt-royale-ontario-launch-july-2026.html">Soft2Bet × WPT Royale Ontario launch</a> coverage provide context on the current release cycle.</p>
+</div>
+</div>
+  <footer class="article-footer">
+    <div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <span itemprop="name">PlayCanadianCasino Editorial Team</span>
+    </div>
+    <div class="rg-footer">
+      <p>Problem gambling help: <a href="tel:1-866-531-2600">ConnexOntario 1-866-531-2600</a></p>
+    </div>
+  </footer>
+
+            <div style="margin: 40px 0 20px;">
+                <a href="/blog/" class="btn btn-outline" style="color: var(--green-dark); border-color: var(--green-primary);">← Back to News & Guides</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-icon">🍁</span>
+                        <span class="logo-text">Play<span>CanadianCasino</span></span>
+                    </a>
+                    <p>Independent casino reviews for Ontario players. All casinos shown are AGCO-licensed.</p>
+                    <p class="footer-disclaimer">Terms apply to all bonuses. Must be 19+ and physically located in Ontario. Gamble responsibly.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Reviews</h4>
+                    <ul>
+                        <li><a href="/reviews/betway.html">Betway Review</a></li>
+                        <li><a href="/reviews/jackpot-city.html">Jackpot City Review</a></li>
+                        <li><a href="/reviews/royal-vegas.html">Royal Vegas Review</a></li>
+                        <li><a href="/reviews/ruby-fortune.html">Ruby Fortune Review</a></li>
+                        <li><a href="/reviews/spin-casino.html">Spin Casino Review</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="/#methodology">How We Rate</a></li>
+                        <li><a href="/blog/">News & Guides</a></li>
+                        <li><a href="/#responsible">Responsible Gambling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PlayCanadianCasino.ca — For educational and informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=15"></script>
+<!-- Custom event tracking for affiliate conversions (added by inject-umami.py) -->
+<script id="umami-track-casino">
+(function() {
+  if (typeof window.umami === 'undefined') {
+    // Umami not loaded yet — wait for it
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.umami !== 'undefined') initUmamiTrackers();
+    });
+  } else {
+    initUmamiTrackers();
+  }
+
+  function initUmamiTrackers() {
+    // Track all clicks, then filter to affiliate + outbound
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+
+      var href = link.getAttribute('href') || '';
+      var hostname = link.hostname || '';
+      var currentHost = window.location.hostname;
+
+      // Skip same-page anchors, mailto, tel, internal nav
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+          href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+      // Affiliate link: contains ?s=sp51774 (our tag) — this is the conversion event
+      if (href.indexOf('s=sp51774') !== -1) {
+        var operator = (link.getAttribute('data-casino-link') || hostname || 'unknown');
+        var page = window.location.pathname;
+        window.umami.track('Casino Click', { operator: operator, page: page, href: href });
+        return;
+      }
+
+      // Other outbound link to a different domain — useful for link-building tracking
+      if (hostname && hostname !== currentHost && !hostname.endsWith('playcanadiancasino.ca')) {
+        window.umami.track('Outbound Click', { domain: hostname, page: window.location.pathname, href: href });
+      }
+    }, true);  // capture phase to catch programmatic clicks
+
+    // Optional: track form submissions (for future "Join Now" forms on review pages)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (form && form.action && form.action.indexOf('s=sp51774') !== -1) {
+        window.umami.track('Conversion', { page: window.location.pathname });
+      }
+    }, true);
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,8 +1,10 @@
 {
-  "last_pick": "news",
-  "last_pick_date": "2026-07-09",
+  "last_pick": "slots",
+  "last_pick_date": "2026-07-13",
   "consecutive_silent": 0,
-  "weekend_silent_count": 2,
-  "last_silent_date": "2026-07-08",
-  "written_guides": []
+  "weekend_silent_count": 0,
+  "last_silent_date": null,
+  "written_guides": [
+    {"topic": "slots", "slug": "slot-volatility-ontario-guide", "date": "2026-07-13"}
+  ]
 }
