@@ -1,10 +1,9 @@
 {
-  "last_pick": "slots",
-  "last_pick_date": "2026-07-13",
+  "last_pick": "news",
+  "last_pick_date": "2026-07-15",
   "consecutive_silent": 0,
   "weekend_silent_count": 0,
-  "last_silent_date": null,
-  "written_guides": [
-    {"topic": "slots", "slug": "slot-volatility-ontario-guide", "date": "2026-07-13"}
-  ]
+  "last_silent_date": "2026-07-14",
+  "written_guides": [],
+  "_update_note": "news publish — ThrillTech AGCO supplier licence (side-bet jackpot specialist, B2B B2C integration timeline Q3-Q4 2026). consecutive_silent=0; weekend_silent_count reset to 0 since last silent was Tue 2026-07-14 (not a weekend). Last-pick-date bumped from 2026-07-14 to 2026-07-15."
 }
