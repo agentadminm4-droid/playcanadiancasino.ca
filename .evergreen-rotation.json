@@ -1,9 +1,9 @@
 {
   "last_pick": "news",
-  "last_pick_date": "2026-07-15",
+  "last_pick_date": "2026-07-27",
   "consecutive_silent": 0,
   "weekend_silent_count": 0,
-  "last_silent_date": "2026-07-14",
+  "last_silent_date": null,
   "written_guides": [],
-  "_update_note": "news publish — ThrillTech AGCO supplier licence (side-bet jackpot specialist, B2B B2C integration timeline Q3-Q4 2026). consecutive_silent=0; weekend_silent_count reset to 0 since last silent was Tue 2026-07-14 (not a weekend). Last-pick-date bumped from 2026-07-14 to 2026-07-15."
+  "_update_note": "NEWS PUBLISH (Mon 2026-07-27 cron tick #2). Published Ontario iGaming Year 4 fiscal wrap (ontario-igaming-year-4-fiscal-summary-2025-26-july-2026) — iGO fiscal year 2025-26 closed at $103B wagers / $4.2B revenue / 91.1% channelization, sourced from licensegaming.com 2026-07-27 article + iGO monthly report sum. Article HTML, OG image, news-grid, news-data, sitemap, and feed.xml patched. Pending: deploy to live site via sub-agent."
 }
