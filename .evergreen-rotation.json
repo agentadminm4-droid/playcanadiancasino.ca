@@ -1,9 +1,9 @@
 {
   "last_pick": "news",
-  "last_pick_date": "2026-07-27",
+  "last_pick_date": "2026-07-28",
   "consecutive_silent": 0,
   "weekend_silent_count": 0,
   "last_silent_date": null,
   "written_guides": [],
-  "_update_note": "NEWS PUBLISH (Mon 2026-07-27 cron tick #2). Published Ontario iGaming Year 4 fiscal wrap (ontario-igaming-year-4-fiscal-summary-2025-26-july-2026) — iGO fiscal year 2025-26 closed at $103B wagers / $4.2B revenue / 91.1% channelization, sourced from licensegaming.com 2026-07-27 article + iGO monthly report sum. Article HTML, OG image, news-grid, news-data, sitemap, and feed.xml patched. Pending: deploy to live site via sub-agent."
+  "_update_note": "NEWS PUBLISH (Tue 2026-07-28 cron tick). Published BetMGM Q2 2026 / Game of Thrones Ontario-exclusive article (betmgm-q2-2026-ontario-gaming-thrones-market-share-july-2026) — BetMGM's Q2 2026 business update dated 2026-07-28 names Ontario Game of Thrones launches 'amongst our most successful launches' and discloses 20% Ontario iGaming market share. Article HTML on disk; news-grid + news-data renderers ran; sitemap regenerated (68 URLs); feed.xml patched (54 items, lastBuildDate bumped). PENDING: OG image generation FAILED (OpenAI billing hard limit reached — billing_limit_user_error). Deploy sub-agent will surface missing image; news-grid renderer uses generic fallback for now. Pending: deploy to live site via sub-agent."
 }

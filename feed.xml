@@ -11,13 +11,32 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Mon, 27 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>BetMGM Q2 2026: Game of Thrones Exclusive Drives Ontario iGaming Growth</title>
+      <link>https://playcanadiancasino.ca/blog/betmgm-q2-2026-ontario-gaming-thrones-market-share-july-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/betmgm-q2-2026-ontario-gaming-thrones-market-share-july-2026.html</guid>
+      <description><![CDATA[<p>BetMGM's Q2 2026 business update, dated July 28, 2026, confirms that new Game of Thrones exclusive titles launched in Ontario are amongst its most successful releases to date, with a 20% Ontario iGaming market share cited in the earnings disclosure.</p>]]></description>
+      <pubDate>Tue, 28 Jul 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-07-28">
+        <schema:headline>BetMGM Q2 2026: Game of Thrones Exclusive Drives Ontario iGaming Growth</schema:headline>
+        <schema:description>BetMGM's Q2 2026 business update, dated July 28, 2026, confirms that new Game of Thrones exclusive titles launched in Ontario are amongst its most successful releases to date, with a 20% Ontario iGaming market share cited in the earnings disclosure.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/betmgm-q2-2026-ontario-gaming-thrones-market-share-july-2026.jpg</schema:image>
+        <schema:datepublished>2026-07-28</schema:datepublished>
+        <schema:author>
+          <schema:Organization schema:name="PlayCanadianCasino" schema:url="https://playcanadiancasino.ca/"/>
+        </schema:author>
+      </schema:Article>
+    </item>
 
     <item>
       <title>Ontario iGaming&#x27;s Year 4 Closed With $103 Billion in Wagers and $4.2 Billion in Revenue — What the Fiscal Wrap Tells Us About a Maturing Market</title>
