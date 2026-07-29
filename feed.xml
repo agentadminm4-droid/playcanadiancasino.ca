@@ -11,7 +11,7 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Tue, 28 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
@@ -19,6 +19,24 @@
       <link>https://playcanadiancasino.ca/</link>
     </image>
 
+    <item>
+      <title>AGCO Updates Break Open Tickets Licensing Framework in Ontario, Cutting Admin Burden for Charities and Suppliers</title>
+      <link>https://playcanadiancasino.ca/blog/agco-bot-licensing-framework-reform-july-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/agco-bot-licensing-framework-reform-july-2026.html</guid>
+      <description><![CDATA[<p>AGCO amended its Break Open Tickets licensing framework on July 29, 2026: new $0.50 and $1 ticket types permitted, Revenue Split Model rollout Sept 30, and graphics-approval flexibility for Gaming Related Suppliers.</p>]]></description>
+      <pubDate>Wed, 29 Jul 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>News</category>
+      <schema:Article schema:datemodified="2026-07-29">
+        <schema:headline>AGCO Updates Break Open Tickets Licensing Framework in Ontario, Cutting Admin Burden for Charities and Suppliers</schema:headline>
+        <schema:description>AGCO amended its Break Open Tickets licensing framework on July 29, 2026: new $0.50 and $1 ticket types permitted, Revenue Split Model rollout Sept 30, and graphics-approval flexibility for Gaming Related Suppliers.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/agco-bot-licensing-framework-reform-july-2026.jpg</schema:image>
+        <schema:datepublished>2026-07-29</schema:datepublished>
+        <schema:author>
+          <schema:Organization schema:name="PlayCanadianCasino" schema:url="https://playcanadiancasino.ca/"/>
+        </schema:author>
+      </schema:Article>
+    </item>
     <item>
       <title>BetMGM Q2 2026: Game of Thrones Exclusive Drives Ontario iGaming Growth</title>
       <link>https://playcanadiancasino.ca/blog/betmgm-q2-2026-ontario-gaming-thrones-market-share-july-2026.html</link>

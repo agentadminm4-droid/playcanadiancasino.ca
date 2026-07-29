@@ -1,9 +1,9 @@
 {
   "last_pick": "news",
-  "last_pick_date": "2026-07-28",
+  "last_pick_date": "2026-07-29",
   "consecutive_silent": 0,
   "weekend_silent_count": 0,
   "last_silent_date": null,
   "written_guides": [],
-  "_update_note": "NEWS PUBLISH (Tue 2026-07-28 cron tick). Published BetMGM Q2 2026 / Game of Thrones Ontario-exclusive article (betmgm-q2-2026-ontario-gaming-thrones-market-share-july-2026) — BetMGM's Q2 2026 business update dated 2026-07-28 names Ontario Game of Thrones launches 'amongst our most successful launches' and discloses 20% Ontario iGaming market share. Article HTML on disk; news-grid + news-data renderers ran; sitemap regenerated (68 URLs); feed.xml patched (54 items, lastBuildDate bumped). PENDING: OG image generation FAILED (OpenAI billing hard limit reached — billing_limit_user_error). Deploy sub-agent will surface missing image; news-grid renderer uses generic fallback for now. Pending: deploy to live site via sub-agent."
+  "_update_note": "NEWS PUBLISH (Wed 2026-07-29 cron tick). Published AGCO BOT licensing framework reform article (agco-bot-licensing-framework-reform-july-2026) — AGCO bulletin dated 2026-07-29 amends Break Open Tickets framework: new $0.50 and $1 ticket types permitted effective immediately, Revenue Split Model rollout Sept 30 2026, and graphics-approval flexibility for Gaming Related Suppliers. Article HTML on disk (30KB), all 11-step build verifications PASS. News-grid + news-data renderers ran (article #1 hero), sitemap regenerated (70 URLs), feed.xml patched (55 items, lastBuildDate 2026-07-29). OG image generation FAILED (OpenAI billing hard limit reached — same billing_limit_user_error that blocked yesterday's BetMGM image). Deploy sub-agent delegated; awaiting report."
 }
