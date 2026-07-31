@@ -1,9 +1,9 @@
 {
   "last_pick": "news",
-  "last_pick_date": "2026-07-29",
+  "last_pick_date": "2026-07-31",
   "consecutive_silent": 0,
   "weekend_silent_count": 0,
   "last_silent_date": null,
   "written_guides": [],
-  "_update_note": "NEWS PUBLISH (Wed 2026-07-29 cron tick). Published AGCO BOT licensing framework reform article (agco-bot-licensing-framework-reform-july-2026) — AGCO bulletin dated 2026-07-29 amends Break Open Tickets framework: new $0.50 and $1 ticket types permitted effective immediately, Revenue Split Model rollout Sept 30 2026, and graphics-approval flexibility for Gaming Related Suppliers. Article HTML on disk (30KB), all 11-step build verifications PASS. News-grid + news-data renderers ran (article #1 hero), sitemap regenerated (70 URLs), feed.xml patched (55 items, lastBuildDate 2026-07-29). OG image generation FAILED (OpenAI billing hard limit reached — same billing_limit_user_error that blocked yesterday's BetMGM image). Deploy sub-agent delegated; awaiting report."
+  "_update_note": "NEWS PUBLISH (Fri 2026-07-31 cron tick). Published ontario-igaming-june-2026-monthly article covering iGaming Ontario June 2026 monthly report: $9.46B wagers (+30.3% YoY), $400.6M NAGGR, 1.319M active accounts. World Cup drove sports betting past $1B for 8th time in 12 months; casino held 88% share. 48 operators / 82 active sites. Tier 1 sources: iGO first-party monthly market performance report + Canadian Gaming Business + Casino.org. Tier 0 jurisdiction verified (iGO is Ontario regulator). Article HTML on disk (40 KB), 5 H2 sections, key-stats-box with 7 citeable stats, FAQPage JSON-LD with 5 questions, all 3 JSON-LD blocks valid. News-grid + JSON news-data renderers both updated (article #1 hero on both surfaces). Sitemap regenerated (72 URLs). feed.xml patched with new <item> at top + lastBuildDate bumped to Fri 31 Jul 2026 18:00:00 +0000. OG image fell back to category placeholder (OpenAI billing hard limit \u2014 third consecutive run). Deploy sub-agent pending."
 }
