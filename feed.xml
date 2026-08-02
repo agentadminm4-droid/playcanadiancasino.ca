@@ -11,7 +11,7 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Thu, 30 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
@@ -20,6 +20,29 @@
     </image>
 
 
+
+    <item>
+      <title>NetEnt Launches Spice Turtle-Mob Slot With Avalanche Bombs and 15,000x Max Win</title>
+      <link>https://playcanadiancasino.ca/blog/netent-spice-slot-turtle-mob-ontario-july-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/netent-spice-slot-turtle-mob-ontario-july-2026.html</guid>
+      <description><![CDATA[<p>NetEnt released Spice on July 28, 2026, a high-volatility online slot that frames the studio's Avalanche grid formula inside a chili-fueled turtle-mafia underworld. The 6&times;5 game pairs scatter payouts with a stac...</p>]]></description>
+      <pubDate>Tue, 28 Jul 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎰 Slot Release</category>
+      <schema:Article schema:datemodified="2026-07-28">
+        <schema:headline>NetEnt Launches Spice Turtle-Mob Slot With Avalanche Bombs and 15,000x Max Win</schema:headline>
+        <schema:description>NetEnt released Spice on July 28, 2026. The 6x5 turtle-mafia slot layers Avalanche cascades with Bomb and Row Converter modifiers, supports a 15,000x max win, and ships at AGCO-licensed Ontario operators including BetMGM and LeoVegas.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/netent-spice-slot-turtle-mob-ontario-july-2026.jpg</schema:image>
+        <schema:datepublished>2026-07-28</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/netent-spice-slot-turtle-mob-ontario-july-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>Pragmatic Play Launches Death Dominion With Doom Mechanic and 20,000x Max Win</title>
