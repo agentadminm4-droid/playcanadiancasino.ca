@@ -11,7 +11,7 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Tue, 28 Jul 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
@@ -20,6 +20,29 @@
     </image>
 
 
+
+    <item>
+      <title>Pragmatic Play Launches Jade Legends — 7x7 Cluster Slot With Position-Linked Coin Multipliers and 20,000x Max Win</title>
+      <link>https://playcanadiancasino.ca/blog/pragmatic-play-jade-legends-ontario-august-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/pragmatic-play-jade-legends-ontario-august-2026.html</guid>
+      <description><![CDATA[<p>Pragmatic Play released Jade Legends on August 3, 2026, a Japanese-themed online slot that pushes the studio's scatter-pays engine onto a 7&times;7 cluster grid and layers a new Coin Collect mechanic on top of it. The...</p>]]></description>
+      <pubDate>Mon, 03 Aug 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🎰 Slot Release</category>
+      <schema:Article schema:datemodified="2026-08-03">
+        <schema:headline>Pragmatic Play Launches Jade Legends — 7x7 Cluster Slot With Position-Linked Coin Multipliers and 20,000x Max Win</schema:headline>
+        <schema:description>Pragmatic Play released Jade Legends on August 3, 2026. The 7x7 cluster slot layers Coin Collect on top of the studio's scatter-pays engine with position-linked multipliers and a four-tier free-spin structure, and ships at AGCO-licensed Ontario operators.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/pragmatic-play-jade-legends-ontario-august-2026.jpg</schema:image>
+        <schema:datepublished>2026-08-03</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/pragmatic-play-jade-legends-ontario-august-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>NetEnt Launches Spice Turtle-Mob Slot With Avalanche Bombs and 15,000x Max Win</title>
