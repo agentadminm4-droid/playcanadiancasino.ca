@@ -11,13 +11,36 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Thu, 06 Aug 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+
+    <item>
+      <title>St8 Extends Pragmatic Play Partnership Across Ontario and Alberta</title>
+      <link>https://playcanadiancasino.ca/blog/st8-pragmatic-play-ontario-alberta-august-2026.html</link>
+      <guid isPermaLink="true">https://playcanadiancasino.ca/blog/st8-pragmatic-play-ontario-alberta-august-2026.html</guid>
+      <description><![CDATA[<p>St8 expanded its content aggregation deal with Pragmatic Play to Ontario and Alberta on August 4, 2026, giving operators in both Canadian provinces access to Pragmatic Play's 600+ game catalogue through a single API integration.</p>]]></description>
+      <pubDate>Fri, 07 Aug 2026 18:00:00 +0000</pubDate>
+      <dc:creator>PlayCanadianCasino Editorial Team</dc:creator>
+      <category>🤝 Supplier Deal</category>
+      <schema:Article schema:datemodified="2026-08-07">
+        <schema:headline>St8 Extends Pragmatic Play Partnership Across Ontario and Alberta</schema:headline>
+        <schema:description>St8 expanded its content aggregation deal with Pragmatic Play to Ontario and Alberta on August 4, 2026. Operators connected to St8's aggregation platform can now offer Pragmatic Play slots, live casino, crash, arcade, and RNG content to players in both Canadian provinces.</schema:description>
+        <schema:image>https://playcanadiancasino.ca/images/articles/st8-pragmatic-play-ontario-alberta-august-2026.jpg</schema:image>
+        <schema:datepublished>2026-08-04</schema:datepublished>
+        <schema:author>
+          <schema:Person>PlayCanadianCasino Editorial Team</schema:Person>
+        </schema:author>
+        <schema:publisher>
+          <schema:Organization>PlayCanadianCasino</schema:Organization>
+        </schema:publisher>
+        <schema:image url="https://playcanadiancasino.ca/images/articles/st8-pragmatic-play-ontario-alberta-august-2026.jpg"/>
+      </schema:Article>
+    </item>
 
     <item>
       <title>Pragmatic Play Releases Super Serge — 6x4 Ways Slot With Light-Bulb Modifiers and 10,000x Max Win</title>

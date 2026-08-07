@@ -1,9 +1,9 @@
 {
   "last_pick": "news",
-  "last_pick_date": "2026-08-06",
+  "last_pick_date": "2026-08-07",
   "consecutive_silent": 0,
   "weekend_silent_count": 0,
   "last_silent_date": null,
   "written_guides": [],
-  "_update_note": "WROTE cron (Thu 2026-08-06 18:00 ET tick). AGCO Betty Gaming $120K underage penalty (Aug 6 2026) — first-party AGCO press release fresh. 9 underage individuals created accounts + deposited + gambled; 14 more created accounts but did not deposit. Standards violated: 3.01 (no underage access) + 3.04 (KYC validation). Article + sitemap + feed + blog/index + homepage news-grid + JSON news-data all updated. OG image: BILLING LIMIT REACHED (Pitfall 33) — used fallback ontario-casino-rules.jpg (171KB, 1200x630). Consecutive-silent reset to 0. ACTION: top up OpenAI credits before next cron run. (prev 2026-08-05 Prospector Wilds Hold & Blitz, 2026-08-05 Betsson Rhino Casino Days wrote from parallel pipeline, 2026-08-06 Betty Gaming $120K underage — six articles in six days.)"
+  "_update_note": "WROTE cron (Fri 2026-08-07 17:33 ET tick). St8 × Pragmatic Play Ontario/Alberta extension (Aug 4, 2026 — 3 days old, edge of Pitfall 19 threshold; St8 source page + Gambling.com + Casino City Times + eegaming.org all confirm date). St8 expands existing PP aggregation deal into ON+AB, single API integration, 600+ titles. Alberta opened July 13 2026 — first wave of stocking deals. Same-day guard PASS (no article written yet today), AGCO lottery-and-gaming news lead date 2026-08-06 (Betty Gaming — already covered yesterday by parallel pipeline). Picked St8 as freshest non-covered story. Article 35KB, build script cleaned up. OG image: OpenAI billing exhausted (HTTP 429 / insufficient_quota), used on-disk fallback (ontario-casino-rules.jpg copy to slug, 171KB 1200x630). render-news-grid + render-news-data + regenerate-sitemap (82 URLs) + feed.xml (prepended new <item>, bumped lastBuildDate) all patched. Deploy NOT yet pushed — sub-agent will handle. ACTION: top up OpenAI credits before next cron. Consecutive-silent reset to 0."
 }
