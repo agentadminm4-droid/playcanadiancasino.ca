@@ -11,13 +11,21 @@
     <description>Casino news, guides, and explainers for Ontario players. Learn about wagering requirements, AGCO regulations, game picks, and more at AGCO-licensed Ontario casinos.</description>
     <language>en-CA</language>
     <managingEditor>hello@playcanadiancasino.ca (TopOntarioCasinos)</managingEditor>
-    <lastBuildDate>Sat, 08 Aug 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 18:00:00 +0000</lastBuildDate>
     <atom:link href="https://playcanadiancasino.ca/feed.xml" rel="self" type="application/rss+xml" title="Top Ontario Casinos RSS Feed"/>
     <image>
       <url>https://playcanadiancasino.ca/images/logo.png</url>
       <title>Top Ontario Casinos</title>
       <link>https://playcanadiancasino.ca/</link>
     </image>
+        <item>
+            <title>Fanatics Receives AGCO Operator Registration in Ontario</title>
+            <link>https://playcanadiancasino.ca/blog/fanatics-agco-ontario-licence-august-2026.html</link>
+            <guid isPermaLink="true">https://playcanadiancasino.ca/blog/fanatics-agco-ontario-licence-august-2026.html</guid>
+            <description>AGCO issued an internet gaming operator registration on August 12, 2026 to a Canadian arm of Fanatics Betting and Gaming, a key step before Fanatics can launch in Ontario's regulated iGaming market.</description>
+            <category>Ontario Casino News</category>
+            <pubDate>Tue, 12 Aug 2026 12:00:00 +0000</pubDate>
+        </item>
 
     <item>
       <title>Play'n GO Brings Bigfoot Folklore to Ontario With Stompin' Gold Release</title>
