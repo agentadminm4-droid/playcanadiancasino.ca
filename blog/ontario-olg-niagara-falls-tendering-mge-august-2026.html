@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AGCO issued an internet gaming operator registration on August 12, 2026 to a Canadian arm of Fanatics Betting and Gaming, a key step before Fanatics can launch in Ontario's regulated iGaming market.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicons (data URI - bypasses all browser caching) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADJ0lEQVR42m2TS0ycZRSG3/N9/z/zzz9DgSlTRolV4hi8xAhdmNaqNMAAEhzrYrqpC6sbY73UBFMTMEjSuPMSTLowxo3xVjRxYWzamdIhRhpdGEfDaJNqo0XKgHIZZvjv33GBmVDSd3U251mc9zxEABgA0HEHHtk7YO6SnawoJiQt1KruNAr5cwSAs1mJqakAO0LY+2B7a+fukVf6kkfKNdUy+e0KTEPAdgIkGySgVOHa3MoJmvuueDOIyBy+/cPvxx54/qn9iZaligt4rs2ep0JS4LOjbcEnT7cfau2IX9J7eh6nqakA4+PiBsA/dhB/O7dgpUaL73189tqhxpCXUo61jy3nrTPFDflwh+lku5oiLoXOJIf778bEBG+HaLNXqz/Mnlt8Dn/OXhIArHhPmzV9sQigOKnSfH2TR3KlVevWRCRS27BeB3AUpVIdQARAADAG+3oDoR8n8JpUOFm1rNXWUOi2MsnLAMlH74zS/Ipd/uPzv1KEn2sMEAAWkaHupHHgwJ5AaO8IM/IkhHjC9TebMDPj11x3ozEsKiRINBuESEjsRiqWrBcAQGMyv1RxM0IMA0EQIPAvSD16X2Sw2wosgEExZoVETKNfFm2GKdX2I2oAEYX0Lvg+2PUUC61XGOFsUPEHpAkZ6Ho4Cs9LNOj6YsVfTfj/Li9v7TIACCZIIgKYFYQQImLE2bKvOLnceSHkiGMH2NdmqKpPvLnh/7RSKlX/b2ELAKV+ZN/7DQQbzOts2y9b5aV7w/19xxAO97DrBcP3xGT+So0Eq48UABQK9RaEXV5+CZb1LtnewQh7/fbX30wazc0PhUzjdHXNCY50NfKSBfnr7+uXj3fqXzBAmJnZ8dLd3UZ93t/7YjQzbCM9xJ3HDvvvf/CMG81k2Eyn+wEA2ay8wQVzaPBZFqT7dtB+MNXw2Ine5P2vfjWvJEO9lm7hsfy6/vfC+pu4mBu9mQua0LSTNQrfNZaJ442BPcjNrSHdsUvc0qiJsfOrmC9XTotCflRtLaudNmoMzpFjXzd8R73w6VVZsZRoa9LVqdyydCznrJjOn1Lj4wITE6pu/rb8B9dgcqYGgrY+AAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJRklEQVR42p1Xa3BV1RX+1t773HPPfSW5IbeEpCBakUYqnYaXogaEINqMr5Fa0XY6VLFaqXTaqv2hMUxb2jqjTnWsjsVx2lpbL8xYReUtQZ5B9EElPiBAMDGEV5J77zn3cc7eqz8S0FZAcP8458fee61v1vq+tdYmfLIIDQ0Sra0BARAAAkA406fXklKpkELMgIvwcbRs377u7u7u/Mmb8+ZJpNMaX2DRpw0IALMaL4muzVU0glSTiquplhKjwRwnIYiZAWYPRB+Duc0hvXzR/p7XWzo6SsM2DAA+ZwAEYOqcacntrnMPbOuOcTWxMdfUJbBxTxa7ewuwLcAYZhANARYCUknkvAAIgt1J5Tcff3P9CgBAc7NAS4s5awD19fVWux27DU54yYy6ii8vmJTAlWOdoKbc4hlP7qMtXZ6I2gKGh6MFQBDYzRuzcFoF9vQH6q0PXSRsXmbv61p8pKMjdy4pUe8mRyysq40/9bMrK3B9Xdy3LSGEAB13NR/KBpCSwCABsAFgJIFyBSMaL4rJR2+oRklz8IO/9mDF+/nvxy8YM8lOJG4uptN7zzYShOmNj7x49wUPzZ+cCLI5LfsGfV69x1Ovvedi8wEXRmtAG5AUIKXga8YIZfSW+84nJyTJ14ywRbjuuf3+tp4gFFemm44NzMhs3do5zOUzghBg9t98Lysy2cD8dsMxOfu5g+relw7sX93e97R2c7dabmZqMJiZIL3sZeS5d6uguHkwIPnLtUeIwGwYMAw8fmONlVTG96VVG5TFX8Ell0TR3PwJ0U+XglAihDUfuubSp7rCHfszH4DM0ttrxfK//HmDWwBQGD7oD/22EfBMdG7jPX/YXPodg/DYDSPBIFKCUB5VKjNQ8q2IMyEyMrXEa2n5yefxQdrjL5pZkOqq3r7Mk/Oq/Fvee+Otnbt27fO5oUGhq4tPMjuVEqiqkpgyhUqvvtZWcfF5h7Z26+um1obN7r4i3frCQRz2NGIhIpuNKULUx0bVvFh8443+4VScUp4UuXbuw0Jr3129dimfqAmHDxNaW4OyiRPLi6lkc6Gn7wF0dAQnjdTXK2pv90NzGjdWlMcajmWLAYOlJQm2IEyrtf31PTpk57PNuTUblqChQaG1NTglB8JHjz+RW712KTc3CwCEdJqHD4tSzcgVFHIWQynrU2RixGLMACkTPHu8qGEpQkgJEBG5PmNCjSMSFrgEdQ0AoLX1tClQx9vaMpg3T2LHDgWgGJ4z+2FIkSTDMXIiV3Gh4MYdZxQ3NMhcKrUH6bTGjFaDVrAoee8oOxywEArMLIjY14wRUSmSNlE/Y/yoyZMrP96589gwGfmzKgCAdFpj1aoiABCJ8SKe+BFsewEXixpAOEhVrQ9s61dIp3lI30OG6Gj2GBuTBQl82ngyIuEosBGi3IvbNcM8OqUalD1r1vm26w6UIpE5Ba2Xs6AolUoaxmgACkIyjB4Fg8UADFmutIb6FEBSMkAndc4AlCQkIxLaMJOQRFLFAQAdHacGANv+XskJ30WSUuHBgV4wKRBJMAAiQ5ZSyLjfza9761ByypTE8ba2zInLxVgsQUQxgEEABYZRHhYocwQG8gZKAIGRZy5EJFCkkJWCgYYTXQaByaw1QGAopTjvtQrf7Heu++ZuL5FYFG1svCpy9RXVACAdZxwsZcMYTUTwA8bYCgsEoiOuFgqGjSkMAa6r41NHACAYw2DDZFkXgAEYAwASWoNJXKhjkU0gSRSL/EIXilm4uBgAjBIzISWgtSGCYJ8xbYyDQ9mASyWmWJgzyBT6AAAtLXzqUgyAiAgMgjEGbBhEABGBGaSsURCCoLUPw54o+bcU3n77IwAKUlw/DFYwQCDQ7HExbO/KM4QAMR/I">
+    <link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAUm0lEQVR42u1baZRdVZX+9jn33nffXFNGKqOFhAQIsRiCwbwKGcCIq3VpMTSCoItWEJuFrUtttcu0E4tusUVNA2o70dqLB7QiCCgkeUnIgMQwFpCQhApJJRWsVNWrN9zhnLP7x7tVqYQgqSRgu1bOyk1e8uree87e3/n2t/c+AU6ME+PEODFOjL/KEGhvlwBoVFftnr/xMWIRIrpGNTo6xPGaCr2NyyYAjPZ2iXxeZ2fPnmomjvvWoJHTEWpOJSQpJgKBwYfMi8AAsRBgDBTvqBTW/BS5nIVCQf2tGKC2+A4ILIOpX/DupRU3/RPf2GNbJzj47MIxWP74fqztqiLhChjDoNod4GGkEHzDcCSA/oHPV1atvuV4GIHetsUDFgBVd9EFHyki9vOEFPQvixqDq89rpIwreP53t+GJ3Z5MxiQb5hG3AUQEpRnNKWF2lTRJ27IxWLyuuqJw+7EaQbzlRAdww+mnNycvXHgnAej3rb+f3hinh66d7F/fNkZ6IYs9xVAMhkYKQQLMAoAEWAIQBAjDLC2CyF89RVwzJ4NqKQytdHp54vzzL0ahoI6FGMVb6vmODrS0IFYaP/7+Cpz5APD+WZnK/ddO4dmT4tQzUHOcMUTVgIkIzAdQyQBICiKvavCBWWnMmODSV5aOF2dPcqnsG6Zs6q7Y3LktyOf10a7lrTNALiexbJnZObntzkRDds6/Lm7aywB+dMUkOaXRoT8ParIkoSltYdDXKPnGSEEGgAKgATABHBqG6xA+Oa+Ri56mmEX0tfeNExYbw04sKzPJXwCw0N5OR7OlxVsW5goFFc+95wZOpa+Km8BcNCvjAEA10Kj6BilXIBkT+PHjvfzhH3eZQQ3LcmyLbduGbVuQUgpBxqtqvnxOluc0x1ENmEs+83nTk1g6My0qRS+UqdTc+AW5G5DPa7S3i7++ATo6BPJ5nTzvrNOQSv2bzRz2Vo1YuaUEAPA1UJe00D0Q8qU/2qE/fd9ea0eZbdLhHi4OPqL7+n7ExeI98PztEMKSlhS7BwIu+4osWXOwNuBrzqmDFBBGacMx98upM88cg3zejBYFx98AnZ0EQJhU9g7Yjgs2xoCwZluFAOCkOhsbtpdx4Q928GOvhk7G1c+nK4NXeZ0vzaw+tuKiYNXqa73HVrbXPfPs6bqveL3rmMrvX6jIrz38GtfFBQiEsq+pdVKSZ05wUfWVlnG30TTWfxIAI5cbFSHK4w79fF4ncrmPI5P+FJQKARJCCtHd63d7W7f+sOm0GZf84296Tt1X1VYD+Tf3/+4PV3ivdP0JAwNepPAkzjmHShs3Bqqr68lY09g1Vsa95ImdnjVvSoKnj4mJQd9gQsaiLT0+Nm6vkBsTZNicPCZbf0dp/fpgNCgQx5X183lT39qaNQl3GYwxtZDGEACqkaL5zP17rL7AIB0OfmT/Q49+EYCHXM4CQFi2zKBQUBGrE9rbndK6dWvcavl6BSHvWL+fAeaMK/GnXR7f/2yRYnFBSmmNmDupP51ePFoUiOPK+gD7dZlPi3h8IozRICEiHQsSNackHXLtgf4bi4+t+W/8Q6sNgCIhw2Ae6TlGPh8gl7P2P7b65w4Hq1bs8OzugVBXQuYrf7aTdg7WeMEGGxAxHOuDAICxY/lIp239RTKr7ec3H/v2EQBk5s5sCBznRlLKgCFAkZYlAhkdAoDoG/jq4Lp169HeLnFnPjwYQ/RGE6e0Ud/preq23zxTpDXbK7StN6BMyuJKaOjkjKQ9PlMFlENLSwz5vH+QlHy7pLC7cMHnRDZ7CwdBeMC4pEGQNFh8b2XVmkcOkccHyWW3bf5yCtTXq+vWdY/4GQLAE1pbE31jGrcIyznJV0rHbCmIGeXAYP5U13QP... [truncated]
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAABqXElEQVR42u29d4BdV3Uu/q21z7l9etOo2iqWJRdsywZMDKPQAiR5IQ9EAl4KpNBSSELyy0sDMZD3SHl5KZCEkuQBCSUM8MALCSEh8UAcShBuWG6ybHWNyoym3XbOXuv3x96n3JFssC2DpNydCKtMuXPuXnuv9a1vfR/QXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd11wS/qPoJv22JMTPAF96qmpy0A7b493fXUHTq7dpkLPji7N0B3PUUbSwCgb3z4hublm5/Oq8dUmpGBKoOgrOzfEznHp/GKv1+5X/3HkCgUBPInuYIABlQJROq+TP5jVaRQFBw+ymMP/MdHDs5jDhMTAaan424AdNf5WX5D7QAqD1xz1W9EgyM/R/09FTIGCnV7EwBBwQHBigJWQUQuIWHyH+MDgCjNU/L7nOATGAKg6v9L2TutuQ+g7M9KgFqBnji1t3T06A/NHzhwx3+GIOgGwLfmGTMA27Nm9Jnx2vV/qkMj1yEwQlZslm6TcoGoGYnYU00YQ1roLwIgzn0dv8e1861TKEhBINLk7PcXgGYfIlAiyn8dzX1zFZAxokFQ1Ln5M+WZo686c+8Dn7zUg6AbAE91yqOqRKTVKze9Oh4d/30a6K9CpAmrIcht7iBkNCNBNNfCuirrqyZGsWasrD/7kYMUVkJSVX9WU3Ku+9/5c5/8YZ9cJAQlBWtHMasKJep41/MXh0LdVYFYwyCg5boGMzOvXrzr639xKQcBd/foU7R2wQCQHURB5fqnvdeuv/w91N9fRiwRRAtKIGOgloDFmYaONyL7O/9ltd761mv1rT+yQdf2sEaREjEBAnEpiyqgcMd8doSpy2CgPqCgYFWIj5Xk49jnWLkYyKVGlCZThqJItFKx0arxPy9vv/pnMT0dY2IiuBTfpqC7U5+ifH9qOl4/XBm/97JtH7Hjq57DTBFiGwAwREQcQpdOtzGoip9+ySr85ItWYaRm9OTJFuZOqB442VaoCqkQSNNEx+XzmsRCkvaT+lBQ9wd/thPUl8D5ZMknUf5Tkq/n/o6ICAqiKCItF2NdO/5HVYYuT0+/81K8CboB8ORTSDoLspmejgfXr9p+ct2GT+jI6FYWaSKyBkQIAqJGJIiPN/HjNw3zG1++VjeOhTp3qsUzJyIAhGKBaSlyX9Ol80REbnsqVABigiZ1s4N2KKtvlVThymckMeHgnyRUXBXt8h4XEWKIjKoDh0AuEqwFqsXIjo38Qa19xaGl6elLribopkBPbvNrx+bf7QDGkSs23tJYt/FWHRrditi21WoBTAGH0MW5pqxvW/n46zbpO1+/MR4pQGaONWEBCQKPXxI0bseSpSgKf+CrO71V0mNd/R5XACpKfsMnx32a6KuK+yIq2WXgUiSrKuF8W5rLrYiMegwVgIC1bQ2qFbUb1n9s4LrrXnKppUPdAHjiz003Dgz0VS+//Fr/dwaT0NoVVwwvrF77NzI8NEJiYyhCZhACwvKxJl62tQf/+r+upudf16czMw1qxUImYL9PmQulosBi0wIE8XtYXVrjT3b1v3VbnRNcCMkprz7D0VzqQ+DkZkCaBREoYLQW2vjLV2/S/35VP9dPtSgMSTW9RJjJKrRS5sZg/1+ObN9yHaan44ugmdcNgKfsmRHJDiA8fuXWv7EbL/suV/TuMgDUbtxYop6ekokjC1EKDKFtQfZ4Q3/vFevpL3/pSi6J0Nx8zEHAQlkpyi4Fd0nKqboaEDjZp0ouQHzGk0CZCQxE6X2Q/NZXDLkLS8llQuknGyZqNCx9x/oqPe+6Gv... [truncated]
+    <link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAEAAElE... [truncated]
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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... [truncated]
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABmAwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAy1JREFUeJxtU0tsVFUY/s9/7p25986UtkOHjjaiDWOqGGPLwoCgJW2nrU0ZcFE2uBDdGPGBSQ0mrcEmxJ2PlISFMW6ML9DEhZHADGUaYwksiKPpKAlKlFo6LfYxnem5r3N+c2dMUwj/6ry+75zzfd/PGAAQBNX2EDy9tc/axNtJsShyNlspuxOQy56rnhka4nDmjIS7isHWJ1ub2zcPv9mTOFisqKbxHxfBMhBsR0KijgMolbs5vXiUTf+UvxcJpg88+Onl0SdeeX5nvGm+5AJ4rk2ep0Ic4atDLfKLF1r3NrfFLuldXftYAD5+HO8guG3L2AeZWZEcyZ/8/OzNvfUhL6kcsYOE8/7p/Crf02Y5Qx0NpstCpxODvY/A2BhtJNGmbpSvTJ2bexn+mroUrIpYV4uYuJgHgPy4StGtNRrOFJbE/XHTrKyKdwDgEBQK6wQsECiYGf093RL1IwxomSs4VhZiqTkUeqDI+DUAxp/ZFmEzi3bxz6//TjL4pUKBfgCE5kBnwti1a4tE7UO0zOcAcb/rrzXA5KRfcd3V+jCWGDJsNBiYIdwMyWhi3YDgC8Ssb1XMMhmBAVJKkP4FrkceM/s7hRSBxSxKpCAe1divczaBxdVGEbXgFyykd4DvA7meItS60QgPyZLfxy3gUtfDEfC8eJ2uz5X8pbj/78JCDVuNDxIDzgIlgmsQEU0jRsK+7mQy5xH5sGNL2NFiqLLPaG3V/3mxUCj/70KNAJS6Sr73OzCwgWiFbPsNUZzfHu7tOQzhcBe5nhx8NMqz1ysMSX1WfX8ut+4C2sWF10GIj5jt7TbJ67W//2HcaGx8KmQZp8rLjjzYUU/zAvhvf6xcO9Kuf1NVf3Lyrkh3dhrr453dr0XSgzakBqj98AH/409edCPpNFmpVG91P4jzxl6wBvpfImS6b8vW3cm6Z492Jx5/67sZxQnU26kmGs2u6P/MrrwHFzMj9+oFDTXtWIWFHx5Nx+Ddvi2QmV6GVNsmvK9ew9HzSzBTLJ3CXHZE1cB3WFjLAVCGOfYtw3fUq1/e4CWhsKVBVycyC9wRzlmcyJ5QgepjYwG41vkb6j/XYHKmMJnwtgAAAABJRU5ErkJggg==">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="64x64" href="../images/favicon-64-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/favicon-512-new.png?v=17">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-new.png?v=17">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon-new.ico?v=17">
+    <link rel="canonical" href="https://playcanadiancasino.ca/blog/ontario-olg-niagara-falls-tendering-mge-august-2026.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://playcanadiancasino.ca/blog/ontario-olg-niagara-falls-tendering-mge-august-2026.html">
+    <meta property="og:title" content="Ontario Government Ends MGE's Niagara Falls Casino Exclusivity, Opens OLG Tendering | PlayCanadianCasino">
+    <meta property="og:description" content="An Ontario government statement on August 13, 2026 announced a new agreement between OLG and MGE Niagara Entertainment that ends exclusivity at Casino Niagara and Fallsview Casino Resort, with OLG launching a tendering process later in 2026 to identify new operators in the region.">
+    <meta property="og:image" content="https://playcanadiancasino.ca/images/articles/ontario-olg-niagara-falls-tendering-mge-august-2026.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Editorial illustration of a printed Ontario government statement on a clean desk with a stylized Niagara Falls backdrop and a small casino floor in the background, no people visible, no operator branding, clean editorial composition.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://playcanadiancasino.ca/images/articles/ontario-olg-niagara-falls-tendering-mge-august-2026.jpg">
+    <meta name="twitter:image:alt" content="Editorial illustration of a printed Ontario government statement on a clean desk with a stylized Niagara Falls backdrop and a small casino floor in the background, no people visible, no operator branding, clean editorial composition.">
+    <meta property="article:published_time" content="2026-08-14">
+
+    <title>Ontario Government Ends MGE's Niagara Falls Casino Exclusivity, Opens OLG Tendering | PlayCanadianCasino</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=15">
+    <link rel="alternate" type="application/rss+xml" title="PlayCanadianCasino RSS" href="../feed.xml">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ontario Government Ends MGE's Niagara Falls Casino Exclusivity, Opens OLG Tendering",
+  "description": "An Ontario government statement on August 13, 2026 announced a new agreement between OLG and MGE Niagara Entertainment that ends exclusivity at Casino Niagara and Fallsview Casino Resort, with OLG launching a tendering process later in 2026 to identify new operators in the region.",
+  "datePublished": "2026-08-14",
+  "author": {
+    "@type": "Organization",
+    "name": "PlayCanadianCasino"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PlayCanadianCasino",
+    "url": "https://playcanadiancasino.ca/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://playcanadiancasino.ca/blog/ontario-olg-niagara-falls-tendering-mge-august-2026.html"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://playcanadiancasino.ca/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Casino Guides & News",
+      "item": "https://playcanadiancasino.ca/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ontario Government Ends MGE's Niagara Falls Casino Exclusivity, Opens OLG Tendering",
+      "item": "https://playcanadiancasino.ca/blog/ontario-olg-niagara-falls-tendering-mge-august-2026.html"
+    }
+  ]
+}
+    </script>
+
+    <link rel="alternate" hreflang="en-CA" href="https://playcanadiancasino.ca/blog/ontario-olg-niagara-falls-tendering-mge-august-2026.html">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What did the Ontario government announce about Niagara Falls casinos on August 13, 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Ontario government statement on August 13, 2026 announced a new agreement between OLG and MGE Niagara Entertainment Inc. that ends the company's regional exclusivity at Casino Niagara and Fallsview Casino Resort. OLG says it will open a tendering process later in 2026 to identify additional gaming operators in the Niagara Falls region."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the August 13 OLG announcement affect Ontario's regulated online iGaming market?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The August 13, 2026 announcement is a land-based casino policy development affecting Casino Niagara and Fallsview Casino Resort, both of which are OLG land-based venues. Ontario's regulated online casino and sportsbook market is a separate framework administered by AGCO and iGaming Ontario, and the iGO public directory of 48 operators and 83 gaming websites is unaffected by the Niagara Falls tendering plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which operator runs Casino Niagara and Fallsview Casino Resort today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MGE Niagara Entertainment Inc. has operated Casino Niagara and Fallsview Casino Resort since 2004. Under the new August 13, 2026 agreement with OLG, MGE will continue to manage both venues, but it will no longer hold exclusive rights to host casino gaming in the Niagara Falls region. OLG will run a tendering process later in 2026 to identify additional operators."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Destination Niagara Strategy and how does the OLG deal relate to it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Destination Niagara Strategy is a multi-billion-dollar provincial initiative Premier Doug Ford outlined at the end of 2025, with the goal of roughly doubling the Niagara Region's visitor numbers (currently around 13 million annually) and bringing forward new casinos, a theme park, an expanded airport, and other tourism infrastructure. The August 13, 2026 OLG–MGE agreement is the operational follow-on, giving the strategy a concrete starting point by opening a competitive tendering process for additional gaming operators in the region."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will Ontario players registered with BetGuard be blocked from any new Niagara Falls operators?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Any new land-based or online operator that emerges from the OLG Niagara Falls tendering process must register with AGCO and integrate with the centralized BetGuard self-exclusion register. Ontario residents registered with BetGuard will not be able to open an account or enter any venue operated by an AGCO-licensed operator, including any new Niagara Falls casino that emerges from the tendering process."
+      }
+    }
+  ]
+}
+    </script>
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbce7893-7bf8-4c76-a76a-8ae8834d3051"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="PlayCanadianCasino - Home">
+                <span class="logo-icon">🍁</span>
+                <span class="logo-text">Play<span>CanadianCasino</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="/#featured">Top Casinos</a></li>
+                    <li><a href="/#offers">Bonuses</a></li>
+                    <li><a href="/blog/">News & Guides</a></li>
+                    <li><a href="/#methodology">How We Rate</a></li>
+                    <li><a href="/#responsible" class="highlight-link">19+ Play Safe</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container article-layout">
+            <div class="article-hero">
+                <div class="article-tag">🏛️ Ontario Policy</div>
+                <h1 class="article-title">Ontario Government Ends MGE's Niagara Falls Casino Exclusivity, Opens OLG Tendering</h1>
+                <div class="article-meta">
+                    <time datetime="2026-08-14">August 14, 2026</time>
+                    <span>•</span>
+                    <span>5 min read</span>
+                    <span>•</span>
+                    <span>By PlayCanadianCasino Team</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+<p><strong>An Ontario government statement released on Thursday afternoon, August 13, 2026</strong> announced a new agreement between the Ontario Lottery and Gaming Corporation (OLG) and MGE Niagara Entertainment Inc. that ends the company's regional exclusivity at Casino Niagara and Fallsview Casino Resort and clears the way for additional casino and entertainment operators in the Niagara Falls region.</p>
+
+<p>The agreement removes <strong>exclusivity provisions</strong> that had previously limited casino gaming in the Niagara region to MGE, which has operated the two venues since 2004. OLG says it will begin a tendering process later in 2026 "to identify potential new gaming operators." The exact timing for completing that process was not announced alongside the August 13 statement.</p>
+
+<div class="key-stats-box">
+<p><strong>Key facts about the August 13, 2026 OLG–MGE Niagara deal:</strong></p>
+<ul>
+<li>Announced Thursday, August 13, 2026 via an Ontario government statement.</li>
+<li>Replaces the regional exclusivity held by MGE Niagara Entertainment Inc. over Casino Niagara and Fallsview Casino Resort.</li>
+<li>OLG will open a tendering process later in 2026 to "identify potential new gaming operators" in the Niagara Falls region.</li>
+<li>MGE will continue to manage its two existing casinos under the new arrangement.</li>
+<li>The Niagara Falls venues collectively attract more than five million visitors per year and generate more than $500 million in annual gaming revenue for the province.</li>
+<li>The deal is part of the broader <strong>Destination Niagara Strategy</strong>, a multi-billion-dollar provincial initiative announced at the end of 2025 to roughly double Niagara Region visitor numbers (currently around 13 million annually) and bring forward new casinos, a theme park, an expanded airport, and other tourism infrastructure.</li>
+</ul>
+<p><strong>Source:</strong> CityNews Toronto, "New Ontario government agreement could allow for more casino operators in Niagara Falls" (Aug 13, 2026, 15:12 ET), citing the Ontario government statement.</p>
+<p><strong>Last updated:</strong> August 14, 2026.</p>
+</div>
+
+<h2>What the New Agreement Actually Changes</h2>
+
+<p>The August 13 statement is the operational follow-on to a softer announcement at the end of 2025, when Ontario Premier Doug Ford outlined the multi-billion-dollar <strong>Destination Niagara Strategy</strong>. That strategy framed Niagara as a multi-year provincial priority, with visions of multiple new casinos, a theme park, an expanded airport, and other tourism infrastructure — all aimed at roughly doubling the region's visitor numbers over time.</p>
+
+<p>The new OLG–MGE agreement gives that strategy a concrete starting point. Under the deal, MGE Niagara Entertainment Inc. will continue to operate Casino Niagara and Fallsview Casino Resort, but it will no longer hold the exclusive right to host casino gaming in the region. OLG will now run a competitive tendering process to evaluate additional operators and entertainment partners. The statement does not specify how many new operators could ultimately be approved, what the regulatory and licensing pathway will be for successful bidders, or how the Ontario regulator — the Alcohol and Gaming Commission of Ontario (AGCO) — will handle any new land-based casino registrations that emerge from the tendering.</p>
+
+<h2>Why the Niagara Falls Region Matters for Ontario Gaming</h2>
+
+<p>Niagara Falls is one of Ontario's signature gaming markets. Fallsview Casino Resort and Casino Niagara together attract more than five million visitors per year and contribute more than $500 million in annual gaming revenue to the province, according to figures cited in the August 13 statement. The two venues are also major employers in the region, and the Destination Niagara Strategy positions the new tendering process as a job-creation and tourism-growth lever.</p>
+
+<p>For the broader Ontario gaming landscape, the Niagara deal is a land-based casino policy development rather than a direct change to the regulated online iGaming market administered by iGaming Ontario (iGO). The two markets are governed by different regulatory frameworks: OLG operates its casino and lottery venues under provincial authority, while Ontario's online casino and sportsbook operators are independently licensed by AGCO and contracted with iGO. The August 13 statement does not extend to either of those frameworks, and the tendering process the statement describes is for additional land-based casino and entertainment operators in Niagara Falls, not for additional online operators.</p>
+
+<h2>How the AGCO and iGO Fit In</h2>
+
+<p>Ontario's <strong>Alcohol and Gaming Commission of Ontario (AGCO)</strong> is the regulator that registers and supervises both land-based and online gaming operators in the province. AGCO sets and enforces the Registrar's standards for responsible gambling, anti-money-laundering controls, financial fitness, game integrity, and player protection. Any new land-based casino operator that emerges from the OLG tendering process will need to be registered with AGCO at the entity level — that is a separate regulatory step from the OLG commercial arrangement just announced.</p>
+
+<p>Online operators in Ontario follow a parallel but distinct path. Each AGCO-registered online operator must also sign an operating agreement with <strong>iGaming Ontario</strong> before it can accept Ontario players. As of August 6, 2026, the iGO public directory listed 48 operators and 83 active gaming websites in the regulated online channel. The August 13 OLG–MGE announcement does not affect that iGO roster, and no new online operator entries are implied by the Niagara Falls tendering plan.</p>
+
+<h2>What Comes Next in the Tendering Process</h2>
+
+<p>OLG has said the tendering process will begin later in 2026. The statement does not specify the criteria OLG will use to evaluate bidders, the maximum number of new operators that could be approved, or the anticipated timeline for award decisions. Once OLG selects one or more successful bidders, the announcement will likely come through a separate OLG or Ontario government press release, with any necessary AGCO registration steps to follow.</p>
+
+<p>For Ontario players, the practical question is whether the new tendering will result in any new land-based casino venues opening in the Niagara Falls region, additional gaming floor space at the existing sites, or expanded entertainment offerings under new operators. The August 13 statement does not answer those questions, but the Destination Niagara Strategy's broader tourism-and-casino framing suggests that, over a multi-year horizon, the region could see additional operational footprints and a more competitive set of local operators.</p>
+
+<h2>Responsible Gambling Reminders for Ontario Players</h2>
+
+<p>Any new gaming operator that emerges from the Niagara Falls tendering process will need to meet AGCO's responsible-gambling standards before being registered. That includes integrating with the centralized <strong>BetGuard</strong> self-exclusion register that AGCO stewards for Ontario, honoring player-set deposit limits, time limits, and cooling-off periods at the operator level, and meeting the 19+ age-verification requirements that apply to all Ontario-licensed gaming.</p>
+
+<p>If you or someone you know is struggling with gambling, contact <a href="https://www.connexontario.ca" rel="noopener noreferrer">ConnexOntario</a> at 1-866-531-2600 for free, confidential support — 24 hours a day, seven days a week.</p>
+</div>
+
+            <div style="margin: 40px 0 20px;">
+                <a href="/blog/" class="btn btn-outline" style="color: var(--green-dark); border-color: var(--green-primary);">← Back to News & Guides</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-icon">🍁</span>
+                        <span class="logo-text">Play<span>CanadianCasino</span></span>
+                    </a>
+                    <p>Independent casino reviews for Ontario players. All casinos shown are AGCO-licensed.</p>
+                    <p class="footer-disclaimer">Terms apply to all bonuses. Must be 19+ and physically located in Ontario. Gamble responsibly.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Reviews</h4>
+                    <ul>
+                        <li><a href="/reviews/betway.html">Betway Review</a></li>
+                        <li><a href="/reviews/jackpot-city.html">Jackpot City Review</a></li>
+                        <li><a href="/reviews/royal-vegas.html">Royal Vegas Review</a></li>
+                        <li><a href="/reviews/ruby-fortune.html">Ruby Fortune Review</a></li>
+                        <li><a href="/reviews/spin-casino.html">Spin Casino Review</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="/#methodology">How We Rate</a></li>
+                        <li><a href="/blog/">News & Guides</a></li>
+                        <li><a href="/#responsible">Responsible Gambling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PlayCanadianCasino.ca — For educational and informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=15"></script>
+<!-- Custom event tracking for affiliate conversions (added by inject-umami.py) -->
+<script id="umami-track-casino">
+(function() {
+  if (typeof window.umami === 'undefined') {
+    // Umami not loaded yet — wait for it
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.umami !== 'undefined') initUmamiTrackers();
+    });
+  } else {
+    initUmamiTrackers();
+  }
+
+  function initUmamiTrackers() {
+    // Track all clicks, then filter to affiliate + outbound
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+
+      var href = link.getAttribute('href') || '';
+      var hostname = link.hostname || '';
+      var currentHost = window.location.hostname;
+
+      // Skip same-page anchors, mailto, tel, internal nav
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+          href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+      // Affiliate link: contains ?s=sp51774 (our tag) — this is the conversion event
+      if (href.indexOf('s=sp51774') !== -1) {
+        var operator = (link.getAttribute('data-casino-link') || hostname || 'unknown');
+        var page = window.location.pathname;
+        window.umami.track('Casino Click', { operator: operator, page: page, href: href });
+        return;
+      }
+
+      // Other outbound link to a different domain — useful for link-building tracking
+      if (hostname && hostname !== currentHost && !hostname.endsWith('playcanadiancasino.ca')) {
+        window.umami.track('Outbound Click', { domain: hostname, page: window.location.pathname, href: href });
+      }
+    }, true);  // capture phase to catch programmatic clicks
+
+    // Optional: track form submissions (for future "Join Now" forms on review pages)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (form && form.action && form.action.indexOf('s=sp51774') !== -1) {
+        window.umami.track('Conversion', { page: window.location.pathname });
+      }
+    }, true);
+  }
+})();
+</script>
+
+</body>
+</html>
