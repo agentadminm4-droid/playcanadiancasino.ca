@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A practical guide to live dealer game strategy for Ontario players — basic strategy for blackjack, optimal roulette bets, baccarat banker-edge math, bet sizing, and how AGCO-licensed live casino studios handle the rules.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicons (data URI - bypasses all browser caching) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADJ0lEQVR42m2TS0ycZRSG3/N9/z/zzz9DgSlTRolV4hi8xAhdmNaqNMAAEhzrYrqpC6sbY73UBFMTMEjSuPMSTLowxo3xVjRxYWzamdIhRhpdGEfDaJNqo0XKgHIZZvjv33GBmVDSd3U251mc9zxEABgA0HEHHtk7YO6SnawoJiQt1KruNAr5cwSAs1mJqakAO0LY+2B7a+fukVf6kkfKNdUy+e0KTEPAdgIkGySgVOHa3MoJmvuueDOIyBy+/cPvxx54/qn9iZaligt4rs2ep0JS4LOjbcEnT7cfau2IX9J7eh6nqakA4+PiBsA/dhB/O7dgpUaL73189tqhxpCXUo61jy3nrTPFDflwh+lku5oiLoXOJIf778bEBG+HaLNXqz/Mnlt8Dn/OXhIArHhPmzV9sQigOKnSfH2TR3KlVevWRCRS27BeB3AUpVIdQARAADAG+3oDoR8n8JpUOFm1rNXWUOi2MsnLAMlH74zS/Ipd/uPzv1KEn2sMEAAWkaHupHHgwJ5AaO8IM/IkhHjC9TebMDPj11x3ozEsKiRINBuESEjsRiqWrBcAQGMyv1RxM0IMA0EQIPAvSD16X2Sw2wosgEExZoVETKNfFm2GKdX2I2oAEYX0Lvg+2PUUC61XGOFsUPEHpAkZ6Ho4Cs9LNOj6YsVfTfj/Li9v7TIACCZIIgKYFYQQImLE2bKvOLnceSHkiGMH2NdmqKpPvLnh/7RSKlX/b2ELAKV+ZN/7DQQbzOts2y9b5aV7w/19xxAO97DrBcP3xGT+So0Eq48UABQK9RaEXV5+CZb1LtnewQh7/fbX30wazc0PhUzjdHXNCY50NfKSBfnr7+uXj3fqXzBAmJnZ8dLd3UZ93t/7YjQzbCM9xJ3HDvvvf/CMG81k2Eyn+wEA2ay8wQVzaPBZFqT7dtB+MNXw2Ine5P2vfjWvJEO9lm7hsfy6/vfC+pu4mBu9mQua0LSTNQrfNZaJ442BPcjNrSHdsUvc0qiJsfOrmC9XTotCflRtLaudNmoMzpFjXzd8R73w6VVZsZRoa9LVqdyydCznrJjOn1Lj4wITE6pu/rb8B9dgcqYGgrY+AAAAAElFTkSuQmCC">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAJRklEQVR42p1Xa3BV1RX+1t773HPPfSW5IbeEpCBakUYqnYaXogaEINqMr5Fa0XY6VLFaqXTaqv2hMUxb2jqjTnWsjsVx2lpbL8xYReUtQZ5B9EElPiBAMDGEV5J77zn3cc7eqz8S0FZAcP8458fee61v1vq+tdYmfLIIDQ0Sra0BARAAAkA406fXklKpkELMgIvwcbRs377u7u7u/Mmb8+ZJpNMaX2DRpw0IALMaL4muzVU0glSTiquplhKjwRwnIYiZAWYPRB+Duc0hvXzR/p7XWzo6SsM2DAA+ZwAEYOqcacntrnMPbOuOcTWxMdfUJbBxTxa7ewuwLcAYZhANARYCUknkvAAIgt1J5Tcff3P9CgBAc7NAS4s5awD19fVWux27DU54yYy6ii8vmJTAlWOdoKbc4hlP7qMtXZ6I2gKGh6MFQBDYzRuzcFoF9vQH6q0PXSRsXmbv61p8pKMjdy4pUe8mRyysq40/9bMrK3B9Xdy3LSGEAB13NR/KBpCSwCABsAFgJIFyBSMaL4rJR2+oRklz8IO/9mDF+/nvxy8YM8lOJG4uptN7zzYShOmNj7x49wUPzZ+cCLI5LfsGfV69x1Ovvedi8wEXRmtAG5AUIKXga8YIZfSW+84nJyTJ14ywRbjuuf3+tp4gFFemm44NzMhs3do5zOUzghBg9t98Lysy2cD8dsMxOfu5g+relw7sX93e97R2c7dabmZqMJiZIL3sZeS5d6uguHkwIPnLtUeIwGwYMAw8fmONlVTG96VVG5TFX8Ell0TR3PwJ0U+XglAihDUfuubSp7rCHfszH4DM0ttrxfK//HmDWwBQGD7oD/22EfBMdG7jPX/YXPodg/DYDSPBIFKCUB5VKjNQ8q2IMyEyMrXEa2n5yefxQdrjL5pZkOqq3r7Mk/Oq/Fvee+Otnbt27fO5oUGhq4tPMjuVEqiqkpgyhUqvvtZWcfF5h7Z26+um1obN7r4i3frCQRz2NGIhIpuNKULUx0bVvFh8443+4VScUp4UuXbuw0Jr3129dimfqAmHDxNaW4OyiRPLi6lkc6Gn7wF0dAQnjdTXK2pv90NzGjdWlMcajmWLAYOlJQm2IEyrtf31PTpk57PNuTUblqChQaG1NTglB8JHjz+RW712KTc3CwCEdJqHD4tSzcgVFHIWQynrU2RixGLMACkTPHu8qGEpQkgJEBG5PmNCjSMSFrgEdQ0AoLX1tClQx9vaMpg3T2LHDgWgGJ4z+2FIkSTDMXIiV3Gh4MYdZxQ3NMhcKrUH6bTGjFaDVrAoee8oOxywEArMLIjY14wRUSmSNlE/Y/yoyZMrP96589gwGfmzKgCAdFpj1aoiABCJ8SKe+BFsewEXixpAOEhVrQ9s61dIp3lI30OG6Gj2GBuTBQl82ngyIuEosBGi3IvbNcM8OqUalD1r1vm26w6UIpE5Ba2Xs6AolUoaxmgACkIyjB4Fg8UADFmutIb6FEBSMkAndc4AlCQkIxLaMJOQRFLFAQAdHacGANv+XskJ30WSUuHBgV4wKRBJMAAiQ5ZSyLjfza9761ByypTE8ba2zInLxVgsQUQxgEEABYZRHhYocwQG8gZKAIGRZy5EJFCkkJWCgYYTXQaByaw1QGAopTjvtQrf7Heu++ZuL5FYFG1svCpy9RXVACAdZxwsZcMYTUTwA8bYCgsEoiOuFgqGjSkMAa6r41NHACAYw2DDZFkXgAEYAwASWoNJXKhjkU0gSRSL/EIXilm4uBgAjBIzISWgtSGCYJ8xbYyDQ9mASyWmWJgzyBT6AAAtLXzqUgyAiAgMgjEGbBhEABGBGaSsURCCoLUPw54o+bcU3n77IwAKUlw/DFYwQCDQ7HExbO/KM4QAMR/I">
+    <link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAUm0lEQVR42u1baZRdVZX+9jn33nffXFNGKqOFhAQIsRiCwbwKGcCIq3VpMTSCoItWEJuFrUtttcu0E4tusUVNA2o70dqLB7QiCCgkeUnIgMQwFpCQhApJJRWsVNWrN9zhnLP7x7tVqYQgqSRgu1bOyk1e8uree87e3/n2t/c+AU6ME+PEODFOjL/KEGhvlwBoVFftnr/xMWIRIrpGNTo6xPGaCr2NyyYAjPZ2iXxeZ2fPnmomjvvWoJHTEWpOJSQpJgKBwYfMi8AAsRBgDBTvqBTW/BS5nIVCQf2tGKC2+A4ILIOpX/DupRU3/RPf2GNbJzj47MIxWP74fqztqiLhChjDoNod4GGkEHzDcCSA/oHPV1atvuV4GIHetsUDFgBVd9EFHyki9vOEFPQvixqDq89rpIwreP53t+GJ3Z5MxiQb5hG3AUQEpRnNKWF2lTRJ27IxWLyuuqJw+7EaQbzlRAdww+mnNycvXHgnAej3rb+f3hinh66d7F/fNkZ6IYs9xVAMhkYKQQLMAoAEWAIQBAjDLC2CyF89RVwzJ4NqKQytdHp54vzzL0ahoI6FGMVb6vmODrS0IFYaP/7+Cpz5APD+WZnK/ddO4dmT4tQzUHOcMUTVgIkIzAdQyQBICiKvavCBWWnMmODSV5aOF2dPcqnsG6Zs6q7Y3LktyOf10a7lrTNALiexbJnZObntzkRDds6/Lm7aywB+dMUkOaXRoT8ParIkoSltYdDXKPnGSEEGgAKgATABHBqG6xA+Oa+Ri56mmEX0tfeNExYbw04sKzPJXwCw0N5OR7OlxVsW5goFFc+95wZOpa+Km8BcNCvjAEA10Kj6BilXIBkT+PHjvfzhH3eZQQ3LcmyLbduGbVuQUgpBxqtqvnxOluc0x1ENmEs+83nTk1g6My0qRS+UqdTc+AW5G5DPa7S3i7++ATo6BPJ5nTzvrNOQSv2bzRz2Vo1YuaUEAPA1UJe00D0Q8qU/2qE/fd9ea0eZbdLhHi4OPqL7+n7ExeI98PztEMKSlhS7BwIu+4osWXOwNuBrzqmDFBBGacMx98upM88cg3zejBYFx98AnZ0EQJhU9g7Yjgs2xoCwZluFAOCkOhsbtpdx4Q928GOvhk7G1c+nK4NXeZ0vzaw+tuKiYNXqa73HVrbXPfPs6bqveL3rmMrvX6jIrz38GtfFBQiEsq+pdVKSZ05wUfWVlnG30TTWfxIAI5cbFSHK4w79fF4ncrmPI5P+FJQKARJCCtHd63d7W7f+sOm0GZf84296Tt1X1VYD+Tf3/+4PV3ivdP0JAwNepPAkzjmHShs3Bqqr68lY09g1Vsa95ImdnjVvSoKnj4mJQd9gQsaiLT0+Nm6vkBsTZNicPCZbf0dp/fpgNCgQx5X183lT39qaNQl3GYwxtZDGEACqkaL5zP17rL7AIB0OfmT/Q49+EYCHXM4CQFi2zKBQUBGrE9rbndK6dWvcavl6BSHvWL+fAeaMK/GnXR7f/2yRYnFBSmmNmDupP51ePFoUiOPK+gD7dZlPi3h8IozRICEiHQsSNackHXLtgf4bi4+t+W/8Q6sNgCIhw2Ae6TlGPh8gl7P2P7b65w4Hq1bs8OzugVBXQuYrf7aTdg7WeMEGGxAxHOuDAICxY/lIp239RTKr7ec3H/v2EQBk5s5sCBznRlLKgCFAkZYlAhkdAoDoG/jq4Lp169HeLnFnPjwYQ/RGE6e0Ud/preq23zxTpDXbK7StN6BMyuJKaOjkjKQ9PlMFlENLSwz5vH+QlHy7pLC7cMHnRDZ7CwdBeMC4pEGQNFh8b2XVmkcOkccHyWW3bf5yCtTXq+vWdY/4GQLAE1pbE31jGrcIyznJV0rHbCmIGeXAYP5U13QP... [truncated]
+    <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAABqXElEQVR42u29d4BdV3Uu/q21z7l9etOo2iqWJRdsywZMDKPQAiR5IQ9EAl4KpNBSSELyy0sDMZD3SHl5KZCEkuQBCSUM8MALCSEh8UAcShBuWG6ybHWNyoym3XbOXuv3x96n3JFssC2DpNydCKtMuXPuXnuv9a1vfR/QXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd3VXd11wS/qPoJv22JMTPAF96qmpy0A7b493fXUHTq7dpkLPji7N0B3PUUbSwCgb3z4hublm5/Oq8dUmpGBKoOgrOzfEznHp/GKv1+5X/3HkCgUBPInuYIABlQJROq+TP5jVaRQFBw+ymMP/MdHDs5jDhMTAaan424AdNf5WX5D7QAqD1xz1W9EgyM/R/09FTIGCnV7EwBBwQHBigJWQUQuIWHyH+MDgCjNU/L7nOATGAKg6v9L2TutuQ+g7M9KgFqBnji1t3T06A/NHzhwx3+GIOgGwLfmGTMA27Nm9Jnx2vV/qkMj1yEwQlZslm6TcoGoGYnYU00YQ1roLwIgzn0dv8e1861TKEhBINLk7PcXgGYfIlAiyn8dzX1zFZAxokFQ1Ln5M+WZo686c+8Dn7zUg6AbAE91yqOqRKTVKze9Oh4d/30a6K9CpAmrIcht7iBkNCNBNNfCuirrqyZGsWasrD/7kYMUVkJSVX9WU3Ku+9/5c5/8YZ9cJAQlBWtHMasKJep41/MXh0LdVYFYwyCg5boGMzOvXrzr639xKQcBd/foU7R2wQCQHURB5fqnvdeuv/w91N9fRiwRRAtKIGOgloDFmYaONyL7O/9ltd761mv1rT+yQdf2sEaREjEBAnEpiyqgcMd8doSpy2CgPqCgYFWIj5Xk49jnWLkYyKVGlCZThqJItFKx0arxPy9vv/pnMT0dY2IiuBTfpqC7U5+ifH9qOl4/XBm/97JtH7Hjq57DTBFiGwAwREQcQpdOtzGoip9+ySr85ItWYaRm9OTJFuZOqB442VaoCqkQSNNEx+XzmsRCkvaT+lBQ9wd/thPUl8D5ZMknUf5Tkq/n/o6ICAqiKCItF2NdO/5HVYYuT0+/81K8CboB8ORTSDoLspmejgfXr9p+ct2GT+jI6FYWaSKyBkQIAqJGJIiPN/HjNw3zG1++VjeOhTp3qsUzJyIAhGKBaSlyX9Ol80REbnsqVABigiZ1s4N2KKtvlVThymckMeHgnyRUXBXt8h4XEWKIjKoDh0AuEqwFqsXIjo38Qa19xaGl6elLribopkBPbvNrx+bf7QDGkSs23tJYt/FWHRrditi21WoBTAGH0MW5pqxvW/n46zbpO1+/MR4pQGaONWEBCQKPXxI0bseSpSgKf+CrO71V0mNd/R5XACpKfsMnx32a6KuK+yIq2WXgUiSrKuF8W5rLrYiMegwVgIC1bQ2qFbUb1n9s4LrrXnKppUPdAHjiz003Dgz0VS+//Fr/dwaT0NoVVwwvrF77NzI8NEJiYyhCZhACwvKxJl62tQf/+r+upudf16czMw1qxUImYL9PmQulosBi0wIE8XtYXVrjT3b1v3VbnRNcCMkprz7D0VzqQ+DkZkCaBREoYLQW2vjLV2/S/35VP9dPtSgMSTW9RJjJKrRS5sZg/1+ObN9yHaan44ugmdcNgKfsmRHJDiA8fuXWv7EbL/suV/TuMgDUbtxYop6ekokjC1EKDKFtQfZ4Q3/vFevpL3/pSi6J0Nx8zEHAQlkpyi4Fd0nKqboaEDjZp0ouQHzGk0CZCQxE6X2Q/NZXDLkLS8llQuknGyZqNCx9x/oqPe+6Gv... [truncated]
+    <link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAEAAElE... [truncated]
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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... [truncated]
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABmAwAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAy1JREFUeJxtU0tsVFUY/s9/7p25986UtkOHjjaiDWOqGGPLwoCgJW2nrU0ZcFE2uBDdGPGBSQ0mrcEmxJ2PlISFMW6ML9DEhZHADGUaYwksiKPpKAlKlFo6LfYxnem5r3N+c2dMUwj/6ry+75zzfd/PGAAQBNX2EDy9tc/axNtJsShyNlspuxOQy56rnhka4nDmjIS7isHWJ1ub2zcPv9mTOFisqKbxHxfBMhBsR0KijgMolbs5vXiUTf+UvxcJpg88+Onl0SdeeX5nvGm+5AJ4rk2ep0Ic4atDLfKLF1r3NrfFLuldXftYAD5+HO8guG3L2AeZWZEcyZ/8/OzNvfUhL6kcsYOE8/7p/Crf02Y5Qx0NpstCpxODvY/A2BhtJNGmbpSvTJ2bexn+mroUrIpYV4uYuJgHgPy4StGtNRrOFJbE/XHTrKyKdwDgEBQK6wQsECiYGf093RL1IwxomSs4VhZiqTkUeqDI+DUAxp/ZFmEzi3bxz6//TjL4pUKBfgCE5kBnwti1a4tE7UO0zOcAcb/rrzXA5KRfcd3V+jCWGDJsNBiYIdwMyWhi3YDgC8Ssb1XMMhmBAVJKkP4FrkceM/s7hRSBxSxKpCAe1divczaBxdVGEbXgFyykd4DvA7meItS60QgPyZLfxy3gUtfDEfC8eJ2uz5X8pbj/78JCDVuNDxIDzgIlgmsQEU0jRsK+7mQy5xH5sGNL2NFiqLLPaG3V/3mxUCj/70KNAJS6Sr73OzCwgWiFbPsNUZzfHu7tOQzhcBe5nhx8NMqz1ysMSX1WfX8ut+4C2sWF10GIj5jt7TbJ67W//2HcaGx8KmQZp8rLjjzYUU/zAvhvf6xcO9Kuf1NVf3Lyrkh3dhrr453dr0XSgzakBqj98AH/409edCPpNFmpVG91P4jzxl6wBvpfImS6b8vW3cm6Z492Jx5/67sZxQnU26kmGs2u6P/MrrwHFzMj9+oFDTXtWIWFHx5Nx+Ddvi2QmV6GVNsmvK9ew9HzSzBTLJ3CXHZE1cB3WFjLAVCGOfYtw3fUq1/e4CWhsKVBVycyC9wRzlmcyJ5QgepjYwG41vkb6j/XYHKmMJnwtgAAAABJRU5ErkJggg==">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="64x64" href="../images/favicon-64-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192-new.png?v=17">
+    <link rel="icon" type="image/png" sizes="512x512" href="../images/favicon-512-new.png?v=17">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-new.png?v=17">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon-new.ico?v=17">
+    <link rel="canonical" href="https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html">
+    <meta property="og:title" content="Live Dealer Strategy for Ontario Players: A Practical Guide to Blackjack, Roulette, and Baccarat | PlayCanadianCasino">
+    <meta property="og:description" content="A practical guide to live dealer game strategy for Ontario players — basic strategy for blackjack, optimal roulette bets, baccarat banker-edge math, bet sizing, and how AGCO-licensed live casino studios handle the rules.">
+    <meta property="og:image" content="https://playcanadiancasino.ca/images/articles/live-dealer-strategy-ontario-guide.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Editorial illustration of a live dealer studio table with three game layout diagrams (blackjack, roulette, baccarat) and an AGCO licence badge in the corner.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://playcanadiancasino.ca/images/articles/live-dealer-strategy-ontario-guide.jpg">
+    <meta name="twitter:image:alt" content="Editorial illustration of a live dealer studio table with three game layout diagrams (blackjack, roulette, baccarat) and an AGCO licence badge in the corner.">
+    <meta property="article:published_time" content="2026-08-17">
+
+    <title>Live Dealer Strategy for Ontario Players: A Practical Guide to Blackjack, Roulette, and Baccarat | PlayCanadianCasino</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css?v=15">
+    <link rel="alternate" type="application/rss+xml" title="PlayCanadianCasino RSS" href="../feed.xml">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Live Dealer Strategy for Ontario Players: A Practical Guide to Blackjack, Roulette, and Baccarat",
+      "description": "A practical guide to live dealer game strategy for Ontario players — basic strategy for blackjack, optimal roulette bets, baccarat banker-edge math, bet sizing, and how AGCO-licensed live casino studios handle the rules.",
+      "datePublished": "2026-08-17",
+      "author": { "@type": "Organization", "name": "PlayCanadianCasino" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PlayCanadianCasino",
+        "url": "https://playcanadiancasino.ca/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://playcanadiancasino.ca/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Casino Guides & News",
+            "item": "https://playcanadiancasino.ca/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Live Dealer Strategy for Ontario Players: A Practical Guide to Blackjack, Roulette, and Baccarat",
+            "item": "https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html"
+        }
+    ]
+}
+    </script>
+
+    <link rel="alternate" hreflang="en-CA" href="https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html">
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbce7893-7bf8-4c76-a76a-8ae8834d3051"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="PlayCanadianCasino - Home">
+                <span class="logo-icon">🍁</span>
+                <span class="logo-text">Play<span>CanadianCasino</span></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="/#featured">Top Casinos</a></li>
+                    <li><a href="/#offers">Bonuses</a></li>
+                    <li><a href="/blog/">News & Guides</a></li>
+                    <li><a href="/#methodology">How We Rate</a></li>
+                    <li><a href="/#responsible" class="highlight-link">19+ Play Safe</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container article-layout">
+            <div class="article-hero">
+                <div class="article-tag">🎲 Live Dealer Guide</div>
+                <h1 class="article-title">Live Dealer Strategy for Ontario Players: A Practical Guide to Blackjack, Roulette, and Baccarat</h1>
+                <div class="article-meta">
+                    <time datetime="2026-08-17">August 17, 2026</time>
+                    <span>•</span>
+                    <span>9 min</span>
+                    <span>•</span>
+                    <span>By PlayCanadianCasino Team</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+
+<div class="article-content">
+
+<p>Live dealer games are the closest Ontario players can get to a real casino table without leaving the house. A human dealer streams from a studio (or a casino floor), you place bets on a digital interface, and the result is decided by the cards or the wheel — not by an RNG. The shift from RNG to live dealer changes the math slightly, the pacing dramatically, and the bankroll math completely. This guide is the practical companion to our existing <a href="blackjack-basic-strategy-ontario-2026.html">blackjack basic strategy guide</a> and the broader <a href="wagering-requirements-guide.html">Wagering Requirements Guide</a>, covering the three games that fill the AGCO-licensed live lobbies: blackjack, roulette, and baccarat.</p>
+
+<h2>How Live Dealer Studios Work in Ontario</h2>
+
+<p>Ontario-licensed live dealer games are streamed from studios operated by Ontario-registered B2B suppliers — primarily Pragmatic Play Live, Evolution, OnAir Entertainment, and a handful of smaller studios. Each studio runs dozens of tables simultaneously, with games including standard blackjack, roulette, baccarat, game shows (Monopoly, Crazy Time, Dream Catcher), and localised variants such as Pragmatic Play's Privé Lounge and Evolution's Lightning series. The equipment is regulated: the same AGCO standards that govern slots apply to live games — published RTP, geolocation verification, and the same responsible-gaming tools (deposit limits, time-outs, self-exclusion via BetGuard).</p>
+
+<p>The two mechanical differences between live dealer and RNG games are pacing and transparency. Live games run at human speed — a typical blackjack hand takes 12-18 seconds, a roulette spin takes 45-60 seconds. That changes the math: a 90-minute live session delivers roughly 200-300 blackjack hands, compared to 800-1,200 in an RNG game at the same elapsed time. The transparency is the same physical dealing and wheel spin you would see in a casino, with the result captured by OCR and posted to your bet slip within a second of the event.</p>
+
+<p>Two practical consequences for Ontario players. First, bet sizing matters more in live games because the variance per hand is higher than per RNG spin. A $10 bet on a hand of blackjack costs $10 whether you win or lose; a $10 bet on a 50-payline slot costs $0.20 per spin. The same $50 budget behaves differently. Second, the published RTP for live games is closer to the theoretical maximum than for slots — most live blackjack sits at 99.5% or higher with optimal play, live roulette at 94.7-97.3% (depending on the variant), and live baccarat at 98.5-98.9% on the banker bet. The house edge is smaller, but the volatility per hand is much larger.</p>
+
+<h2>Live Blackjack: The Game With the Best Player Odds</h2>
+
+<p>Live blackjack is the most strategically deep live-dealer game in Ontario. With optimal basic strategy, the RTP is 99.5% or higher — better than any slot, and competitive with video poker. The catch is that optimal play is a learned skill, not intuition. Blackjack basic strategy is a 250-cell decision chart that tells you what to do with every possible hand against every possible dealer upcard. The grid is invariant of the specific game rules (within reason) — once you learn the chart, you can apply it to any AGCO-licensed live blackjack table.</p>
+
+<p>Three rules points that change the math. First, the dealer must hit on 16 and stand on 17 in most Ontario-licensed games — a few studios offer "Dealer Must Stand on All 17s" as a variant, which improves the player RTP by about 0.2%. Second, blackjack pays 3:2 — not 6:5 (the 6:5 variant is uncommon in Ontario but it exists, and the RTP drops to about 96% if you play it). Third, doubling after splitting (DAS) is standard, which broadens your doubling-down opportunities beyond the initial two-card hand.</p>
+
+<p>Bankroll sizing for live blackjack follows a simple rule: bring 50-100 bet units to a session. A $10 minimum bet on a $5-table average means $500-1,000 in buy-in. The expected loss on $500 of action at 99.5% RTP is $2.50 — but the variance is the issue, not the long-run house edge. Most players will finish a $500 session either up or down by $50-150, with extended losing streaks of 8-12 hands being routine. If you cannot afford to lose $500 in a single session, you are overbetting. Drop the table minimum or play RNG blackjack, which has the same RTP at one-tenth the variance per hand.</p>
+
+<h2>Live Roulette: The Game Where the Variant Matters</h2>
+
+<p>Live roulette comes in three variants in Ontario-licensed lobbies: European (one zero, 97.3% RTP), American (two zeros, 94.7% RTP), and French (one zero plus La Partage rule, 98.6% RTP on even-money bets). The variant is the single most important difference between two roulette tables with the same minimum bet. American roulette is the worst bet in the entire live casino — the extra zero doubles the house edge on every bet, and there is no strategy that overcomes it. Avoid American roulette in Ontario if you can. French roulette is the best even-money bet in the lobby if La Partage is offered — the rule refunds half your even-money bet when the ball lands on zero, recovering most of the European edge on those bets.</p>
+
+<p>Many live roulette games in Ontario include multipliers. Evolution's Lightning Roulette adds random multipliers of 50x-500x to one or more straight-up numbers each spin, but applies those multipliers only to straight-up bets (single number), and reduces the regular payout on straight-up numbers from 35:1 to 29:1 to fund the multipliers. The math: the multiplier boosts the RTP on straight-up numbers to 97.1% (from the European 97.3% per-bet, but with massively higher variance). For all other bets (red/black, dozens, columns), the RTP stays at the European 97.3%. Pragmatic Play's PowerUP Roulette and Mega Roulette work similarly. The bottom line: roulette variants with multipliers are fine if you bet straight-up numbers; the RTP edge is in your favour; if you bet anything else, you are paying for someone else's straight-up multiplier.</p>
+
+<p>Bankroll sizing for live roulette is the same as blackjack — 50-100 bet units. The longer spin count (roulette typically delivers 60-80 spins per hour at a live table) smooths variance faster than blackjack, but the zero (or double zero on American) cuts harder on long-shot bets. If you find yourself betting on a single number "because the multiplier is up to 500x", you are chasing variance, not executing strategy. The flat-bet approach — same unit size on the same bet type every spin — is the right default. Martingale systems (double after a loss) do not work in expectation; they accelerate your losses when the inevitable losing streak arrives.</p>
+
+<h2>Live Baccarat: The Lowest-Skill Option That Still Rewards Strategy</h2>
+
+<p>Live baccarat is the simplest live-dealer game strategically. There are three bets: banker (pays 1:1, RTP 98.94%), player (pays 1:1, RTP 98.76%), and tie (pays 8:1, RTP 85.6%). The banker bet wins slightly more often than the player bet, but the casino takes a 5% commission on banker wins to offset that edge, leaving the banker bet with the highest RTP of the three. The tie bet is the worst bet in the lobby — do not play it. The 8:1 payout looks tempting, but the math says you lose 14.4% of every dollar over time.</p>
+
+<p>There is no decision after the bet in baccarat. The cards are dealt, the natural or tableau rule resolves the hand, and either the player bet, banker bet, or both win. The "strategy" in baccarat is purely about which bet to make and how much to bet. The flat-bet banker approach is the right default — most AGCO-licensed live baccarat players who bet the banker bet every hand finish their session within $50-100 of break-even on a $500 buy-in.</p>
+
+<p>One pattern to watch for: most live baccarat tables offer side bets (player pair, banker pair, perfect pair, either pair, big, small). These are universally bad bets — RTP ranges from 86-93%, compared to 98.94% on the banker bet. The side bets exist because they are fun and because they pay the casino 7-14% of every dollar bet. Same advice as slots: if you want to play the side bet for the entertainment value, treat it as a slot spin, not a baccarat hand. Do not delude yourself that you are "playing baccarat strategy" when you are betting the player pair at 13% house edge.</p>
+
+<h2>Bet Sizing and Session Management Across All Live Games</h2>
+
+<p>The most common mistake across all live-dealer games in Ontario is bet sizing relative to session length. A $500 buy-in spread across 50 hands of $10 blackjack is the same mathematical exposure as a $500 buy-in spread across 25 hands of $20 blackjack, but the second version gives you half the hands and double the variance per hand. The flat-bet $10 approach is the right default for most Ontario players. The progression systems (Martingale, Fibonacci, Paroli) all have the same flaw: they will perform well in 60-70% of sessions (the short losing streaks get recovered), but in the 30-40% of sessions where a long losing streak arrives, they accelerate losses to the full session budget in a handful of hands.</p>
+
+<p>Two practical session rules. First, set a hard stop-loss before you sit down — a dollar amount where you will close the table regardless of the situation. For most Ontario players, $200-300 is the right range. Second, set a hard win goal — a dollar amount where you lock in profit and walk away. A 30-50% session profit goal is realistic; chasing higher than that is what most losing live-dealer sessions have in common. The skill in live-dealer play is not in the betting choices — it is in the discipline to leave the table.</p>
+
+<p>Time-wise, live sessions of 60-90 minutes are the sweet spot. Longer than 90 minutes, the dealer shifts, the studio occasionally breaks for table maintenance, and the player fatigue kicks in. Shorter than 60 minutes, the variance has not had enough time to converge on the theoretical RTP — you are likely to finish a $500 short session either up or down by $50-100 purely on variance, not on anything to do with skill.</p>
+
+<h2>Live Dealer Game Shows: The High-Variance Slot-Like Tier</h2>
+
+<p>Evolution's live game shows (Monopoly Live, Crazy Time, Dream Catcher, Funky Time) and Pragmatic Play's equivalents look like live dealer games but function mathematically like high-volatility slots. Crazy Time, the most popular Ontario-licensed live game show, has a top payout of 20,000x and an RTP between 94-96% across its bet types — comparable to a high-volatility Megaways slot. The difference is that the outcome is determined by a physical wheel spin and a slot multiplier, not by an RNG. The pacing is slower (one wheel spin every 45-60 seconds) and the volatility is higher (long gaps between wins, big swings when they arrive).</p>
+
+<p>The strategic guidance for live game shows is the same as for high-volatility slots: bring a bankroll sized to survive 50-100 spins without any significant return, and accept that the outcome is decided by the multiplier, not by your bet timing. The "bet on the bonus round" approach is the closest to strategy these games offer — backing the bonus-space bets (Coin Flip, Pachinko, Cash Hunt, Crazy Time in the Crazy Time wheel) shifts your expected RTP toward the higher end of the range, but also lowers the hit frequency. Same trade-off as a high-volatility slot: less often, but bigger when it lands.</p>
+
+<h2>Responsible Play and the AGCO Framework</h2>
+
+<p>Live dealer games are subject to the same AGCO responsible-gaming framework as slots: deposit limits, time-outs, self-exclusion via BetGuard (the Ontario-wide centralized self-exclusion register that launched in 2025), and mandatory reality checks during long sessions. The combination of human-paced dealing and higher bet sizes makes live games a more reactive gambling experience than slots — the long stretches between outcomes create the same "this one will pay" chasing psychology that high-volatility slots do, and the visual confirmation of the dealer and the cards adds an emotional layer that an RNG does not.</p>
+
+<p>ConnexOntario (1-866-531-2600) is the province-wide problem-gambling helpline and is referenced at the bottom of every AGCO-licensed operator's responsible-gambling page. If you find yourself playing live dealer games longer than you planned, betting more than you budgeted, or chasing losses by raising your bet size, those are the warning signs that the entertainment is becoming a problem. The deposit-limit and time-out tools are easier to configure before you start a session than during one — set them up on first deposit, and the system will enforce them for you.</p>
+
+<p>Ontario's regulatory framework is the strongest consumer protection in the North American online casino market. Every AGCO-licensed live dealer studio has its tables audited, its RTP published, and its randomisation process verified. If you ever see a live dealer game that behaves unusually (a card that does not match the displayed result, a roulette spin with an inconsistent landing spot, a dealer who cannot accept your bet), report it to the operator's live chat and to AGCO if the issue is not resolved. The system works when players use it.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the best live dealer game for Ontario players?</h3>
+<p>Live blackjack gives the highest RTP at 99.5% or higher with optimal basic strategy, making it the lowest-house-edge live dealer game in the Ontario-regulated market. Live baccarat on the banker bet is close behind at 98.94% and requires zero strategy, while live roulette varies from 94.7% (American) to 98.6% (French on even-money bets with La Partage).</p>
+
+<h3>Are live dealer games fair in Ontario?</h3>
+<p>Yes. Every live dealer game in Ontario is operated by an AGCO-registered B2B supplier (Pragmatic Play Live, Evolution, OnAir Entertainment, and others), and every game publishes its theoretical RTP. The actual gameplay is captured by OCR and audited, and the studios are subject to the same AGCO standards as the rest of the casino — including geolocation, responsible-gaming controls, and player-fund segregation.</p>
+
+<h3>Can I use basic strategy on live blackjack?</h3>
+<p>Yes. The basic strategy chart is invariant across AGCO-licensed live blackjack games (with the same rule set). You can use a printed card, the strategy chart available in the in-game help panel on most Ontario-licensed blackjack variants, or our dedicated <a href="blackjack-basic-strategy-ontario-2026.html">blackjack basic strategy Ontario guide</a>. Most live blackjack tables do not prohibit the use of strategy cards, but check the game rules before you play.</p>
+
+<h3>What is the house edge on live roulette?</h3>
+<p>European roulette (one zero) has a 2.7% house edge on every bet. American roulette (two zeros) has a 5.26% house edge. French roulette has a 1.35% house edge on even-money bets when the La Partage rule applies (returns half your bet when the ball lands on zero). Game-show variants with multipliers (Lightning Roulette, Mega Roulette, PowerUP Roulette) range from 2.7% to 8.7% depending on the bet type.</p>
+
+<h3>Are live game shows like Crazy Time the same as slots?</h3>
+<p>Mechanically, yes. Live game shows use a physical wheel or slot-style multiplier to determine the outcome, with no decision-making after the bet. The mathematical structure is similar to a high-volatility slot: a 94-96% RTP with a top payout of several thousand times the bet. The pacing is slower than a slot (one outcome every 45-60 seconds) and the human element adds an entertainment layer that a slot does not.</p>
+
+<h3>How do I set deposit limits at Ontario live dealer casinos?</h3>
+<p>The deposit-limit tool is available in the responsible-gaming section of every AGCO-licensed operator's account page. You can set daily, weekly, and monthly limits, and the operator is required to enforce them — you cannot raise a limit without a 24-48 hour cooling-off period. The most common pattern is to set a weekly limit equal to your entertainment budget and let the system enforce it for you.</p>
+
+<h3>What is BetGuard and how does it relate to live dealer games?</h3>
+<p>BetGuard is Ontario's centralized self-exclusion register, launched in 2025 and operated by AGCO. When you register with BetGuard, you are excluded from all AGCO-licensed online casino operators and all Ontario-registered iGaming sites — including live dealer games. The registration is for a minimum of 30 days and can be extended to 1 year, 2 years, 3 years, or 5 years. The exclusion is enforced across all operators and cannot be reversed early.</p>
+
+</div>
+</div>
+  <footer class="article-footer">
+    <div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <span itemprop="name">PlayCanadianCasino Editorial Team</span>
+    </div>
+    <div class="rg-footer">
+      <p>Problem gambling help: <a href="tel:1-866-531-2600">ConnexOntario 1-866-531-2600</a></p>
+    </div>
+  </footer>
+
+            <div style="margin: 40px 0 20px;">
+                <a href="/blog/" class="btn btn-outline" style="color: var(--green-dark); border-color: var(--green-primary);">← Back to News & Guides</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">
+                        <span class="logo-icon">🍁</span>
+                        <span class="logo-text">Play<span>CanadianCasino</span></span>
+                    </a>
+                    <p>Independent casino reviews for Ontario players. All casinos shown are AGCO-licensed.</p>
+                    <p class="footer-disclaimer">Terms apply to all bonuses. Must be 19+ and physically located in Ontario. Gamble responsibly.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Reviews</h4>
+                    <ul>
+                        <li><a href="/reviews/betway.html">Betway Review</a></li>
+                        <li><a href="/reviews/jackpot-city.html">Jackpot City Review</a></li>
+                        <li><a href="/reviews/royal-vegas.html">Royal Vegas Review</a></li>
+                        <li><a href="/reviews/ruby-fortune.html">Ruby Fortune Review</a></li>
+                        <li><a href="/reviews/spin-casino.html">Spin Casino Review</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="/#methodology">How We Rate</a></li>
+                        <li><a href="/blog/">News & Guides</a></li>
+                        <li><a href="/#responsible">Responsible Gambling</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 PlayCanadianCasino.ca — For educational and informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js?v=15"></script>
+<!-- Custom event tracking for affiliate conversions (added by inject-umami.py) -->
+<script id="umami-track-casino">
+(function() {
+  if (typeof window.umami === 'undefined') {
+    // Umami not loaded yet — wait for it
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.umami !== 'undefined') initUmamiTrackers();
+    });
+  } else {
+    initUmamiTrackers();
+  }
+
+  function initUmamiTrackers() {
+    // Track all clicks, then filter to affiliate + outbound
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+
+      var href = link.getAttribute('href') || '';
+      var hostname = link.hostname || '';
+      var currentHost = window.location.hostname;
+
+      // Skip same-page anchors, mailto, tel, internal nav
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') ||
+          href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+      // Affiliate link: contains ?s=sp51774 (our tag) — this is the conversion event
+      if (href.indexOf('s=sp51774') !== -1) {
+        var operator = (link.getAttribute('data-casino-link') || hostname || 'unknown');
+        var page = window.location.pathname;
+        window.umami.track('Casino Click', { operator: operator, page: page, href: href });
+        return;
+      }
+
+      // Other outbound link to a different domain — useful for link-building tracking
+      if (hostname && hostname !== currentHost && !hostname.endsWith('playcanadiancasino.ca')) {
+        window.umami.track('Outbound Click', { domain: hostname, page: window.location.pathname, href: href });
+      }
+    }, true);  // capture phase to catch programmatic clicks
+
+    // Optional: track form submissions (for future "Join Now" forms on review pages)
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      if (form && form.action && form.action.indexOf('s=sp51774') !== -1) {
+        window.umami.track('Conversion', { page: window.location.pathname });
+      }
+    }, true);
+  }
+})();
+</script>
+
+</body>
+</html>
