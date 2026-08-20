@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://playcanadiancasino.ca/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -50,13 +50,19 @@
   </url>
   <url>
     <loc>https://playcanadiancasino.ca/reviews/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://playcanadiancasino.ca/blog/agco-betty-gaming-120k-underage-august-2026.html</loc>
     <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playcanadiancasino.ca/blog/agco-booming-games-70000-penalty-auto-play-august-2026.html</loc>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -217,6 +223,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://playcanadiancasino.ca/blog/netent-fruit-shop-grand-re-opening-ontario-july-2026.html</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -333,6 +345,12 @@
   <url>
     <loc>https://playcanadiancasino.ca/blog/playngo-alberta-canada-expansion-july-2026.html</loc>
     <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://playcanadiancasino.ca/blog/playngo-cursed-moon-power-collection-ontario-august-2026.html</loc>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -521,11 +539,5 @@
     <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://playcanadiancasino.ca/blog/live-dealer-strategy-ontario-guide.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
